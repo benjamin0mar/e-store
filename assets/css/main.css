@@ -144,6 +144,11 @@ a:visited {
 body {
   background-color: #fff; }
 
+.seccions {
+  display: none; }
+  .seccions.show_section {
+    display: block; }
+
 #menu-dark {
   width: calc(100% - 200px);
   position: fixed;

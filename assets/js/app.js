@@ -6,8 +6,6 @@ $(function(){
   // GalleryProducts("#carrito");
   numberInput();
   tabInfoProduct();
-  $("#producto").hide();
-  $("#carrito").hide();
 
   page('/', index);
   page('/producto', producto);
@@ -18,21 +16,18 @@ $(function(){
 
 
 function index(){
-  $("#producto").hide();
-  $("#carrito").hide();
-  $("#main").show();
+  $("#main").siblings("section").removeClass("show_section");
+  $("#main").addClass("show_section");
 }
 
 function producto(){
-  $("#carrito").hide();
-  $("#main").hide();
-  $("#producto").show();
+  $("#producto").siblings("section").removeClass("show_section");
+  $("#producto").addClass("show_section");
 }
 
 function car(){
-  $("#producto").hide();
-  $("#main").hide();
-  $("#carrito").show();
+  $("#carrito").siblings("section").removeClass("show_section");
+  $("#carrito").addClass("show_section");
 }
 
 
