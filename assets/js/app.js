@@ -6,6 +6,8 @@ $(function(){
   // GalleryProducts("#carrito");
   numberInput();
   tabInfoProduct();
+  $("#producto").hide();
+  $("#carrito").hide();
 
   page('/', index);
   page('/producto', producto);
