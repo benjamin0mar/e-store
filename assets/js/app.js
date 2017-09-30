@@ -18,17 +18,20 @@ $(function(){
 
 
 function index(){
-  $("#main").siblings("section").hide();
+  $("#producto").hide();
+  $("#carrito").hide();
   $("#main").show();
 }
 
 function producto(){
-  $("#producto").siblings("section").hide();
+  $("#carrito").hide();
+  $("#main").hide();
   $("#producto").show();
 }
 
 function car(){
-  $("#carrito").siblings("section").hide();
+  $("#producto").hide();
+  $("#main").hide();
   $("#carrito").show();
 }
 
