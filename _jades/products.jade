@@ -1,0 +1,127 @@
+section.menu-section
+  aside.side-list
+    section
+      h2.title Producto de la semana
+      - for (var i = 0; i < 5; ++i) {
+        .producto-week
+          img(src="assets/img/product#{i+2}.jpg" width="100%")
+          .producto-week-content
+            h2 Apple MacBook Air
+            .price 
+              small 
+              small s/. 5000
+            
+      - }   
+      - for (var i = 0; i < 2; ++i) {
+        .producto-week
+          img(src="assets/img/product#{i+2}.jpg" width="100%")
+          .producto-week-content
+            h2 Apple MacBook Air
+            .price 
+              small 
+              small s/. 5000
+            
+      - }  
+
+  aside.products-list  
+    .top-list
+      h1 Mas Populares
+      .categories
+        h2.active Laptop
+        h2 Smartphone
+        h2 Desktop
+        h2 Tablet
+        h2 Musica
+    .products-list-content
+      .products-list-wrapper
+        - for (var i = 0; i < 9; ++i) {
+          .product-description
+            img(src="assets/img/product2.jpg" width="100%")
+            .product-description-content
+              h2 Apple MacBook Pro
+              .power  
+                i.ion-wifi
+                i.ion-camera
+                i.ion-wifi
+                i.ion-camera
+              .price 
+                h3 s/. 4800
+                h3 s/. 5000    
+              .add-car 
+                span Agregar
+                i.ion-android-cart 
+        - } 
+      .products-list-wrapper  
+        - for (var i = 0; i < 12; ++i) {
+          .product-description
+            img(src="assets/img/product3.jpg" width="100%")
+            .product-description-content
+              h2 Iphone X
+              .power  
+                i.ion-wifi
+                i.ion-camera
+                i.ion-wifi
+                i.ion-camera
+              .price 
+                h3 s/. 3220
+                h3 s/. 2800   
+              .add-car 
+                span Agregar
+                i.ion-android-cart 
+        - }
+         
+      .products-list-wrapper  
+        - for (var i = 0; i < 6; ++i) {
+          .product-description
+            img(src="assets/img/product4.jpg" width="100%")
+            .product-description-content
+              h2 IMac 10
+              .power  
+                i.ion-wifi
+                i.ion-camera
+                i.ion-wifi
+                i.ion-camera
+              .price 
+                h3 s/. 3220
+                h3 s/. 2800   
+              .add-car 
+                span Agregar
+                i.ion-android-cart 
+        - }
+      .products-list-wrapper  
+        - for (var i = 0; i < 9; ++i) {
+          .product-description
+            img(src="assets/img/product5.jpg" width="100%")
+            .product-description-content
+              h2 Ipad Air 2
+              .power  
+                i.ion-wifi
+                i.ion-camera
+                i.ion-wifi
+                i.ion-camera
+              .price 
+                h3 s/. 3220
+                h3 s/. 2800   
+              .add-car 
+                span Agregar
+                i.ion-android-cart 
+        - }   
+        
+      .products-list-wrapper  
+        - for (var i = 0; i < 9; ++i) {
+          .product-description
+            img(src="assets/img/product6.jpg" width="100%")
+            .product-description-content
+              h2 Ipod Touch 6
+              .power  
+                i.ion-wifi
+                i.ion-camera
+                i.ion-wifi
+                i.ion-camera
+              .price 
+                h3 s/. 3220
+                h3 s/. 2800   
+              .add-car 
+                span Agregar
+                i.ion-android-cart 
+        - }         

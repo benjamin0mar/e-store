@@ -1,0 +1,50 @@
+section.car_content
+  .car_content_wrapper
+    .list-products
+      table.detalle_producto
+          tr
+            th
+              h1 Producto
+            th
+              h1 Precio Unidad
+            th
+              h1 Cantidad
+            th
+              h1 Precio
+            th               
+              h1 Eliminar
+          - for (var i = 0; i < 5; ++i) {
+            tr.item
+              td
+                .item_content
+                  img(src="assets/img/product#{i+2}.jpg" width="120")
+                  h2 Apple MacBook Pro
+              td
+                h2 S/. 3000.00  
+              td
+                h2 1
+              td
+                h2 S/. 3000.00
+              td
+                a(href="#")
+                  i.ion-trash-a
+          - }    
+          
+      .pay_producto
+        .pay_producto_wrapper
+          .pay_list
+            span
+              h2.about-price Sub Total
+              h2.price S/. 10000.00
+            span
+              h2.about-price Descuento 
+              h2.price S/ 10.00
+            span
+              h2.about-price IGV
+              h2.price S/ 20.00  
+          .pay_total
+            h1 total
+            h1 S/. 9990
+          .pay
+            a#see-car(href="#") Pagar
+            i.ion-card            

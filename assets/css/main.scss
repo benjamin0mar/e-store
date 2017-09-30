@@ -1,0 +1,88 @@
+@import "0-tools/reset";
+@import "0-tools/var";
+@import "1-modules/home";
+@import "1-modules/menu";
+@import "1-modules/products";
+@import "1-modules/footer";
+@import "1-modules/products_content";
+@import "1-modules/products_info";
+@import "1-modules/car";
+
+// NOTE: input number styling
+
+.quantity {
+  position: relative;
+  margin-right: 10px;
+  box-shadow: $shadow;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button
+{
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number]
+{
+  -moz-appearance: textfield;
+}
+
+.quantity input {
+  font-family: $main-font;
+  width: 50px;
+  height: 45px;
+  line-height: 1.65;
+  float: left;
+  display: block;
+  padding: 0;
+  margin: 0;
+  padding-left: 20px;
+  border: 1px solid #eee;
+  background-color: #2196F3;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 3px;
+}
+
+.quantity input:focus {
+  outline: 0;
+}
+
+.quantity-nav {
+  float: left;
+  position: relative;
+  height: 45px;
+}
+
+.quantity-button {
+  position: relative;
+  cursor: pointer;
+  border-left: 1px solid #eee;
+  width: 20px;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  font-family: $main-font;
+  line-height: 1.7;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.quantity-button.quantity-up {
+  position: absolute;
+  height: 50%;
+  top: 0;
+  border-bottom: 1px solid #eee;
+}
+
+.quantity-button.quantity-down {
+  position: absolute;
+  bottom: -1px;
+  height: 50%;
+}

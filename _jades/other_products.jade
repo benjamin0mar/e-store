@@ -1,0 +1,15 @@
+section.other_products
+  .other_products_wrapper
+    - for (var i = 0; i < 3; ++i) {
+      .product-description
+        img(src="assets/img/product#{i+2}.jpg" width="100%")
+        .product-description-content
+          h2 Apple MacBook Pro
+          .power  
+            i.ion-wifi
+            i.ion-camera
+            i.ion-wifi
+            i.ion-camera  
+          .add-car 
+            span Ver Producto
+    - }
