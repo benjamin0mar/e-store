@@ -1,19 +1,39 @@
 $(function(){
+  movePay();
   menuShow();
   tabProducts();
   moveSlideBar();
   GalleryProducts();
-  // GalleryProducts("#carrito");
   numberInput();
   tabInfoProduct();
+
+  profileTabs(".profile_wrapper .tabs ul li",".tabs_content_profile");
+  profileTabs(".auth_wrapper .tab_auth span",".auth_sign");
 
   page('/', index);
   page('/producto', producto);
   page('/carrito', car);
+  page('/perfil', profile);
+  page('/autentificacion', auth);
   page();
 
 });
 
+
+
+function profileTabs(tab,content){
+  $(tab).click(function(){
+    var indice = $(this).index();
+    $(this).siblings().removeClass("active");
+    $(this).addClass("active");
+    $(content).removeClass("active");
+    $(content).eq(indice).addClass("active");
+  });
+}
+
+
+
+// NOTE: routes
 
 function index(){
   $("#main").siblings("section").removeClass("show_section");
@@ -29,6 +49,17 @@ function car(){
   $("#carrito").siblings("section").removeClass("show_section");
   $("#carrito").addClass("show_section");
 }
+
+function profile(){
+  $("#profile").siblings("section").removeClass("show_section");
+  $("#profile").addClass("show_section");
+}
+
+function auth(){
+  $("#auth").siblings("section").removeClass("show_section");
+  $("#auth").addClass("show_section");
+}
+
 
 
 function tabInfoProduct(){
@@ -129,21 +160,37 @@ function GalleryProducts(){
 
 }
 
-function moveSlideBar(){
+function movePay(){
   $(window).scroll(function(){
     var top = $(this).scrollTop();
-    var topSlide = $(".side-list").offset().top
-    var topFooter = $("footer").offset().top
-    if(top > topSlide){
+    var topPayContent = $(".pay_producto").offset().top;
+    // var topFooter = $("footer").offset().top;
+    console.log(top+" > "+topPayContent);
+    if(top > topPayContent  ){
+     $(".pay_producto_content").addClass("fixed");
+     $(".pay_producto_content").css({
+       "top":  (top + 20)+"px"
+     })
+    }else if(top < topPayContent){
+      $(".pay_producto_content").removeClass("fixed");
+    }
+  });
+}
+
+function moveSlideBar(){
+  $(window).scroll(function(){
+    var topSlide = $(".side-list").offset().top;
+    var top = $(this).scrollTop();
+    var topFooter = $("footer").offset().top;
+    var topSection = $(".menu-section").offset().top;
+    if(top > topSection && top + $(window).height() < topFooter ){
      $(".side-list").addClass("fixed");
-     if(top + $(window).height() > topFooter ){
-       $(".side-list").addClass("hide");
-     }else{
-       $(".side-list").removeClass("hide");
-     }
-   }else{
-     $(".side-list").removeClass("fixed");
-   }
+     $(".side-list section").css({
+       "top":  (top)+"px"
+     })
+    }else if(top < topSection){
+      $(".side-list").removeClass("fixed");
+    }
   });
 }
 

@@ -42,15 +42,62 @@
       i
         font-size: 20px
         margin-left: 20px
-        color: rgba($accent-color, .6)
+        width: 25px
+        color: rgba($accent-color, .8)
       a
         font-family: $main-font
         text-decoration: none
         padding: 10px
         box-sizing: border-box
         display: block
-        text-transform: uppercase
+        text-transform: capitalize
+        font-size: 14px
         color: $accent-color
+    .sign_up
+      display: -webkit-flex
+      display: -ms-flex
+      display: flex
+      align-items: center
+      justify-content: space-around
+      background-color: #2196F3
+      padding: 8px
+      border-radius: 2px
+      cursor: pointer
+      color: white
+      font-size: 15px
+      font-family: $main-font
+      position: relative
+      overflow: hidden
+      z-index: 2
+      box-shadow: $shadow
+      width: 120px
+      margin-left: 20px
+      margin-top: 10px
+      &:hover
+        &::before
+          transform: translateY(0%)
+          border-radius: 2px
+      &::before
+        content: ''
+        position: absolute
+        display: block
+        height: 100%
+        width: 100%
+        top: 0
+        left: 0
+        background-color: darken(#2196F3, 7%)
+        transform: translateY(-100%)
+        border-radius: 50%
+        z-index: -1
+        transition: all 0.35s cubic-bezier(0.77, 0, 0.175, 1)
+      a
+        text-decoration: none
+        color: #fff
+        font-weight: normal
+        padding: 0
+      i
+        font-size: 20px
+        color: #fff
 body
   background-color: #F2F5F7
 header
@@ -197,7 +244,7 @@ header
               z-index: 2
               &:hover
                 &::before
-                  transform: scale(1)
+                  transform: translateY(0)
                   border-radius: 2px
               &::before
                 content: ''
@@ -208,8 +255,8 @@ header
                 top: 0
                 left: 0
                 background-color: darken(#2196F3, 7%)
-                transform: scale(0)
-                border-radius: 10px
+                transform: translateY(-100%)
+                border-radius: 50%
                 z-index: -1
                 transition: all 0.4s cubic-bezier(0.77, 0, 0.175, 1)
               a
@@ -375,6 +422,7 @@ nav.slide-menu
   margin-bottom: 30px
   position: relative
   overflow: hidden
+  z-index: 2
   .btn-control
     position: absolute
     border-radius: 50%
@@ -448,7 +496,7 @@ nav.slide-menu
       display: -ms-flex
       display: flex
       min-width: 530px
-      height: 270px
+      // height: 270px
       box-sizing: border-box
       .product-wrapper
         display: -webkit-flex

@@ -4,6 +4,7 @@ section.menu-section
   display: flex
   width: 100%
   font-family: $main-font
+  z-index: 1
   aside.side-list
     width: 250px
     margin-right: 30px
@@ -12,7 +13,7 @@ section.menu-section
     text-align: left
     opacity: 1
     &.fixed section
-      position: fixed
+      position: absolute
       top: 0
       left: 20px
       margin-top: 70px
@@ -22,12 +23,12 @@ section.menu-section
       width: 250px
       margin-bottom: 50px
       height: 100vh
-      transition: $transition
+      // transition: all ease-in-out .3s
     // background-color: #fff
     h2
       // padding-top: 20px
-      color: $accent-color
-      font-size: 16px
+      color: #45A6F3
+      font-size: 14px
       margin: 0
       margin-bottom: 15px
     .category
@@ -69,6 +70,7 @@ section.menu-section
       .producto-week-content
         width: calc(60% - 5px)
         h2
+          color: $accent-color
           font-size: 12px
           margin: 0
         small
@@ -96,7 +98,8 @@ section.menu-section
       margin-left: 10px
       h1
         margin: 0
-        font-size: 16px
+        font-size: 14px
+        color: #45A6F3
       .categories
         display: -webkit-flex
         display: -ms-flex
@@ -145,10 +148,11 @@ section.menu-section
       .product-description
         // height: 300px
         background-color: #fff
-        box-shadow: $shadow
+        box-shadow: $accent-shadow
         display: -webkit-flex
         display: -ms-flex
         display: flex
+        border-radius: 5px
         flex-direction: column
         align-items: center
         width: calc(33.333% - 20px)
@@ -157,15 +161,15 @@ section.menu-section
         transition: all ease-in .3s
         opacity: 0
         &:hover
-          box-shadow: $shadow-hover
+          box-shadow: $shadow
           // transform: translateY(-2px)
           .add-car
-            box-shadow: $shadow-hover
+            box-shadow: $shadow
         &.show
           opacity: 1
-          animation: fadeInUp .8s
-        img
-          box-shadow: $shadow
+          animation: fadeIn .8s
+        // img
+        //   box-shadow: $shadow
         .product-description-content
           padding: 15px
           box-sizing: border-box
@@ -193,21 +197,22 @@ section.menu-section
             padding: 8px
             margin-bottom: -35px
             width: 100px
-            border-radius: 25px
+            border-radius: 2px
             // font-weight: 900
             // display: block
             cursor: pointer
             color: white
             font-size: 15px
             font-family: $main-font
-            box-shadow: 0 13px 12px 0 rgba(0,0,0,0.02), 0 1px 5px 0 rgba(0,0,0,0.01), 0 10px 10px -2px rgba(0,0,0,0.05)
+            box-shadow: $shadow
             position: relative
             overflow: hidden
             z-index: 2
+            transition: $transition
             &:hover
               &::before
-                transform: scale(1)
-                border-radius: 25px
+                transform: translateY(0)
+                border-radius: 2px
             &::before
               content: ''
               position: absolute
@@ -217,7 +222,7 @@ section.menu-section
               top: 0
               left: 0
               background-color: darken(#2196F3, 7%)
-              transform: scale(0)
+              transform: translateY(-100%)
               border-radius: 50%
               z-index: -1
               transition: all 0.4s cubic-bezier(0.77, 0, 0.175, 1)

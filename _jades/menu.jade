@@ -2,23 +2,27 @@
 .menu-options
   ul 
     li
-      i.ion-ios-home-outline
+      i.ion-ios-home
       a(href="/") Inicio
     li
-      i.ion-ios-infinite-outline
+      i.ion-ios-infinite
       a(href="/") Marcas
     li
-      i.ion-ios-box-outline
+      i.ion-ios-box
       a(href="/") productos  
     li
-      i.ion-ios-pricetags-outline
+      i.ion-ios-pricetags
       a(href="/") Ofertas  
     li
-      i.ion-ios-list-outline
+      i.ion-ios-list
       a(href="/") Contacto
     li
-      i.ion-ios-help-outline
+      i.ion-ios-help
       a(href="/") Soporte
+    li  
+      .sign_up
+        a(href="/autentificacion") Registrarse
+        i.ion-android-list
 header
   nav.top-menu
     .dropdown
@@ -32,7 +36,8 @@ header
       span 
         a(href="/") e-store
     .user-img
-      img(src="https://work.opinno.com/static/images/nobody_profile_image.jpg" width="30")
+      a(href="/perfil")
+        img(src="https://images.unsplash.com/profile-fb-1485649729-9ad6da0a8efc.jpg?crop=faces&cs=tinysrgb&fit=crop&fm=jpg&h=150&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=150" width="30")
     .car
       .list-productos
         ul

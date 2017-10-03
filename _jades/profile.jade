@@ -1,0 +1,81 @@
+section.profile_section
+  .panel_title
+    h2 Configuración de Usuario
+    .save
+      a#see-car(href="#") Guardar
+      i.ion-lock-combination
+  .profile_wrapper
+    .tabs
+      ul
+        li.active 
+          i.ion-android-happy
+          h1  Personal
+        li 
+          i.ion-android-list
+          h1  Informacion
+        li 
+          i.ion-card
+          h1  Pago
+        li 
+          i.ion-android-options
+          h1  Cuenta
+
+    .tabs_content
+      .tabs_content_profile.active
+        .tabs_wrapper_profile
+          form
+            .top_form
+              .image
+                img(src="https://images.unsplash.com/profile-fb-1485649729-9ad6da0a8efc.jpg?crop=faces&cs=tinysrgb&fit=crop&fm=jpg&h=150&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=150" width="150" height="150")
+              .main-field    
+                .field
+                  label Nombres:
+                  input(type="text" value="Omar Benjamin")
+                .field
+                  label Apellidos:
+                  input(type="text" value="Chagua Ramos")
+            .field
+              label Correo Electrónico:
+              input(type="email" value="benjamin0mar@hotmail.com")     
+            .field
+              label Telefono:
+              input(type="text" value="971755982") 
+            .field
+              label Locación:
+              input(type="text" value="Amarilis")         
+        
+      .tabs_content_profile
+        .tabs_wrapper_profile
+          form
+            .field
+              label Correo Electronico:
+              input(type="text")    
+            .field
+              label Contraseña:
+              input(type="text") 
+            .field
+              label Telefono:
+              input(type="text") 
+            .field
+              label Locacion:
+              input(type="text")
+            .field
+              label Locacion:
+              input(type="text")    
+      .tabs_content_profile
+        h2 pago
+      .tabs_content_profile   
+        .tabs_wrapper_profile
+          form    
+            .field
+              label Contraseña:
+              input(type="password") 
+            .field
+              label Nueva Contraseña:
+              input(type="password")   
+            .field
+              label Verificar Contraseña:
+              input(type="password")  
+            .delete_account
+              a(href="#") Eliminar mi cuenta  
+              i.ion-nuclear

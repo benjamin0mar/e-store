@@ -18,33 +18,59 @@ section.car_content
               td
                 .item_content
                   img(src="assets/img/product#{i+2}.jpg" width="120")
-                  h2 Apple MacBook Pro
+                  .product_name
+                    h2 Apple MacBook Pro
+                    small disponible 
+                      i.ion-android-done
+                  
               td
                 h2 S/. 3000.00  
               td
-                h2 1
+                .quantity
+                  input(type="number" min="1" max="10" step="1" value="1")
               td
                 h2 S/. 3000.00
               td
                 a(href="#")
                   i.ion-trash-a
-          - }    
+          - }   
+          - for (var i = 0; i < 5; ++i) {
+            tr.item
+              td
+                .item_content
+                  img(src="assets/img/product#{i+2}.jpg" width="120")
+                  .product_name
+                    h2 Apple MacBook Pro
+                    small disponible 
+                      i.ion-android-done
+              td
+                h2 S/. 3000.00  
+              td
+                .quantity
+                  input(type="number" min="1" max="10" step="1" value="1")
+              td
+                h2 S/. 3000.00
+              td
+                a(href="#")
+                  i.ion-trash-a
+          - }  
           
       .pay_producto
-        .pay_producto_wrapper
-          .pay_list
-            span
-              h2.about-price Sub Total
-              h2.price S/. 10000.00
-            span
-              h2.about-price Descuento 
-              h2.price S/ 10.00
-            span
-              h2.about-price IGV
-              h2.price S/ 20.00  
-          .pay_total
-            h1 total
-            h1 S/. 9990
-          .pay
-            a#see-car(href="#") Pagar
-            i.ion-card            
+        .pay_producto_content
+          .pay_producto_wrapper
+              .pay_list
+                span
+                  h2.about-price Sub Total
+                  h2.price S/. 10000.00
+                span
+                  h2.about-price Descuento 
+                  h2.price S/ 10.00
+                span
+                  h2.about-price IGV
+                  h2.price S/ 20.00  
+              .pay_total
+                h1 total
+                h1 S/. 9990
+              .pay
+                a#see-car(href="#") Pagar
+                i.ion-card            
