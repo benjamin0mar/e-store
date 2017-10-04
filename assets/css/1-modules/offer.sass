@@ -1,0 +1,141 @@
+.offer_section
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  justify-content: center
+  width: 100%
+  .offer_wrapper
+    margin-top: 30px
+    width: 900px
+    display: -webkit-flex
+    display: -ms-flex
+    display: flex
+    flex-wrap: wrap
+    font-family: $main-font
+    .product-description
+      background-color: #fff
+      box-shadow: $accent-shadow
+      display: -webkit-flex
+      display: -ms-flex
+      display: flex
+      border-radius: 5px
+      flex-direction: column
+      align-items: center
+      width: calc(33.333% - 30px)
+      margin: 15px
+      margin-bottom: 40px
+      transition: all ease-in .3s
+      position: relative
+      &:hover
+        box-shadow: $shadow
+        .add-car
+            box-shadow: $shadow
+      // &.show
+      //   opacity: 1
+      //   animation: fadeIn .8s
+      .offer_number
+        position: absolute
+        top: -15px
+        left: -15px
+        width: 30px
+        height: 30px
+        display: -webkit-flex
+        display: -ms-flex
+        display: flex
+        justify-content: center
+        align-items: center
+        background-color: #e91e54
+        border-radius: 50%
+        box-shadow: $shadow
+        padding: 7px
+        font-weight: bold
+        font-size: 17px
+        color: #fff
+      .product-description-content
+        padding: 15px
+        box-sizing: border-box
+        display: -webkit-flex
+        display: -ms-flex
+        display: flex
+        flex-direction: column
+        align-items: center
+        h2
+          font-size: 16px
+          text-transform: uppercase
+          font-weight: 900
+          text-align: left
+          color: $accent-color
+          margin: 0
+          margin-top: 10px
+        .add-car
+          display: -webkit-flex
+          display: -ms-flex
+          display: flex
+          align-items: center
+          justify-content: space-around
+          text-decoration: none
+          background-color: #2196F3
+          padding: 8px
+          margin-bottom: -35px
+          width: 100px
+          border-radius: 2px
+          cursor: pointer
+          color: white
+          font-size: 15px
+          font-family: $main-font
+          box-shadow: $shadow
+          position: relative
+          overflow: hidden
+          z-index: 2
+          transition: $transition
+          &:hover
+            &::before
+              transform: translateY(0)
+              border-radius: 2px
+          &::before
+            content: ''
+            position: absolute
+            display: block
+            height: 100%
+            width: 100%
+            top: 0
+            left: 0
+            background-color: darken(#2196F3, 7%)
+            transform: translateY(-100%)
+            border-radius: 50%
+            z-index: -1
+            transition: all 0.4s cubic-bezier(0.77, 0, 0.175, 1)
+          i
+            font-size: 18px
+        .power
+          display: -webkit-flex
+          display: -ms-flex
+          display: flex
+          align-items: center
+          i
+            background-color: rgba($accent-color, 1)
+            padding: 6px
+            width: 14px
+            height: 14px
+            color: white
+            margin: 2px
+            font-size: 14px
+            display: -webkit-flex
+            display: -ms-flex
+            display: flex
+            align-items: center
+            justify-content: center
+            border-radius: 50%
+        .price
+          display: -webkit-flex
+          display: -ms-flex
+          display: flex
+          margin-top: 10px
+          margin-bottom: 30px
+          font-size: 15px
+          h3:last-child
+            color: $accent-color
+          h3:first-child
+            text-decoration: line-through
+            color: rgba($accent-color, .5)
+            margin-right: 10px

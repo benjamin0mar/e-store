@@ -25,9 +25,52 @@
         i.ion-android-list
 header
   nav.top-menu
-    .dropdown
-      span Categoria
+    .dropdown#search_menu
+      .list_category
+        ul
+          .tip
+          li
+            label.custom_checkbox_wrapper
+              label.custom_checkbox
+                input(type="checkbox")
+                i.ion-android-checkbox
+                i.ion-android-checkbox-outline-blank
+              h2 Laptop
+              span 1800   
+          li
+            label.custom_checkbox_wrapper
+              label.custom_checkbox
+                input(type="checkbox")
+                i.ion-android-checkbox
+                i.ion-android-checkbox-outline-blank
+              h2 desktop
+              span 2300 
+          li
+            label.custom_checkbox_wrapper
+              label.custom_checkbox
+                input(type="checkbox")
+                i.ion-android-checkbox
+                i.ion-android-checkbox-outline-blank
+              h2 Tablet
+              span 1300 
+          li
+            label.custom_checkbox_wrapper
+              label.custom_checkbox
+                input(type="checkbox")
+                i.ion-android-checkbox
+                i.ion-android-checkbox-outline-blank
+              h2 Smartphone
+              span 2100  
+          li
+            label.custom_checkbox_wrapper
+              label.custom_checkbox
+                input(type="checkbox")
+                i.ion-android-checkbox
+                i.ion-android-checkbox-outline-blank
+              h2 Musica
+              span 1500          
       i.ion-android-arrow-dropdown
+      span#show_search_category Categoria
     .line-separator    
     .search-field
       i.ion-search  
@@ -78,7 +121,7 @@ header
             //-   p S/. 10000
             .pay
               a#see-car(href="/carrito") Comprar
-              i.ion-card  
+              i.fa.fa-shopping-bag
       .number-productos 4
       i.ion-android-cart 
         

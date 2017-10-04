@@ -287,12 +287,80 @@ header {
       -ms-flex-align: center;
           align-items: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+      position: relative; }
+      header nav.top-menu .dropdown .list_category {
+        position: absolute;
+        left: 7px;
+        min-width: 170px;
+        top: 50px;
+        z-index: 9;
+        background-color: white;
+        box-shadow: 8px 10px 20px 0px rgba(46, 61, 73, 0.25);
+        visibility: hidden;
+        opacity: 0; }
+        header nav.top-menu .dropdown .list_category.show {
+          -webkit-animation: fadeInUp .3s;
+                  animation: fadeInUp .3s;
+          visibility: visible;
+          opacity: 1; }
+        header nav.top-menu .dropdown .list_category ul .tip {
+          position: absolute;
+          top: -8px;
+          left: 15px;
+          width: 17px;
+          height: 17px;
+          background-color: white;
+          display: block;
+          -webkit-transform: rotateZ(45deg);
+                  transform: rotateZ(45deg);
+          z-index: 7; }
+        header nav.top-menu .dropdown .list_category ul li {
+          display: block;
+          padding: 9px 5px; }
+          header nav.top-menu .dropdown .list_category ul li:hover {
+            background-color: rgba(128, 128, 128, 0.08); }
+          header nav.top-menu .dropdown .list_category ul li .custom_checkbox_wrapper {
+            cursor: pointer;
+            display: -ms-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-align: center;
+                align-items: center;
+            color: #3D4A54; }
+            header nav.top-menu .dropdown .list_category ul li .custom_checkbox_wrapper h2 {
+              font-weight: normal; }
+            header nav.top-menu .dropdown .list_category ul li .custom_checkbox_wrapper span {
+              font-size: 10px;
+              margin-left: 7px;
+              color: rgba(61, 74, 84, 0.7); }
+            header nav.top-menu .dropdown .list_category ul li .custom_checkbox_wrapper .custom_checkbox {
+              margin-left: 10px;
+              margin-right: 10px; }
+              header nav.top-menu .dropdown .list_category ul li .custom_checkbox_wrapper .custom_checkbox i {
+                font-size: 20px;
+                color: #2196F3; }
+              header nav.top-menu .dropdown .list_category ul li .custom_checkbox_wrapper .custom_checkbox input {
+                display: none; }
+              header nav.top-menu .dropdown .list_category ul li .custom_checkbox_wrapper .custom_checkbox input + i {
+                display: none; }
+                header nav.top-menu .dropdown .list_category ul li .custom_checkbox_wrapper .custom_checkbox input + i + i {
+                  display: block;
+                  color: rgba(33, 150, 243, 0.7);
+                  -webkit-animation: zoomIn .2s;
+                          animation: zoomIn .2s; }
+              header nav.top-menu .dropdown .list_category ul li .custom_checkbox_wrapper .custom_checkbox input:checked + i {
+                display: block;
+                -webkit-animation: zoomIn .2s;
+                        animation: zoomIn .2s; }
+                header nav.top-menu .dropdown .list_category ul li .custom_checkbox_wrapper .custom_checkbox input:checked + i + i {
+                  display: none; }
       header nav.top-menu .dropdown span {
-        color: #3D4A54; }
+        color: #3D4A54;
+        cursor: pointer; }
       header nav.top-menu .dropdown i {
-        font-size: 15px;
-        margin-left: 5px; }
+        font-size: 16px;
+        margin-right: 5px; }
     header nav.top-menu .search-field {
       position: relative;
       display: -ms-flex;
@@ -400,7 +468,7 @@ header {
               -ms-flex-pack: distribute;
                   justify-content: space-around;
               background-color: #2196F3;
-              padding: 8px;
+              padding: 10px;
               border-radius: 2px;
               cursor: pointer;
               color: white;
@@ -621,7 +689,8 @@ nav.slide-menu {
     margin-top: 125px;
     cursor: pointer;
     box-shadow: 0 15px 16px 0 rgba(0, 0, 0, 0.1), 0 1px 5px 0 rgba(0, 0, 0, 0.3), 0 10px 20px -2px rgba(0, 0, 0, 0.1);
-    opacity: 1; }
+    opacity: 1;
+    z-index: 4; }
     nav.slide-menu .btn-control i {
       font-size: 20px;
       color: rgba(0, 0, 0, 0.5); }
@@ -694,7 +763,8 @@ nav.slide-menu {
         -ms-flex-align: start;
             align-items: flex-start;
         font-family: "Poppins", sans-serif;
-        padding: 40px 10px 40px 40px; }
+        padding: 40px 10px 40px 40px;
+        position: relative; }
         nav.slide-menu .new-products .product .product-wrapper .content {
           margin-left: 30px;
           margin-right: 10px; }
@@ -710,6 +780,16 @@ nav.slide-menu {
             text-align: left;
             color: white;
             margin: 0; }
+          nav.slide-menu .new-products .product .product-wrapper .content .offer_number {
+            position: absolute;
+            right: 0;
+            top: 0;
+            font-size: 20px;
+            background-color: #3D4A54;
+            box-sizing: border-box;
+            box-shadow: 8px 10px 20px 0px rgba(46, 61, 73, 0.15);
+            padding: 8px;
+            color: white; }
           nav.slide-menu .new-products .product .product-wrapper .content .power {
             display: -ms-flex;
             display: -ms-flexbox;
@@ -1548,7 +1628,7 @@ section.car_content {
             -ms-flex-pack: distribute;
                 justify-content: space-around;
             background-color: #2196F3;
-            padding: 8px;
+            padding: 10px;
             border-radius: 2px;
             cursor: pointer;
             color: white;
@@ -2053,6 +2133,388 @@ section.auth_content {
           font-size: 14px;
           font-weight: normal;
           color: rgba(61, 74, 84, 0.5); }
+
+section.pay_section {
+  display: -ms-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center; }
+  section.pay_section .panel_title {
+    margin-top: 30px;
+    box-shadow: 8px 10px 20px 0px rgba(46, 61, 73, 0.15);
+    background-color: #fff;
+    display: -ms-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 800px;
+    padding: 15px 10px;
+    box-sizing: border-box;
+    margin-bottom: 7px;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-align: center;
+        align-items: center; }
+    section.pay_section .panel_title h2 {
+      font-family: "Poppins", sans-serif;
+      font-size: 17px;
+      color: #3D4A54;
+      font-weight: 900; }
+    section.pay_section .panel_title .save {
+      display: -ms-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: center;
+          align-items: center;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+      background-color: #2196F3;
+      padding: 8px;
+      border-radius: 2px;
+      cursor: pointer;
+      color: white;
+      font-size: 15px;
+      font-family: "Poppins", sans-serif;
+      position: relative;
+      overflow: hidden;
+      z-index: 2;
+      box-shadow: 8px 10px 20px 0px rgba(46, 61, 73, 0.15);
+      width: 120px; }
+      section.pay_section .panel_title .save:hover::before {
+        -webkit-transform: translateY(0%);
+                transform: translateY(0%);
+        border-radius: 2px; }
+      section.pay_section .panel_title .save::before {
+        content: '';
+        position: absolute;
+        display: block;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background-color: #0c84e4;
+        -webkit-transform: translateY(-100%);
+                transform: translateY(-100%);
+        border-radius: 50%;
+        z-index: -1;
+        transition: all 0.35s cubic-bezier(0.77, 0, 0.175, 1); }
+      section.pay_section .panel_title .save a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: normal; }
+      section.pay_section .panel_title .save i {
+        font-size: 20px;
+        color: #fff; }
+  section.pay_section .pay_wrapper {
+    width: 800px;
+    min-height: 600px;
+    box-shadow: 8px 10px 20px 0px rgba(46, 61, 73, 0.15);
+    background-color: #fff;
+    margin-bottom: 30px;
+    padding: 20px 40px 40px 40px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif; }
+    section.pay_section .pay_wrapper .choose_payment {
+      display: -ms-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      width: 100%;
+      -ms-flex-align: start;
+          align-items: flex-start;
+      color: #3D4A54; }
+      section.pay_section .pay_wrapper .choose_payment h1 {
+        color: #2196F3;
+        margin-bottom: 17px;
+        margin-top: 10px;
+        font-size: 15px; }
+      section.pay_section .pay_wrapper .choose_payment .card_wrapper {
+        width: 100%;
+        display: -ms-flex;
+        display: -ms-flexbox;
+        display: flex; }
+        section.pay_section .pay_wrapper .choose_payment .card_wrapper .card {
+          border: 2px solid rgba(61, 74, 84, 0.3);
+          width: 33.333%;
+          border-radius: 2px;
+          padding: 20px 40px;
+          margin-right: 15px;
+          display: -ms-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-pack: center;
+              justify-content: center;
+          -ms-flex-direction: column;
+              flex-direction: column;
+          -ms-flex-align: center;
+              align-items: center;
+          color: rgba(61, 74, 84, 0.4);
+          position: relative;
+          cursor: pointer;
+          transition: all 0.4s cubic-bezier(0.77, 0, 0.175, 1); }
+          section.pay_section .pay_wrapper .choose_payment .card_wrapper .card.active {
+            border: 2px solid #2196F3;
+            color: #2196F3; }
+            section.pay_section .pay_wrapper .choose_payment .card_wrapper .card.active span {
+              display: -ms-flex;
+              display: -ms-flexbox;
+              display: flex;
+              border: 2px solid #2196F3;
+              -webkit-animation: zoomIn .2s;
+                      animation: zoomIn .2s; }
+          section.pay_section .pay_wrapper .choose_payment .card_wrapper .card i {
+            font-size: 40px;
+            margin-bottom: 10px; }
+          section.pay_section .pay_wrapper .choose_payment .card_wrapper .card p {
+            margin: 0;
+            font-size: 14px; }
+          section.pay_section .pay_wrapper .choose_payment .card_wrapper .card span {
+            display: none;
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            -ms-flex-align: center;
+                align-items: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background-color: #fff;
+            border: 2px solid rgba(61, 74, 84, 0.4); }
+    section.pay_section .pay_wrapper .form_payment {
+      margin-top: 30px; }
+      section.pay_section .pay_wrapper .form_payment form {
+        display: -ms-flex;
+        display: -ms-flexbox;
+        display: flex; }
+        section.pay_section .pay_wrapper .form_payment form aside {
+          width: 50%;
+          margin-right: 15px;
+          display: -ms-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-direction: column;
+              flex-direction: column;
+          -ms-flex-align: start;
+              align-items: flex-start; }
+          section.pay_section .pay_wrapper .form_payment form aside h1 {
+            color: #2196F3;
+            margin-bottom: 17px;
+            margin-top: 10px;
+            font-size: 15px;
+            display: -ms-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-align: center;
+                align-items: center; }
+            section.pay_section .pay_wrapper .form_payment form aside h1 span {
+              display: -ms-flex;
+              display: -ms-flexbox;
+              display: flex;
+              -ms-flex-align: center;
+                  align-items: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+              width: 25px;
+              height: 25px;
+              border-radius: 50%;
+              background-color: #fff;
+              margin-right: 5px;
+              border: 2px solid #2196F3; }
+        section.pay_section .pay_wrapper .form_payment form .field_inline {
+          display: -ms-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+          section.pay_section .pay_wrapper .form_payment form .field_inline .field:first-child {
+            margin-right: 10px; }
+        section.pay_section .pay_wrapper .form_payment form .field {
+          display: -ms-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-direction: column;
+              flex-direction: column;
+          -ms-flex-align: start;
+              align-items: flex-start;
+          margin-bottom: 15px;
+          width: 100%;
+          color: #3D4A54;
+          font-family: "Poppins", sans-serif; }
+          section.pay_section .pay_wrapper .form_payment form .field label {
+            font-size: 14px;
+            color: rgba(61, 74, 84, 0.7); }
+          section.pay_section .pay_wrapper .form_payment form .field input {
+            width: 100%;
+            padding: 12px;
+            box-sizing: border-box;
+            border-radius: 2px;
+            color: #3D4A54;
+            border: 1px solid rgba(61, 74, 84, 0.25);
+            font-family: "Poppins", sans-serif; }
+            section.pay_section .pay_wrapper .form_payment form .field input:active, section.pay_section .pay_wrapper .form_payment form .field input:focus {
+              border: 1px solid #2196f3;
+              outline: none; }
+
+.offer_section {
+  display: -ms-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  width: 100%; }
+  .offer_section .offer_wrapper {
+    margin-top: 30px;
+    width: 900px;
+    display: -ms-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    font-family: "Poppins", sans-serif; }
+    .offer_section .offer_wrapper .product-description {
+      background-color: #fff;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+      display: -ms-flex;
+      display: -ms-flexbox;
+      display: flex;
+      border-radius: 5px;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      -ms-flex-align: center;
+          align-items: center;
+      width: calc(33.333% - 30px);
+      margin: 15px;
+      margin-bottom: 40px;
+      transition: all ease-in .3s;
+      position: relative; }
+      .offer_section .offer_wrapper .product-description:hover {
+        box-shadow: 8px 10px 20px 0px rgba(46, 61, 73, 0.15); }
+        .offer_section .offer_wrapper .product-description:hover .add-car {
+          box-shadow: 8px 10px 20px 0px rgba(46, 61, 73, 0.15); }
+      .offer_section .offer_wrapper .product-description .offer_number {
+        position: absolute;
+        top: -15px;
+        left: -15px;
+        width: 30px;
+        height: 30px;
+        display: -ms-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: center;
+            justify-content: center;
+        -ms-flex-align: center;
+            align-items: center;
+        background-color: #e91e54;
+        border-radius: 50%;
+        box-shadow: 8px 10px 20px 0px rgba(46, 61, 73, 0.15);
+        padding: 7px;
+        font-weight: bold;
+        font-size: 17px;
+        color: #fff; }
+      .offer_section .offer_wrapper .product-description .product-description-content {
+        padding: 15px;
+        box-sizing: border-box;
+        display: -ms-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+            flex-direction: column;
+        -ms-flex-align: center;
+            align-items: center; }
+        .offer_section .offer_wrapper .product-description .product-description-content h2 {
+          font-size: 16px;
+          text-transform: uppercase;
+          font-weight: 900;
+          text-align: left;
+          color: #3D4A54;
+          margin: 0;
+          margin-top: 10px; }
+        .offer_section .offer_wrapper .product-description .product-description-content .add-car {
+          display: -ms-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-align: center;
+              align-items: center;
+          -ms-flex-pack: distribute;
+              justify-content: space-around;
+          text-decoration: none;
+          background-color: #2196F3;
+          padding: 8px;
+          margin-bottom: -35px;
+          width: 100px;
+          border-radius: 2px;
+          cursor: pointer;
+          color: white;
+          font-size: 15px;
+          font-family: "Poppins", sans-serif;
+          box-shadow: 8px 10px 20px 0px rgba(46, 61, 73, 0.15);
+          position: relative;
+          overflow: hidden;
+          z-index: 2;
+          transition: all 0.4s cubic-bezier(0.77, 0, 0.175, 1); }
+          .offer_section .offer_wrapper .product-description .product-description-content .add-car:hover::before {
+            -webkit-transform: translateY(0);
+                    transform: translateY(0);
+            border-radius: 2px; }
+          .offer_section .offer_wrapper .product-description .product-description-content .add-car::before {
+            content: '';
+            position: absolute;
+            display: block;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background-color: #0c84e4;
+            -webkit-transform: translateY(-100%);
+                    transform: translateY(-100%);
+            border-radius: 50%;
+            z-index: -1;
+            transition: all 0.4s cubic-bezier(0.77, 0, 0.175, 1); }
+          .offer_section .offer_wrapper .product-description .product-description-content .add-car i {
+            font-size: 18px; }
+        .offer_section .offer_wrapper .product-description .product-description-content .power {
+          display: -ms-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-align: center;
+              align-items: center; }
+          .offer_section .offer_wrapper .product-description .product-description-content .power i {
+            background-color: #3d4a54;
+            padding: 6px;
+            width: 14px;
+            height: 14px;
+            color: white;
+            margin: 2px;
+            font-size: 14px;
+            display: -ms-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-align: center;
+                align-items: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+            border-radius: 50%; }
+        .offer_section .offer_wrapper .product-description .product-description-content .price {
+          display: -ms-flex;
+          display: -ms-flexbox;
+          display: flex;
+          margin-top: 10px;
+          margin-bottom: 30px;
+          font-size: 15px; }
+          .offer_section .offer_wrapper .product-description .product-description-content .price h3:last-child {
+            color: #3D4A54; }
+          .offer_section .offer_wrapper .product-description .product-description-content .price h3:first-child {
+            text-decoration: line-through;
+            color: rgba(61, 74, 84, 0.5);
+            margin-right: 10px; }
 
 .quantity {
   position: relative;

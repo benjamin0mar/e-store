@@ -1,0 +1,65 @@
+section.pay_section
+  .panel_title
+    h2 Configuración de Pago
+    .save
+      a#see-car(href="#") Continuar
+      i.ion-card
+  .pay_wrapper
+    .choose_payment
+      h1 Elige un metodo de pago
+      .card_wrapper
+        .card.active
+          span.fa.fa-check
+          i.fa.fa-google-wallet
+          p Pagar en efectivo
+        .card
+          span.fa.fa-check
+          i.fa.fa-credit-card
+          p Pagar con tarjeta de credito
+        .card
+          span.fa.fa-check
+          i.fa.fa-cc-paypal
+          p Pagar con PayPal
+    .form_payment
+      form
+        aside.bill_info
+          h1 
+            span 1
+            | Informacion de Factura
+            
+          .field
+            label Nombres:
+            input(type="text" value="Omar Benjamin Chagua Ramos")  
+          .field
+            label Correo Electrónico:
+            input(type="email" value="benjamin0mar@hotmail.com") 
+          .field_inline      
+            .field
+              label Ciudad:
+              input(type="text" value="Huanuco") 
+            .field
+              label Codigo Postal:
+              input(type="text" value="9717")   
+          .field
+            label Telefono:
+            input(type="text" value="971755982")    
+        aside.car_info
+          h1 
+            span 2
+            | Informacion de Tarjeta
+          .field
+            label Nombres en Tarjeta:
+            input(type="text" value="Omar Benjamin Chagua Ramos")  
+          .field
+            label Numero de Tarjeta:
+            input(type="text" value="4545-3241-1000-3410") 
+          .field_inline      
+            .field
+              label Mes de Exp:
+              input(type="text" value="01") 
+            .field
+              label Año de Exp:
+              input(type="text" value="21")   
+          .field
+            label Numero CVC:
+            input(type="text" value="468")  

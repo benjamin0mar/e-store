@@ -1,0 +1,208 @@
+section.pay_section
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  width: 100%
+  justify-content: center
+  flex-direction: column
+  align-items: center
+  .panel_title
+    margin-top: 30px
+    box-shadow: $shadow
+    background-color: #fff
+    display: -webkit-flex
+    display: -ms-flex
+    display: flex
+    width: 800px
+    padding: 15px 10px
+    box-sizing: border-box
+    margin-bottom: 7px
+    justify-content: space-between
+    align-items: center
+    h2
+      // text-transform: uppercase
+      font-family: $main-font
+      font-size: 17px
+      color: $accent-color
+      font-weight: 900
+    .save
+      display: -webkit-flex
+      display: -ms-flex
+      display: flex
+      align-items: center
+      justify-content: space-around
+      background-color: #2196F3
+      padding: 8px
+      border-radius: 2px
+      cursor: pointer
+      color: white
+      font-size: 15px
+      font-family: $main-font
+      position: relative
+      overflow: hidden
+      z-index: 2
+      box-shadow: $shadow
+      width: 120px
+      &:hover
+        &::before
+          transform: translateY(0%)
+          border-radius: 2px
+      &::before
+        content: ''
+        position: absolute
+        display: block
+        height: 100%
+        width: 100%
+        top: 0
+        left: 0
+        background-color: darken(#2196F3, 7%)
+        transform: translateY(-100%)
+        border-radius: 50%
+        z-index: -1
+        transition: all 0.35s cubic-bezier(0.77, 0, 0.175, 1)
+      a
+        text-decoration: none
+        color: #fff
+        font-weight: normal
+      i
+        font-size: 20px
+        color: #fff
+  .pay_wrapper
+    width: 800px
+    min-height: 600px
+    box-shadow: $shadow
+    background-color: #fff
+    margin-bottom: 30px
+    padding: 20px 40px 40px 40px
+    box-sizing: border-box
+    font-family: $main-font
+    .choose_payment
+      display: -webkit-flex
+      display: -ms-flex
+      display: flex
+      flex-direction: column
+      width: 100%
+      align-items: flex-start
+      color: $accent-color
+      h1
+        color: #2196F3
+        margin-bottom: 17px
+        margin-top: 10px
+        font-size: 15px
+      .card_wrapper
+        width: 100%
+        display: -webkit-flex
+        display: -ms-flex
+        display: flex
+        .card
+          border: 2px solid rgba($accent-color, .3)
+          width: 33.333%
+          border-radius: 2px
+          padding: 20px 40px
+          margin-right: 15px
+          display: -webkit-flex
+          display: -ms-flex
+          display: flex
+          justify-content: center
+          flex-direction: column
+          align-items: center
+          color: rgba($accent-color, .4)
+          position: relative
+          cursor: pointer
+          transition: $transition
+          &.active
+            border: 2px solid #2196F3
+            color: #2196F3
+            span
+              display: -webkit-flex
+              display: -ms-flex
+              display: flex
+              border: 2px solid #2196F3
+              animation: zoomIn .2s
+
+          i
+            font-size: 40px
+            margin-bottom: 10px
+            // transition: $transition
+          p
+            margin: 0
+            font-size: 14px
+          span
+            display: none
+            position: absolute
+            top: -10px
+            right: -10px
+            align-items: center
+            justify-content: center
+            width: 25px
+            height: 25px
+            border-radius: 50%
+            background-color: #fff
+            border: 2px solid rgba($accent-color, .4)
+
+    .form_payment
+      margin-top: 30px
+      form
+        display: -webkit-flex
+        display: -ms-flex
+        display: flex
+        aside
+          width: 50%
+          margin-right: 15px
+          display: -webkit-flex
+          display: -ms-flex
+          display: flex
+          flex-direction: column
+          align-items: flex-start
+          h1
+            color: #2196F3
+            margin-bottom: 17px
+            margin-top: 10px
+            font-size: 15px
+            display: -webkit-flex
+            display: -ms-flex
+            display: flex
+            align-items: center
+            span
+              display: -webkit-flex
+              display: -ms-flex
+              display: flex
+              align-items: center
+              justify-content: center
+              width: 25px
+              height: 25px
+              border-radius: 50%
+              background-color: #fff
+              margin-right: 5px
+              border: 2px solid #2196F3
+        .field_inline
+          display: -webkit-flex
+          display: -ms-flex
+          display: flex
+          justify-content: space-between
+          .field:first-child
+            margin-right: 10px
+        .field
+          display: -webkit-flex
+          display: -ms-flex
+          display: flex
+          flex-direction: column
+          align-items: flex-start
+          margin-bottom: 15px
+          width: 100%
+          color: $accent-color
+          font-family: $main-font
+          label
+            font-size: 14px
+            color: rgba($accent-color, .7)
+          input
+            width: 100%
+            padding: 12px
+            box-sizing: border-box
+            border-radius: 2px
+            color: $accent-color
+            border: 1px solid rgba($accent-color, .25)
+            font-family: $main-font
+            &:active, &:focus
+              border: 1px solid rgba(#2196F3, 1)
+              outline: none

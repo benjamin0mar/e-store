@@ -6,20 +6,39 @@ $(function(){
   GalleryProducts();
   numberInput();
   tabInfoProduct();
+  menuCategorySearch();
 
   profileTabs(".profile_wrapper .tabs ul li",".tabs_content_profile");
   profileTabs(".auth_wrapper .tab_auth span",".auth_sign");
+  profileTabs(".card_wrapper .card","#");
 
   page('/', index);
   page('/producto', producto);
   page('/carrito', car);
   page('/perfil', profile);
+  page('/pago', pay);
+  page('/ofertas', offer);
   page('/autentificacion', auth);
   page();
 
+  $(".btn-control.right").click();
+  $(".btn-control.right").click();
+
+
 });
 
-
+function menuCategorySearch(){
+  var ch = true;
+  $("#show_search_category").click(function(){
+    if (ch == true){
+      $(".list_category").addClass("show");
+      ch=false;
+    }else{
+      $(".list_category").removeClass("show");
+      ch = true;
+    }
+  });
+}
 
 function profileTabs(tab,content){
   $(tab).click(function(){
@@ -35,31 +54,18 @@ function profileTabs(tab,content){
 
 // NOTE: routes
 
-function index(){
-  $("#main").siblings("section").removeClass("show_section");
-  $("#main").addClass("show_section");
-}
+function index() {routesShow("#main");}
+function pay() {routesShow("#pay");}
+function producto() {routesShow("#producto");}
+function car() {routesShow("#carrito");}
+function profile() {routesShow("#profile");}
+function auth() {routesShow("#auth");}
+function offer() {routesShow("#offer");}
 
-function producto(){
-  $("#producto").siblings("section").removeClass("show_section");
-  $("#producto").addClass("show_section");
+function routesShow(id){
+  $(id).siblings("section").removeClass("show_section");
+  $(id).addClass("show_section");
 }
-
-function car(){
-  $("#carrito").siblings("section").removeClass("show_section");
-  $("#carrito").addClass("show_section");
-}
-
-function profile(){
-  $("#profile").siblings("section").removeClass("show_section");
-  $("#profile").addClass("show_section");
-}
-
-function auth(){
-  $("#auth").siblings("section").removeClass("show_section");
-  $("#auth").addClass("show_section");
-}
-
 
 
 function tabInfoProduct(){
@@ -165,7 +171,6 @@ function movePay(){
     var top = $(this).scrollTop();
     var topPayContent = $(".pay_producto").offset().top;
     // var topFooter = $("footer").offset().top;
-    console.log(top+" > "+topPayContent);
     if(top > topPayContent  ){
      $(".pay_producto_content").addClass("fixed");
      $(".pay_producto_content").css({
