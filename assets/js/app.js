@@ -7,6 +7,7 @@ $(function(){
   numberInput();
   tabInfoProduct();
   menuCategorySearch();
+  selectList();
 
   profileTabs(".profile_wrapper .tabs ul li",".tabs_content_profile");
   profileTabs(".auth_wrapper .tab_auth span",".auth_sign");
@@ -26,6 +27,33 @@ $(function(){
 
 
 });
+
+function selectList(){
+  var bl = true;
+  $("#select_prefer").click(function(){
+    if (bl == true){
+      $(".list_select").addClass("show");
+      bl=false;
+    }else{
+      $(".list_select").removeClass("show");
+      bl = true;
+    }
+  });
+  var list_prefer = [];
+  $(".select_item").click(function(){
+    var item =$(this).attr("name");
+    if($(this).prop('checked')){
+      list_prefer.push(item)
+    }else {
+    list_prefer.forEach(function(element,index) {
+      if(item===element){
+        list_prefer.splice(index, 1);
+      }
+    });
+    }
+    $("#select_prefer").val(list_prefer)
+  });
+}
 
 function menuCategorySearch(){
   var ch = true;

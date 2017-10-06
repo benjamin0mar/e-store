@@ -11,11 +11,8 @@ section.profile_section
           i.ion-android-happy
           h1  Personal
         li 
-          i.ion-android-list
-          h1  Informacion
-        li 
-          i.ion-card
-          h1  Pago
+          i.ion-bag
+          h1  Compras
         li 
           i.ion-android-options
           h1  Cuenta
@@ -43,29 +40,51 @@ section.profile_section
             .field
               label Locación:
               input(type="text" value="Amarilis")         
-        
+    
       .tabs_content_profile
+        .tabs_wrapper_profile
+          table.table_story
+              tr
+                th
+                  h1 Producto
+                th
+                  h1 Precio Unidad
+                th
+                  h1 Precio
+                th               
+                  h1 Detalle
+              - for (var i = 0; i < 5; ++i) {
+                tr.item
+                  td
+                    .item_content
+                      img(src="assets/img/product#{i+2}.jpg" width="35")
+                      .product_name
+                        h2 Apple MacBook Pro
+                        small completada 
+                          i.ion-android-done
+                      
+                  td
+                    h2 S/. 3000.00  
+                  td
+                    h2 S/. 3000.00
+                  td
+                    a(href="#")
+                      i.ion-clipboard
+              - }         
+      .tabs_content_profile   
         .tabs_wrapper_profile
           form
             .field
-              label Correo Electronico:
-              input(type="text")    
-            .field
-              label Contraseña:
-              input(type="text") 
-            .field
-              label Telefono:
-              input(type="text") 
-            .field
-              label Locacion:
-              input(type="text")
-            .field
-              label Locacion:
-              input(type="text")    
-      .tabs_content_profile
-        h2 pago
-      .tabs_content_profile   
-        .tabs_wrapper_profile
+              label Categorias de interes:
+              input(type="text" id="select_prefer" readonly="true")   
+              {% include select.html %} 
+            .box_check
+              label.custom_checkbox_wrapper
+                label.custom_checkbox
+                  input(type="checkbox")
+                  i.ion-android-checkbox
+                  i.ion-android-checkbox-outline-blank
+                h2 Recibir notificaciones al correo electronico sobre nuevos producto que puedan ser de mi interes.    
           form    
             .field
               label Contraseña:

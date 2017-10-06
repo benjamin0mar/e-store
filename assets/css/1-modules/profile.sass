@@ -1,3 +1,4 @@
+
 section.profile_section
   display: -webkit-flex
   display: -ms-flex
@@ -156,10 +157,57 @@ section.profile_section
           display: -ms-flex
           display: flex
           animation: fadeIn .5s
+        .table_story
+          background-color: #fff
+          border-collapse: collapse
+          border: 1px solid rgba(128, 128, 128, 0.15)
+          border-radius: 2px
+          font-family: $main-font
+          color: $accent-color
+          width: 100%
+          tr
+            border-bottom: 1px solid rgba(128, 128, 128, 0.15)
+            th
+              color: #47AAF9
+              text-transform: capitalize
+              h1
+                font-weight: normal
+                font-size: 14px
+                margin: 0
+            th, td
+              // text-align: left
+              padding: 20px
+            td
+              .item_content
+                display: -webkit-flex
+                display: -ms-flex
+                display: flex
+                justify-content: center
+                align-items: center
+                img
+                  display: none
+                .product_name
+                  display: -webkit-flex
+                  display: -ms-flex
+                  display: flex
+                  flex-direction: column
+                  align-items: flex-start
+                  h2
+                    font-weight: normal
+                  small
+                    color: #47AAF9
+              a
+                text-decoration: none
+                color: $accent-color
+                i
+                  font-size: 20px
+          .item:hover
+            background-color: rgba(128, 128, 128, 0.08)
         .tabs_wrapper_profile
           width: 100%
           padding: 20px 40px 30px 40px
           box-sizing: border-box
+
           form
             .delete_account
               margin-top: 25px
@@ -168,7 +216,7 @@ section.profile_section
               display: flex
               align-items: center
               justify-content: space-around
-              background-color: #FA5E55
+              background-color: #e1284a
               padding: 8px
               border-radius: 2px
               cursor: pointer
@@ -193,7 +241,7 @@ section.profile_section
                 width: 100%
                 top: 0
                 left: 0
-                background-color: darken(#FA5E55, 7%)
+                background-color: darken(#e1284a, 7%)
                 transform: translateY(-100%)
                 border-radius: 50%
                 z-index: -1
@@ -205,6 +253,45 @@ section.profile_section
               i
                 font-size: 20px
                 color: #fff
+            .box_check
+              margin-bottom: 20px
+              .custom_checkbox_wrapper
+                cursor: pointer
+                display: -webkit-flex
+                display: -ms-flex
+                display: flex
+                align-items: flex-start
+                color: $accent-color
+                h2
+                  font-weight: normal
+                  font-family: $main-font
+                  font-size: 15px
+                  color: rgba($accent-color, .7)
+                  text-align: left
+                span
+                  font-size: 10px
+                  // margin-left: 7px
+                  color: rgba($accent-color, .7)
+                .custom_checkbox
+                  // margin-left: 10px
+                  margin-right: 10px
+                  i
+                    font-size: 30px
+                    color: #2196F3
+                  input
+                    display: none
+                  input + i
+                    display: none
+                    & + i
+                      display: block
+                      color: rgba(#2196F3, .7)
+                      animation: zoomIn .2s
+                  input:checked + i
+                    display: block
+                    animation: zoomIn .2s
+                    & + i
+                      display: none
+
             .field
               display: -webkit-flex
               display: -ms-flex

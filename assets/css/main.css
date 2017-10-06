@@ -1872,6 +1872,54 @@ section.profile_section {
           display: flex;
           -webkit-animation: fadeIn .5s;
                   animation: fadeIn .5s; }
+        section.profile_section .profile_wrapper .tabs_content .tabs_content_profile .table_story {
+          background-color: #fff;
+          border-collapse: collapse;
+          border: 1px solid rgba(128, 128, 128, 0.15);
+          border-radius: 2px;
+          font-family: "Poppins", sans-serif;
+          color: #3D4A54;
+          width: 100%; }
+          section.profile_section .profile_wrapper .tabs_content .tabs_content_profile .table_story tr {
+            border-bottom: 1px solid rgba(128, 128, 128, 0.15); }
+            section.profile_section .profile_wrapper .tabs_content .tabs_content_profile .table_story tr th {
+              color: #47AAF9;
+              text-transform: capitalize; }
+              section.profile_section .profile_wrapper .tabs_content .tabs_content_profile .table_story tr th h1 {
+                font-weight: normal;
+                font-size: 14px;
+                margin: 0; }
+            section.profile_section .profile_wrapper .tabs_content .tabs_content_profile .table_story tr th, section.profile_section .profile_wrapper .tabs_content .tabs_content_profile .table_story tr td {
+              padding: 20px; }
+            section.profile_section .profile_wrapper .tabs_content .tabs_content_profile .table_story tr td .item_content {
+              display: -ms-flex;
+              display: -ms-flexbox;
+              display: flex;
+              -ms-flex-pack: center;
+                  justify-content: center;
+              -ms-flex-align: center;
+                  align-items: center; }
+              section.profile_section .profile_wrapper .tabs_content .tabs_content_profile .table_story tr td .item_content img {
+                display: none; }
+              section.profile_section .profile_wrapper .tabs_content .tabs_content_profile .table_story tr td .item_content .product_name {
+                display: -ms-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+                -ms-flex-align: start;
+                    align-items: flex-start; }
+                section.profile_section .profile_wrapper .tabs_content .tabs_content_profile .table_story tr td .item_content .product_name h2 {
+                  font-weight: normal; }
+                section.profile_section .profile_wrapper .tabs_content .tabs_content_profile .table_story tr td .item_content .product_name small {
+                  color: #47AAF9; }
+            section.profile_section .profile_wrapper .tabs_content .tabs_content_profile .table_story tr td a {
+              text-decoration: none;
+              color: #3D4A54; }
+              section.profile_section .profile_wrapper .tabs_content .tabs_content_profile .table_story tr td a i {
+                font-size: 20px; }
+          section.profile_section .profile_wrapper .tabs_content .tabs_content_profile .table_story .item:hover {
+            background-color: rgba(128, 128, 128, 0.08); }
         section.profile_section .profile_wrapper .tabs_content .tabs_content_profile .tabs_wrapper_profile {
           width: 100%;
           padding: 20px 40px 30px 40px;
@@ -1885,7 +1933,7 @@ section.profile_section {
                 align-items: center;
             -ms-flex-pack: distribute;
                 justify-content: space-around;
-            background-color: #FA5E55;
+            background-color: #e1284a;
             padding: 8px;
             border-radius: 2px;
             cursor: pointer;
@@ -1910,7 +1958,7 @@ section.profile_section {
               width: 100%;
               top: 0;
               left: 0;
-              background-color: #f93d32;
+              background-color: #c91c3c;
               -webkit-transform: translateY(-100%);
                       transform: translateY(-100%);
               border-radius: 50%;
@@ -1923,6 +1971,45 @@ section.profile_section {
             section.profile_section .profile_wrapper .tabs_content .tabs_content_profile .tabs_wrapper_profile form .delete_account i {
               font-size: 20px;
               color: #fff; }
+          section.profile_section .profile_wrapper .tabs_content .tabs_content_profile .tabs_wrapper_profile form .box_check {
+            margin-bottom: 20px; }
+            section.profile_section .profile_wrapper .tabs_content .tabs_content_profile .tabs_wrapper_profile form .box_check .custom_checkbox_wrapper {
+              cursor: pointer;
+              display: -ms-flex;
+              display: -ms-flexbox;
+              display: flex;
+              -ms-flex-align: start;
+                  align-items: flex-start;
+              color: #3D4A54; }
+              section.profile_section .profile_wrapper .tabs_content .tabs_content_profile .tabs_wrapper_profile form .box_check .custom_checkbox_wrapper h2 {
+                font-weight: normal;
+                font-family: "Poppins", sans-serif;
+                font-size: 15px;
+                color: rgba(61, 74, 84, 0.7);
+                text-align: left; }
+              section.profile_section .profile_wrapper .tabs_content .tabs_content_profile .tabs_wrapper_profile form .box_check .custom_checkbox_wrapper span {
+                font-size: 10px;
+                color: rgba(61, 74, 84, 0.7); }
+              section.profile_section .profile_wrapper .tabs_content .tabs_content_profile .tabs_wrapper_profile form .box_check .custom_checkbox_wrapper .custom_checkbox {
+                margin-right: 10px; }
+                section.profile_section .profile_wrapper .tabs_content .tabs_content_profile .tabs_wrapper_profile form .box_check .custom_checkbox_wrapper .custom_checkbox i {
+                  font-size: 30px;
+                  color: #2196F3; }
+                section.profile_section .profile_wrapper .tabs_content .tabs_content_profile .tabs_wrapper_profile form .box_check .custom_checkbox_wrapper .custom_checkbox input {
+                  display: none; }
+                section.profile_section .profile_wrapper .tabs_content .tabs_content_profile .tabs_wrapper_profile form .box_check .custom_checkbox_wrapper .custom_checkbox input + i {
+                  display: none; }
+                  section.profile_section .profile_wrapper .tabs_content .tabs_content_profile .tabs_wrapper_profile form .box_check .custom_checkbox_wrapper .custom_checkbox input + i + i {
+                    display: block;
+                    color: rgba(33, 150, 243, 0.7);
+                    -webkit-animation: zoomIn .2s;
+                            animation: zoomIn .2s; }
+                section.profile_section .profile_wrapper .tabs_content .tabs_content_profile .tabs_wrapper_profile form .box_check .custom_checkbox_wrapper .custom_checkbox input:checked + i {
+                  display: block;
+                  -webkit-animation: zoomIn .2s;
+                          animation: zoomIn .2s; }
+                  section.profile_section .profile_wrapper .tabs_content .tabs_content_profile .tabs_wrapper_profile form .box_check .custom_checkbox_wrapper .custom_checkbox input:checked + i + i {
+                    display: none; }
           section.profile_section .profile_wrapper .tabs_content .tabs_content_profile .tabs_wrapper_profile form .field {
             display: -ms-flex;
             display: -ms-flexbox;
@@ -2412,7 +2499,7 @@ section.pay_section {
             justify-content: center;
         -ms-flex-align: center;
             align-items: center;
-        background-color: #e91e54;
+        background-color: #e1284a;
         border-radius: 50%;
         box-shadow: 8px 10px 20px 0px rgba(46, 61, 73, 0.15);
         padding: 7px;
@@ -2515,6 +2602,78 @@ section.pay_section {
             text-decoration: line-through;
             color: rgba(61, 74, 84, 0.5);
             margin-right: 10px; }
+
+.field {
+  position: relative; }
+
+.list_select {
+  position: absolute;
+  left: 0;
+  min-width: 100%;
+  top: 70px;
+  z-index: 9;
+  background-color: white;
+  box-shadow: 8px 10px 20px 0px rgba(46, 61, 73, 0.25);
+  border: 1px solid rgba(61, 74, 84, 0.1);
+  visibility: hidden;
+  opacity: 0; }
+  .list_select.show {
+    -webkit-animation: fadeInUp .3s;
+            animation: fadeInUp .3s;
+    visibility: visible;
+    opacity: 1; }
+  .list_select ul .tip {
+    position: absolute;
+    top: -8px;
+    left: 15px;
+    width: 17px;
+    height: 17px;
+    background-color: white;
+    display: block;
+    -webkit-transform: rotateZ(45deg);
+            transform: rotateZ(45deg);
+    z-index: 7;
+    display: none; }
+  .list_select ul li {
+    display: block;
+    padding: 9px 5px; }
+    .list_select ul li:hover {
+      background-color: rgba(128, 128, 128, 0.08); }
+    .list_select ul li .custom_checkbox_wrapper {
+      cursor: pointer;
+      display: -ms-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: center;
+          align-items: center;
+      color: #3D4A54; }
+      .list_select ul li .custom_checkbox_wrapper h2 {
+        font-weight: normal; }
+      .list_select ul li .custom_checkbox_wrapper span {
+        font-size: 10px;
+        margin-left: 7px;
+        color: rgba(61, 74, 84, 0.7); }
+      .list_select ul li .custom_checkbox_wrapper .custom_checkbox {
+        margin-left: 10px;
+        margin-right: 10px; }
+        .list_select ul li .custom_checkbox_wrapper .custom_checkbox i {
+          font-size: 20px;
+          color: #2196F3; }
+        .list_select ul li .custom_checkbox_wrapper .custom_checkbox input {
+          display: none; }
+        .list_select ul li .custom_checkbox_wrapper .custom_checkbox input + i {
+          display: none; }
+          .list_select ul li .custom_checkbox_wrapper .custom_checkbox input + i + i {
+            display: block;
+            color: rgba(33, 150, 243, 0.7);
+            -webkit-animation: zoomIn .2s;
+                    animation: zoomIn .2s; }
+        .list_select ul li .custom_checkbox_wrapper .custom_checkbox input:checked + i {
+          display: block;
+          -webkit-animation: zoomIn .2s;
+                  animation: zoomIn .2s; }
+          .list_select ul li .custom_checkbox_wrapper .custom_checkbox input:checked + i + i {
+            display: none; }
 
 .quantity {
   position: relative;
