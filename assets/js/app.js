@@ -8,7 +8,7 @@ $(function(){
   tabInfoProduct();
   menuCategorySearch();
   selectList();
-
+  openChat();
   profileTabs(".profile_wrapper .tabs ul li",".tabs_content_profile");
   profileTabs(".auth_wrapper .tab_auth span",".auth_sign");
   profileTabs(".card_wrapper .card","#");
@@ -27,6 +27,20 @@ $(function(){
 
 
 });
+
+
+function openChat(){
+  var open = true;
+  $(".button_chat i").click(function(){
+    if (open == true){
+      $(".chat_section_wrapper").removeClass("active");
+      open=false;
+    }else{
+      $(".chat_section_wrapper").addClass("active");
+      open = true;
+    }
+  });
+}
 
 function selectList(){
   var bl = true;
@@ -198,11 +212,11 @@ function movePay(){
   $(window).scroll(function(){
     var top = $(this).scrollTop();
     var topPayContent = $(".pay_producto").offset().top;
-    // var topFooter = $("footer").offset().top;
-    if(top > topPayContent  ){
+    var topMenu = $(".slide-menu").offset().top;
+    if(top > topPayContent ){
      $(".pay_producto_content").addClass("fixed");
      $(".pay_producto_content").css({
-       "top":  (top + 20)+"px"
+       "top":  (top + 30)+"px"
      })
     }else if(top < topPayContent){
       $(".pay_producto_content").removeClass("fixed");

@@ -6,7 +6,7 @@ section.products_info_content
       aside.tab 
         h2 Especificaciones
       aside.tab 
-        h2 Valoracion
+        h2 Comentarios
     .info_content
       .info_wrapper
         .info_products.active
@@ -42,32 +42,28 @@ section.products_info_content
             p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque labore sit aliquid? Velit.    
         .info_products
           table
-              tr
-                th
-                  h1 Nombre
-                th
-                  h1 Descripcion
               - for (var i = 0; i < 5; ++i) {
                 tr.item
+                  td(width="120")
+                    h2 Procesador
                   td
-                    h2 puertos
-                  td
-                   h2 3.0  Serial Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo autem deserunt voluptates eos, consequuntur
+                   h3 Intel® Celeron® Processor N3060 1.60GHZ
               - }    
                 
         .info_products
-          table
-              tr
-                th
-                  h1 Nombre
-                th
-                  h1 Descripcion
-              - for (var i = 0; i < 5; ++i) {
-                tr.item
-                  td
-                    h2 puertos
-                  td
-                   h2 3.0  Serial Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo autem deserunt voluptates eos, consequuntur
-              - }    
-          
-                
+          .valoracion_wrapper
+            .comment_wrapper 
+              .commet_box
+                img(src="https://images.unsplash.com/profile-fb-1485649729-9ad6da0a8efc.jpg?crop=faces&cs=tinysrgb&fit=crop&fm=jpg&h=150&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=150" width="45")
+                textarea( placeholder="Escribe tu opinion a cerca del producto...")
+              - for (var i = 0; i < 3; ++i) {
+                .commet_content
+                  img(src="https://images.unsplash.com/profile-fb-1485649729-9ad6da0a8efc.jpg?crop=faces&cs=tinysrgb&fit=crop&fm=jpg&h=150&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=150" width="30")
+                  .comment
+                    .name
+                      h2 usuario #{i}
+                      a(href="#")
+                        i.fa.fa-ellipsis-h
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas amet obcaecati laudantium a numquam sed sint soluta facere. Ipsum, doloremque molestias ratione tenetur, dolorum minus doloribus unde possimus quo officiis!   
+            
+              - } 
