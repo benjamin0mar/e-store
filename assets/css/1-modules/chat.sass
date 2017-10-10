@@ -2,7 +2,7 @@
   position: fixed
   bottom: 10px
   right: 10px
-  z-index: 10
+  z-index: 5
   font-family: $main-font
   text-transform: capitalize
   .chat_section_wrapper
@@ -24,7 +24,7 @@
     .chat
       animation: fadeInUp .5s
       display: block
-      width: 205px
+      width: 220px
       background-color: #fff
       box-shadow: $shadow
       border-radius: 7px
@@ -44,6 +44,7 @@
         max-height: 300px
         overflow: scroll
         .chat_messages_wrapper
+          width: 100%
           .messages_wrapper
             display: -webkit-flex
             display: -ms-flex
@@ -58,11 +59,14 @@
               padding: 5px 12px
               font-size: 12px
               margin-bottom: 12px
+              text-transform: none
             .bubble_admin
+              text-align: left
               align-self: flex-start
               color: $accent-color
               border-radius: 10px 25px 25px 10px
             .bubble_client
+              text-align: right
               border-radius: 25px 10px 10px 25px
               align-self: flex-end
               color: #fff
@@ -108,3 +112,4 @@
         height: 28px
         margin-right: -37px
         z-index: 4
+        cursor: pointer

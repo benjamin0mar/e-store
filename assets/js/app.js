@@ -9,6 +9,7 @@ $(function(){
   menuCategorySearch();
   selectList();
   openChat();
+  menuAdmin();
   profileTabs(".profile_wrapper .tabs ul li",".tabs_content_profile");
   profileTabs(".auth_wrapper .tab_auth span",".auth_sign");
   profileTabs(".card_wrapper .card","#");
@@ -20,6 +21,7 @@ $(function(){
   page('/pago', pay);
   page('/ofertas', offer);
   page('/autentificacion', auth);
+  page('/admin', admin);
   page();
 
   $(".btn-control.right").click();
@@ -27,6 +29,24 @@ $(function(){
 
 
 });
+
+
+function menuAdmin(){
+  var showList = true;
+
+  $(".menu_admin_wrapper ul .icons_menu_admin a").click(function(){
+    if (showList == true){
+      $(".admin_section").addClass("active");
+      $(this).siblings("ul").addClass("show");
+      showList=false;
+    }else{
+      $(".admin_section").removeClass("active");
+      $(this).siblings("ul").removeClass("show");
+      showList = true;
+    }
+  });
+
+}
 
 
 function openChat(){
@@ -103,6 +123,7 @@ function car() {routesShow("#carrito");}
 function profile() {routesShow("#profile");}
 function auth() {routesShow("#auth");}
 function offer() {routesShow("#offer");}
+function admin() {routesShow("#admin");}
 
 function routesShow(id){
   $(id).siblings("section").removeClass("show_section");

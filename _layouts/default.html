@@ -14,11 +14,17 @@
 
     </head>
     <body>
+
       {% include menu.html %}
 
       <section class="seccions show_section" id="main">
-        {% include showcase.html %}
-        {% include products.html %}
+        {% include menu_admin.html %}
+        <!-- {% include showcase.html %}
+        {% include products.html %} -->
+      </section>
+
+      <section class="seccions" id="admin">
+        {% include menu_admin.html %}
       </section>
 
       <section class="seccions" id="producto">

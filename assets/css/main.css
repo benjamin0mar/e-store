@@ -686,7 +686,7 @@ nav.slide-menu {
     -ms-flex-align: center;
         align-items: center;
     background-color: rgba(255, 255, 255, 0.85);
-    margin-top: 125px;
+    margin-top: 145px;
     cursor: pointer;
     box-shadow: 0 15px 16px 0 rgba(0, 0, 0, 0.1), 0 1px 5px 0 rgba(0, 0, 0, 0.3), 0 10px 20px -2px rgba(0, 0, 0, 0.1);
     opacity: 1;
@@ -2777,7 +2777,7 @@ section.pay_section {
   position: fixed;
   bottom: 10px;
   right: 10px;
-  z-index: 10;
+  z-index: 5;
   font-family: "Poppins", sans-serif;
   text-transform: capitalize; }
   .chat_section .chat_section_wrapper {
@@ -2800,7 +2800,7 @@ section.pay_section {
       -webkit-animation: fadeInUp .5s;
               animation: fadeInUp .5s;
       display: block;
-      width: 205px;
+      width: 220px;
       background-color: #fff;
       box-shadow: 8px 10px 20px 0px rgba(46, 61, 73, 0.15);
       border-radius: 7px;
@@ -2819,33 +2819,38 @@ section.pay_section {
         display: flex;
         max-height: 300px;
         overflow: scroll; }
-        .chat_section .chat_section_wrapper .chat .chat_messages .chat_messages_wrapper .messages_wrapper {
-          display: -ms-flex;
-          display: -ms-flexbox;
-          display: flex;
-          padding: 8px;
-          -ms-flex-direction: column;
-              flex-direction: column;
-          box-sizing: border-box; }
-          .chat_section .chat_section_wrapper .chat .chat_messages .chat_messages_wrapper .messages_wrapper .bubble {
-            box-shadow: 8px 10px 20px 0px rgba(46, 61, 73, 0.15);
+        .chat_section .chat_section_wrapper .chat .chat_messages .chat_messages_wrapper {
+          width: 100%; }
+          .chat_section .chat_section_wrapper .chat .chat_messages .chat_messages_wrapper .messages_wrapper {
+            display: -ms-flex;
             display: -ms-flexbox;
             display: flex;
-            max-width: 80%;
-            padding: 5px 12px;
-            font-size: 12px;
-            margin-bottom: 12px; }
-          .chat_section .chat_section_wrapper .chat .chat_messages .chat_messages_wrapper .messages_wrapper .bubble_admin {
-            -ms-flex-item-align: start;
-                align-self: flex-start;
-            color: #3D4A54;
-            border-radius: 10px 25px 25px 10px; }
-          .chat_section .chat_section_wrapper .chat .chat_messages .chat_messages_wrapper .messages_wrapper .bubble_client {
-            border-radius: 25px 10px 10px 25px;
-            -ms-flex-item-align: end;
-                align-self: flex-end;
-            color: #fff;
-            background-color: #2196F3; }
+            padding: 8px;
+            -ms-flex-direction: column;
+                flex-direction: column;
+            box-sizing: border-box; }
+            .chat_section .chat_section_wrapper .chat .chat_messages .chat_messages_wrapper .messages_wrapper .bubble {
+              box-shadow: 8px 10px 20px 0px rgba(46, 61, 73, 0.15);
+              display: -ms-flexbox;
+              display: flex;
+              max-width: 80%;
+              padding: 5px 12px;
+              font-size: 12px;
+              margin-bottom: 12px;
+              text-transform: none; }
+            .chat_section .chat_section_wrapper .chat .chat_messages .chat_messages_wrapper .messages_wrapper .bubble_admin {
+              text-align: left;
+              -ms-flex-item-align: start;
+                  align-self: flex-start;
+              color: #3D4A54;
+              border-radius: 10px 25px 25px 10px; }
+            .chat_section .chat_section_wrapper .chat .chat_messages .chat_messages_wrapper .messages_wrapper .bubble_client {
+              text-align: right;
+              border-radius: 25px 10px 10px 25px;
+              -ms-flex-item-align: end;
+                  align-self: flex-end;
+              color: #fff;
+              background-color: #2196F3; }
     .chat_section .chat_section_wrapper .button_chat {
       display: -ms-flex;
       border-radius: 40px;
@@ -2889,7 +2894,102 @@ section.pay_section {
         width: 28px;
         height: 28px;
         margin-right: -37px;
-        z-index: 4; }
+        z-index: 4;
+        cursor: pointer; }
+
+.admin_section {
+  display: -ms-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+  .admin_section.active .menu_admin_section .menu_admin_wrapper ul li ul.show {
+    width: 140px;
+    margin-left: 60px;
+    visibility: visible; }
+  .admin_section.active .admin_content {
+    margin-left: 200px; }
+  .admin_section .admin_content {
+    width: calc(100% - 60px);
+    margin-left: 60px;
+    height: 800px;
+    background-color: white;
+    transition: all 0.4s cubic-bezier(0.77, 0, 0.175, 1); }
+  .admin_section .menu_admin_section {
+    display: -ms-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 60px;
+    position: fixed;
+    left: 0;
+    top: 50px;
+    height: calc(100vh - 50px);
+    z-index: 6;
+    box-sizing: border-box; }
+    .admin_section .menu_admin_section .menu_admin_wrapper {
+      display: -ms-flex;
+      display: -ms-flexbox;
+      display: flex;
+      width: 100%; }
+      .admin_section .menu_admin_section .menu_admin_wrapper ul {
+        background-color: white;
+        display: -ms-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+            flex-direction: column;
+        -ms-flex-align: center;
+            align-items: center;
+        margin: 0;
+        width: 100%;
+        position: relative; }
+        .admin_section .menu_admin_section .menu_admin_wrapper ul li.icons_menu_admin {
+          margin: 0;
+          list-style: none;
+          width: 100%;
+          font-family: "Poppins", sans-serif; }
+          .admin_section .menu_admin_section .menu_admin_wrapper ul li.icons_menu_admin ul {
+            transition: all 0.4s cubic-bezier(0.77, 0, 0.175, 1);
+            position: absolute;
+            height: 100%;
+            top: 0;
+            left: 0;
+            width: 60px;
+            z-index: -1;
+            background-color: rgba(234, 234, 234, 0.25);
+            visibility: hidden;
+            text-align: left; }
+            .admin_section .menu_admin_section .menu_admin_wrapper ul li.icons_menu_admin ul li {
+              text-transform: capitalize;
+              list-style: none;
+              width: 100%;
+              padding-left: 25px;
+              box-sizing: border-box;
+              padding-bottom: 10px;
+              color: #3D4A54; }
+            .admin_section .menu_admin_section .menu_admin_wrapper ul li.icons_menu_admin ul .title {
+              padding-top: 10px;
+              background-color: #f0f0f0;
+              padding-bottom: 10px;
+              font-weight: bold;
+              margin-bottom: 10px; }
+          .admin_section .menu_admin_section .menu_admin_wrapper ul li.icons_menu_admin a {
+            text-decoration: none;
+            width: 100%;
+            padding: 15px 10px;
+            box-sizing: border-box;
+            display: -ms-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-pack: center;
+                justify-content: center;
+            -ms-flex-align: center;
+                align-items: center; }
+            .admin_section .menu_admin_section .menu_admin_wrapper ul li.icons_menu_admin a:hover {
+              background-color: rgba(128, 128, 128, 0.08); }
+            .admin_section .menu_admin_section .menu_admin_wrapper ul li.icons_menu_admin a i {
+              font-size: 20px;
+              color: #3D4A54; }
 
 .quantity {
   position: relative;
