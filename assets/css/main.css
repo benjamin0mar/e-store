@@ -194,7 +194,7 @@ body {
         width: 25px;
         color: rgba(61, 74, 84, 0.8); }
       .menu-options ul li a {
-        font-family: "Poppins", sans-serif;
+        font-family: "Quicksand", sans-serif;
         text-decoration: none;
         padding: 10px;
         box-sizing: border-box;
@@ -216,7 +216,7 @@ body {
       cursor: pointer;
       color: white;
       font-size: 15px;
-      font-family: "Poppins", sans-serif;
+      font-family: "Quicksand", sans-serif;
       position: relative;
       overflow: hidden;
       z-index: 2;
@@ -271,7 +271,7 @@ header {
         justify-content: space-between;
     -ms-flex-align: center;
         align-items: center;
-    font-family: "Poppins", sans-serif; }
+    font-family: "Quicksand", sans-serif; }
     header nav.top-menu .line-separator {
       display: -ms-flex;
       display: -ms-flexbox;
@@ -377,7 +377,7 @@ header {
       header nav.top-menu .search-field input {
         border: none;
         padding-left: 35px;
-        font-family: "Poppins", sans-serif;
+        font-family: "Quicksand", sans-serif;
         width: 120px; }
         header nav.top-menu .search-field input:focus, header nav.top-menu .search-field input:active {
           outline: none; }
@@ -473,7 +473,7 @@ header {
               cursor: pointer;
               color: white;
               font-size: 15px;
-              font-family: "Poppins", sans-serif;
+              font-family: "Quicksand", sans-serif;
               position: relative;
               overflow: hidden;
               z-index: 2; }
@@ -762,7 +762,7 @@ nav.slide-menu {
         display: flex;
         -ms-flex-align: start;
             align-items: flex-start;
-        font-family: "Poppins", sans-serif;
+        font-family: "Quicksand", sans-serif;
         padding: 40px 10px 40px 40px;
         position: relative; }
         nav.slide-menu .new-products .product .product-wrapper .content {
@@ -835,7 +835,7 @@ nav.slide-menu {
             font-weight: 900;
             display: block;
             font-size: 14px;
-            font-family: "Poppins", sans-serif;
+            font-family: "Quicksand", sans-serif;
             box-shadow: 0 13px 12px 0 rgba(0, 0, 0, 0.02), 0 1px 5px 0 rgba(0, 0, 0, 0.01), 0 10px 10px -2px rgba(0, 0, 0, 0.05);
             position: relative;
             z-index: 2; }
@@ -866,7 +866,7 @@ section.menu-section {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  font-family: "Poppins", sans-serif;
+  font-family: "Quicksand", sans-serif;
   z-index: 1; }
   section.menu-section aside.side-list {
     width: 250px;
@@ -1071,7 +1071,7 @@ section.menu-section {
             cursor: pointer;
             color: white;
             font-size: 15px;
-            font-family: "Poppins", sans-serif;
+            font-family: "Quicksand", sans-serif;
             box-shadow: 8px 10px 20px 0px rgba(46, 61, 73, 0.15);
             position: relative;
             overflow: hidden;
@@ -1152,7 +1152,7 @@ footer {
         justify-content: center;
     -ms-flex-align: center;
         align-items: center;
-    font-family: "Poppins", sans-serif;
+    font-family: "Quicksand", sans-serif;
     -ms-flex-direction: column;
         flex-direction: column; }
     footer .footer-wrapper .logo {
@@ -1206,7 +1206,7 @@ footer {
         justify-content: space-between;
     -ms-flex-align: center;
         align-items: center;
-    font-family: "Poppins", sans-serif;
+    font-family: "Quicksand", sans-serif;
     margin-top: 50px;
     margin-bottom: 50px; }
     .producto_content .producto_content_wrapper .producto_content_info {
@@ -1272,7 +1272,7 @@ footer {
           cursor: pointer;
           color: white;
           font-size: 15px;
-          font-family: "Poppins", sans-serif;
+          font-family: "Quicksand", sans-serif;
           box-shadow: 0 13px 12px 0 rgba(0, 0, 0, 0.02), 0 1px 5px 0 rgba(0, 0, 0, 0.01), 0 10px 10px -2px rgba(0, 0, 0, 0.05);
           position: relative;
           overflow: hidden;
@@ -1326,7 +1326,7 @@ footer {
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
-  font-family: "Poppins", sans-serif;
+  font-family: "Quicksand", sans-serif;
   background-color: #fff; }
   .other_products .other_products_wrapper {
     width: 820px;
@@ -1386,7 +1386,7 @@ footer {
           cursor: pointer;
           color: white;
           font-size: 15px;
-          font-family: "Poppins", sans-serif;
+          font-family: "Quicksand", sans-serif;
           box-shadow: 8px 10px 20px 0px rgba(46, 61, 73, 0.15);
           position: relative;
           overflow: hidden;
@@ -1490,7 +1490,7 @@ footer {
           display: none;
           -ms-flex-wrap: wrap;
               flex-wrap: wrap;
-          font-family: "Poppins", sans-serif;
+          font-family: "Quicksand", sans-serif;
           color: #3D4A54;
           width: 100%;
           -ms-flex-pack: justify;
@@ -1581,7 +1581,7 @@ footer {
                 border-radius: 2px;
                 color: #3D4A54;
                 border: 1px solid rgba(61, 74, 84, 0.25);
-                font-family: "Poppins", sans-serif;
+                font-family: "Quicksand", sans-serif;
                 height: 60px !important;
                 resize: none; }
                 .products_info_content .products_info_wrapper .info_content .info_wrapper .info_products .valoracion_wrapper .comment_wrapper textarea:active, .products_info_content .products_info_wrapper .info_content .info_wrapper .info_products .valoracion_wrapper .comment_wrapper textarea:focus {
@@ -1665,7 +1665,7 @@ section.car_content {
           justify-content: center;
       -ms-flex-align: start;
           align-items: flex-start;
-      font-family: "Poppins", sans-serif;
+      font-family: "Quicksand", sans-serif;
       color: #3D4A54; }
       section.car_content .car_content_wrapper .list-products .pay_producto {
         margin-left: 10px;
@@ -1731,7 +1731,7 @@ section.car_content {
             cursor: pointer;
             color: white;
             font-size: 15px;
-            font-family: "Poppins", sans-serif;
+            font-family: "Quicksand", sans-serif;
             position: relative;
             overflow: hidden;
             z-index: 2; }
@@ -1829,7 +1829,7 @@ section.profile_section {
     -ms-flex-align: center;
         align-items: center; }
     section.profile_section .panel_title h2 {
-      font-family: "Poppins", sans-serif;
+      font-family: "Quicksand", sans-serif;
       font-size: 17px;
       color: #3D4A54;
       font-weight: 900; }
@@ -1847,7 +1847,7 @@ section.profile_section {
       cursor: pointer;
       color: white;
       font-size: 15px;
-      font-family: "Poppins", sans-serif;
+      font-family: "Quicksand", sans-serif;
       position: relative;
       overflow: hidden;
       z-index: 2;
@@ -1907,7 +1907,7 @@ section.profile_section {
         margin: 0;
         padding: 0;
         height: 100%;
-        font-family: "Poppins", sans-serif; }
+        font-family: "Quicksand", sans-serif; }
         section.profile_section .profile_wrapper .tabs ul li:not(.save) {
           list-style: none;
           display: -ms-flex;
@@ -1975,7 +1975,7 @@ section.profile_section {
           border-collapse: collapse;
           border: 1px solid rgba(128, 128, 128, 0.15);
           border-radius: 2px;
-          font-family: "Poppins", sans-serif;
+          font-family: "Quicksand", sans-serif;
           color: #3D4A54;
           width: 100%; }
           section.profile_section .profile_wrapper .tabs_content .tabs_content_profile .table_story tr {
@@ -2037,7 +2037,7 @@ section.profile_section {
             cursor: pointer;
             color: white;
             font-size: 15px;
-            font-family: "Poppins", sans-serif;
+            font-family: "Quicksand", sans-serif;
             position: relative;
             overflow: hidden;
             z-index: 2;
@@ -2081,7 +2081,7 @@ section.profile_section {
               color: #3D4A54; }
               section.profile_section .profile_wrapper .tabs_content .tabs_content_profile .tabs_wrapper_profile form .box_check .custom_checkbox_wrapper h2 {
                 font-weight: normal;
-                font-family: "Poppins", sans-serif;
+                font-family: "Quicksand", sans-serif;
                 font-size: 15px;
                 color: rgba(61, 74, 84, 0.7);
                 text-align: left; }
@@ -2118,7 +2118,7 @@ section.profile_section {
                 align-items: flex-start;
             margin-bottom: 15px;
             color: #3D4A54;
-            font-family: "Poppins", sans-serif; }
+            font-family: "Quicksand", sans-serif; }
             section.profile_section .profile_wrapper .tabs_content .tabs_content_profile .tabs_wrapper_profile form .field label {
               font-size: 14px;
               color: rgba(61, 74, 84, 0.7); }
@@ -2129,7 +2129,7 @@ section.profile_section {
               border-radius: 2px;
               color: #3D4A54;
               border: 1px solid rgba(61, 74, 84, 0.25);
-              font-family: "Poppins", sans-serif; }
+              font-family: "Quicksand", sans-serif; }
               section.profile_section .profile_wrapper .tabs_content .tabs_content_profile .tabs_wrapper_profile form .field input:active, section.profile_section .profile_wrapper .tabs_content .tabs_content_profile .tabs_wrapper_profile form .field input:focus {
                 border: 1px solid #2196f3;
                 outline: none; }
@@ -2212,7 +2212,7 @@ section.auth_content {
             cursor: pointer;
             color: white;
             font-size: 15px;
-            font-family: "Poppins", sans-serif;
+            font-family: "Quicksand", sans-serif;
             position: relative;
             overflow: hidden;
             z-index: 2;
@@ -2255,7 +2255,7 @@ section.auth_content {
             margin-bottom: 15px;
             width: 100%;
             color: #3D4A54;
-            font-family: "Poppins", sans-serif; }
+            font-family: "Quicksand", sans-serif; }
             section.auth_content .auth_wrapper .auth_form .auth_sign form .field label {
               font-size: 14px;
               color: rgba(61, 74, 84, 0.7); }
@@ -2266,7 +2266,7 @@ section.auth_content {
               border-radius: 2px;
               color: #3D4A54;
               border: 1px solid rgba(61, 74, 84, 0.25);
-              font-family: "Poppins", sans-serif; }
+              font-family: "Quicksand", sans-serif; }
               section.auth_content .auth_wrapper .auth_form .auth_sign form .field input:active, section.auth_content .auth_wrapper .auth_form .auth_sign form .field input:focus {
                 border: 1px solid #2196f3;
                 outline: none; }
@@ -2277,7 +2277,7 @@ section.auth_content {
       display: -ms-flex;
       display: -ms-flexbox;
       display: flex;
-      font-family: "Poppins", sans-serif; }
+      font-family: "Quicksand", sans-serif; }
       section.auth_content .auth_wrapper .tab_auth span {
         padding: 20px;
         width: 50%;
@@ -2346,7 +2346,7 @@ section.pay_section {
     -ms-flex-align: center;
         align-items: center; }
     section.pay_section .panel_title h2 {
-      font-family: "Poppins", sans-serif;
+      font-family: "Quicksand", sans-serif;
       font-size: 17px;
       color: #3D4A54;
       font-weight: 900; }
@@ -2364,7 +2364,7 @@ section.pay_section {
       cursor: pointer;
       color: white;
       font-size: 15px;
-      font-family: "Poppins", sans-serif;
+      font-family: "Quicksand", sans-serif;
       position: relative;
       overflow: hidden;
       z-index: 2;
@@ -2403,7 +2403,7 @@ section.pay_section {
     margin-bottom: 30px;
     padding: 20px 40px 40px 40px;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif; }
+    font-family: "Quicksand", sans-serif; }
     section.pay_section .pay_wrapper .choose_payment {
       display: -ms-flex;
       display: -ms-flexbox;
@@ -2532,7 +2532,7 @@ section.pay_section {
           margin-bottom: 15px;
           width: 100%;
           color: #3D4A54;
-          font-family: "Poppins", sans-serif; }
+          font-family: "Quicksand", sans-serif; }
           section.pay_section .pay_wrapper .form_payment form .field label {
             font-size: 14px;
             color: rgba(61, 74, 84, 0.7); }
@@ -2543,7 +2543,7 @@ section.pay_section {
             border-radius: 2px;
             color: #3D4A54;
             border: 1px solid rgba(61, 74, 84, 0.25);
-            font-family: "Poppins", sans-serif; }
+            font-family: "Quicksand", sans-serif; }
             section.pay_section .pay_wrapper .form_payment form .field input:active, section.pay_section .pay_wrapper .form_payment form .field input:focus {
               border: 1px solid #2196f3;
               outline: none; }
@@ -2563,7 +2563,7 @@ section.pay_section {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    font-family: "Poppins", sans-serif; }
+    font-family: "Quicksand", sans-serif; }
     .offer_section .offer_wrapper .product-description {
       background-color: #fff;
       box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
@@ -2639,7 +2639,7 @@ section.pay_section {
           cursor: pointer;
           color: white;
           font-size: 15px;
-          font-family: "Poppins", sans-serif;
+          font-family: "Quicksand", sans-serif;
           box-shadow: 8px 10px 20px 0px rgba(46, 61, 73, 0.15);
           position: relative;
           overflow: hidden;
@@ -2778,7 +2778,7 @@ section.pay_section {
   bottom: 10px;
   right: 10px;
   z-index: 5;
-  font-family: "Poppins", sans-serif;
+  font-family: "Quicksand", sans-serif;
   text-transform: capitalize; }
   .chat_section .chat_section_wrapper {
     display: -ms-flex;
@@ -2869,7 +2869,7 @@ section.pay_section {
         padding-bottom: 5px;
         padding-right: 5px;
         width: calc(200px - 38px);
-        font-family: "Poppins", sans-serif;
+        font-family: "Quicksand", sans-serif;
         border: 1px solid rgba(61, 74, 84, 0.15);
         border-left: 1px solid #2196F3;
         color: #3D4A54;
@@ -2904,15 +2904,13 @@ section.pay_section {
   -ms-flex-pack: justify;
       justify-content: space-between; }
   .admin_section.active .menu_admin_section .menu_admin_wrapper ul li ul.show {
-    width: 140px;
-    margin-left: 60px;
-    visibility: visible; }
+    visibility: visible;
+    opacity: 1; }
   .admin_section.active .admin_content {
     margin-left: 200px; }
   .admin_section .admin_content {
     width: calc(100% - 60px);
     margin-left: 60px;
-    height: 800px;
     background-color: white;
     transition: all 0.4s cubic-bezier(0.77, 0, 0.175, 1); }
   .admin_section .menu_admin_section {
@@ -2947,18 +2945,20 @@ section.pay_section {
           margin: 0;
           list-style: none;
           width: 100%;
-          font-family: "Poppins", sans-serif; }
+          font-family: "Quicksand", sans-serif; }
           .admin_section .menu_admin_section .menu_admin_wrapper ul li.icons_menu_admin ul {
-            transition: all 0.4s cubic-bezier(0.77, 0, 0.175, 1);
             position: absolute;
             height: 100%;
             top: 0;
             left: 0;
-            width: 60px;
+            width: 140px;
+            margin-left: 60px;
             z-index: -1;
             background-color: rgba(234, 234, 234, 0.25);
             visibility: hidden;
-            text-align: left; }
+            opacity: 0;
+            text-align: left;
+            transition: all 0.4s cubic-bezier(0.77, 0, 0.175, 1); }
             .admin_section .menu_admin_section .menu_admin_wrapper ul li.icons_menu_admin ul li {
               text-transform: capitalize;
               list-style: none;
@@ -2991,6 +2991,299 @@ section.pay_section {
               font-size: 20px;
               color: #3D4A54; }
 
+.chart_section {
+  display: -ms-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%; }
+  .chart_section .chart_top_section {
+    width: 100%; }
+    .chart_section .chart_top_section .guia_content {
+      display: -ms-flex;
+      display: -ms-flexbox;
+      display: flex;
+      width: 100%;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+      -ms-flex-align: start;
+          align-items: flex-start;
+      font-family: "Quicksand", sans-serif;
+      margin-bottom: 20px;
+      margin-top: 20px; }
+      .chart_section .chart_top_section .guia_content h1 {
+        color: rgba(61, 74, 84, 0.8);
+        font-size: 15px;
+        text-transform: uppercase;
+        margin-left: 5px; }
+      .chart_section .chart_top_section .guia_content .result {
+        display: -ms-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+            align-items: center;
+        margin-right: 10px; }
+        .chart_section .chart_top_section .guia_content .result .number {
+          display: -ms-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-align: center;
+              align-items: center;
+          -ms-flex-pack: end;
+              justify-content: flex-end;
+          min-width: 100px;
+          color: rgba(61, 74, 84, 0.8); }
+          .chart_section .chart_top_section .guia_content .result .number .percentage {
+            display: -ms-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-align: start;
+                align-items: flex-start;
+            -ms-flex-direction: column;
+                flex-direction: column; }
+            .chart_section .chart_top_section .guia_content .result .number .percentage h3 {
+              font-size: 20px; }
+            .chart_section .chart_top_section .guia_content .result .number .percentage p {
+              font-size: 12px; }
+            .chart_section .chart_top_section .guia_content .result .number .percentage h3, .chart_section .chart_top_section .guia_content .result .number .percentage p {
+              margin: 0; }
+          .chart_section .chart_top_section .guia_content .result .number .color {
+            display: block;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: red;
+            margin-right: 8px;
+            margin-top: -20px; }
+            .chart_section .chart_top_section .guia_content .result .number .color.c1 {
+              background-color: #F9E29E; }
+            .chart_section .chart_top_section .guia_content .result .number .color.c2 {
+              background-color: #A8E4EE; }
+            .chart_section .chart_top_section .guia_content .result .number .color.c3 {
+              background-color: #2BC9E2; }
+    .chart_section .chart_top_section .chart_content {
+      width: 100%;
+      font-family: "Quicksand", sans-serif; }
+      .chart_section .chart_top_section .chart_content canvas {
+        width: calc(100% + 15px) !important;
+        height: 350px !important; }
+    .chart_section .chart_top_section .number_overall {
+      display: -ms-flex;
+      display: -ms-flexbox;
+      display: flex;
+      width: 100%;
+      height: 180px;
+      font-family: "Quicksand", sans-serif; }
+      .chart_section .chart_top_section .number_overall .number_overall_content {
+        width: 25%;
+        height: 100%;
+        background-color: #F2F6F9;
+        display: -ms-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: center;
+            justify-content: center;
+        -ms-flex-align: center;
+            align-items: center;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+        .chart_section .chart_top_section .number_overall .number_overall_content .product_sale_count {
+          color: #3D4A54; }
+          .chart_section .chart_top_section .number_overall .number_overall_content .product_sale_count i {
+            font-size: 30px; }
+          .chart_section .chart_top_section .number_overall .number_overall_content .product_sale_count h3 {
+            font-size: 25px; }
+        .chart_section .chart_top_section .number_overall .number_overall_content .number_sale {
+          text-align: left;
+          color: #3D4A54; }
+          .chart_section .chart_top_section .number_overall .number_overall_content .number_sale h2 {
+            text-transform: uppercase;
+            color: rgba(61, 74, 84, 0.6); }
+          .chart_section .chart_top_section .number_overall .number_overall_content .number_sale h1 {
+            font-size: 28px; }
+        .chart_section .chart_top_section .number_overall .number_overall_content .line {
+          width: calc(100% - 20px);
+          display: block;
+          height: 4px;
+          background-color: #fff; }
+          .chart_section .chart_top_section .number_overall .number_overall_content .line span {
+            display: block;
+            width: 50%;
+            height: 100%; }
+            .chart_section .chart_top_section .number_overall .number_overall_content .line span.l1 {
+              background-color: #52B6EA; }
+            .chart_section .chart_top_section .number_overall .number_overall_content .line span.l2 {
+              background-color: #EA8686; }
+            .chart_section .chart_top_section .number_overall .number_overall_content .line span.l3 {
+              background-color: #45B6B2; }
+            .chart_section .chart_top_section .number_overall .number_overall_content .line span.l4 {
+              background-color: red; }
+      .chart_section .chart_top_section .number_overall .number_overall_content:nth-child(2n+1) {
+        background-color: #E2ECF6; }
+
+.table_section {
+  display: -ms-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+  font-family: "Quicksand", sans-serif; }
+  .table_section .table_order {
+    width: calc(100% - 400px);
+    background-color: #fff; }
+    .table_section .table_order h4 {
+      color: rgba(61, 74, 84, 0.8);
+      font-size: 15px;
+      text-transform: uppercase;
+      margin-left: 5px;
+      text-align: left;
+      margin-bottom: 20px;
+      margin-top: 20px; }
+    .table_section .table_order table {
+      width: 100%;
+      background-color: #fff;
+      border-collapse: collapse;
+      border: 1px solid rgba(128, 128, 128, 0.15); }
+      .table_section .table_order table tr {
+        border-bottom: 1px solid rgba(128, 128, 128, 0.1); }
+        .table_section .table_order table tr th {
+          text-transform: capitalize; }
+          .table_section .table_order table tr th h1 {
+            color: rgba(61, 74, 84, 0.6);
+            font-size: 14px;
+            margin: 0; }
+        .table_section .table_order table tr th, .table_section .table_order table tr td {
+          padding: 15px; }
+        .table_section .table_order table tr th:last-child {
+          width: 80px; }
+        .table_section .table_order table tr td h2 {
+          color: rgba(61, 74, 84, 0.9); }
+        .table_section .table_order table tr td .status {
+          padding: 6px 30px;
+          border-radius: 15px;
+          color: white;
+          text-transform: uppercase;
+          font-weight: bold;
+          width: 100px;
+          min-width: 100px;
+          margin: 0 auto;
+          box-shadow: 8px 10px 20px 0px rgba(46, 61, 73, 0.15); }
+          .table_section .table_order table tr td .status.s1 {
+            background-color: #50affa; }
+          .table_section .table_order table tr td .status.s2 {
+            background-color: #E9535C; }
+          .table_section .table_order table tr td .status.s3 {
+            background-color: #37D67A; }
+        .table_section .table_order table tr td a {
+          text-decoration: none;
+          color: #3D4A54; }
+          .table_section .table_order table tr td a i {
+            font-size: 20px; }
+        .table_section .table_order table tr td:last-child {
+          display: -ms-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-pack: distribute;
+              justify-content: space-around;
+          width: 80px; }
+          .table_section .table_order table tr td:last-child a {
+            color: rgba(61, 74, 84, 0.7); }
+      .table_section .table_order table .item:hover {
+        background-color: rgba(128, 128, 128, 0.08); }
+  .table_section .table_users {
+    width: 380px;
+    margin-left: 20px; }
+    .table_section .table_users h4 {
+      color: rgba(61, 74, 84, 0.8);
+      font-size: 15px;
+      text-transform: uppercase;
+      margin-left: 5px;
+      text-align: left;
+      margin-bottom: 20px;
+      margin-top: 20px; }
+    .table_section .table_users .list_users {
+      margin: 0;
+      color: #3D4A54;
+      display: -ms-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      border: 1px solid rgba(128, 128, 128, 0.15);
+      padding: 10px;
+      box-sizing: border-box; }
+      .table_section .table_users .list_users li {
+        display: -ms-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+            align-items: center;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+        padding-top: 15px;
+        padding-bottom: 15px; }
+        .table_section .table_users .list_users li .user {
+          display: -ms-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-align: center;
+              align-items: center; }
+        .table_section .table_users .list_users li .profile_btn {
+          display: -ms-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-align: center;
+              align-items: center;
+          -ms-flex-pack: distribute;
+              justify-content: space-around;
+          background-color: #2196F3;
+          padding: 7px;
+          border-radius: 2px;
+          cursor: pointer;
+          color: white;
+          width: 80px;
+          margin-right: 10px;
+          box-shadow: 8px 10px 20px 0px rgba(46, 61, 73, 0.15);
+          font-size: 15px;
+          font-family: "Quicksand", sans-serif;
+          font-weight: bold;
+          letter-spacing: 0.05em;
+          position: relative;
+          overflow: hidden;
+          z-index: 2; }
+          .table_section .table_users .list_users li .profile_btn:hover::before {
+            -webkit-transform: translateY(0);
+                    transform: translateY(0);
+            border-radius: 2px; }
+          .table_section .table_users .list_users li .profile_btn::before {
+            content: '';
+            position: absolute;
+            display: block;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background-color: #0c84e4;
+            -webkit-transform: translateY(-100%);
+                    transform: translateY(-100%);
+            border-radius: 50%;
+            z-index: -1;
+            transition: all 0.4s cubic-bezier(0.77, 0, 0.175, 1); }
+          .table_section .table_users .list_users li .profile_btn a {
+            text-decoration: none;
+            color: #fff; }
+          .table_section .table_users .list_users li .profile_btn i {
+            font-size: 18px;
+            color: #fff; }
+        .table_section .table_users .list_users li img {
+          border-radius: 50%; }
+        .table_section .table_users .list_users li .info {
+          margin-left: 10px;
+          text-align: left; }
+          .table_section .table_users .list_users li .info .name {
+            font-weight: bold; }
+          .table_section .table_users .list_users li .info .email {
+            font-size: 10px; }
+
 .quantity {
   position: relative;
   margin-right: 10px;
@@ -3005,7 +3298,7 @@ input[type=number] {
   -moz-appearance: textfield; }
 
 .quantity input {
-  font-family: "Poppins", sans-serif;
+  font-family: "Quicksand", sans-serif;
   width: 50px;
   height: 45px;
   line-height: 1.65;
@@ -3036,7 +3329,7 @@ input[type=number] {
   text-align: center;
   color: #fff;
   font-size: 14px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Quicksand", sans-serif;
   line-height: 1.7;
   -webkit-transform: translateX(-100%);
   transform: translateX(-100%);

@@ -6,15 +6,15 @@
   &.active
     .menu_admin_section
       .menu_admin_wrapper ul li ul.show
-        width: 140px
-        margin-left: 60px
+        // width: 140px
+        // margin-left: 60px
         visibility: visible
+        opacity: 1
     .admin_content
       margin-left: 200px
   .admin_content
      width: calc(100% - 60px)
      margin-left: 60px
-     height: 800px
      background-color: white
      transition: $transition
   .menu_admin_section
@@ -51,16 +51,18 @@
           width: 100%
           font-family: $main-font
           ul
-            transition: $transition
             position: absolute
             height: 100%
             top: 0
             left: 0
-            width: 60px
+            width: 140px
+            margin-left: 60px
             z-index: -1
             background-color: rgba(234, 234, 234, 0.25)
             visibility: hidden
+            opacity: 0
             text-align: left
+            transition: $transition
             li
               text-transform: capitalize
               list-style: none

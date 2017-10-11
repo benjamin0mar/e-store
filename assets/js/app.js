@@ -36,13 +36,18 @@ function menuAdmin(){
 
   $(".menu_admin_wrapper ul .icons_menu_admin a").click(function(){
     if (showList == true){
+
       $(".admin_section").addClass("active");
       $(this).siblings("ul").addClass("show");
       showList=false;
+
     }else{
-      $(".admin_section").removeClass("active");
-      $(this).siblings("ul").removeClass("show");
+      $(".sub_menu_admin").removeClass("show");
+      setTimeout(function(){
+        $(".admin_section").removeClass("active");
+      }, 150);
       showList = true;
+
     }
   });
 
