@@ -1,0 +1,58 @@
+section.admin_section
+  .admin_content
+    {% include menu_admin.html%}  
+    section.inbox_section
+      .tabs_inbox
+        .tab_wrapper.active
+          i.fa.fa-envelope-open-o
+          h2 Pendientes
+        .tab_wrapper
+          i.fa.fa-envelope-o 
+          h2 Completos
+        .tab_wrapper
+          i.fa.fa-trash-o 
+          h2 Eliminados 
+      .inbox_pedidos 
+        .pedidos_wrapper.active
+          table.detalle_producto
+            tr
+              th
+                h1 ID produtos
+              th
+                h1 usuario  
+              th
+                h1 Monto     
+              th
+                h1 fecha
+              th
+                h1 lugar
+              th               
+                h1 Accion
+
+            - for (var i = 0; i < 20; ++i) {
+              tr.item
+                td
+                  h2 MBP20170346                
+                td
+                  .user
+                    img(src="https://images.unsplash.com/profile-fb-1485649729-9ad6da0a8efc.jpg?crop=faces&cs=tinysrgb&fit=crop&fm=jpg&h=150&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=150" width="40")
+                    h2 Omar Benjamin
+                td
+                  h2 S/.3000.00
+                td
+                  h2 2 Noviembre, 2017
+                td
+                  h2 Amarilis, Huanuco
+                td
+                  a(href="#")
+                    i.ion-trash-a
+                  a(href="#")
+                    i.ion-edit
+                  a(href="#")
+                    i.ion-clipboard      
+            - }
+              
+        .pedidos_wrapper
+           p pedidos completos
+        .pedidos_wrapper
+           p pedidos eliminados  

@@ -3,15 +3,7 @@
   display: -ms-flex
   display: flex
   justify-content: space-between
-  &.active
-    .menu_admin_section
-      .menu_admin_wrapper ul li ul.show
-        // width: 140px
-        // margin-left: 60px
-        visibility: visible
-        opacity: 1
-    .admin_content
-      margin-left: 200px
+
   .admin_content
      width: calc(100% - 60px)
      margin-left: 60px
@@ -26,8 +18,7 @@
     left: 0
     top: 50px
     height: calc(100vh - 50px)
-    z-index: 6
-    // border-top: 1px solid rgba($accent-color, .1)
+    z-index: 5
     box-sizing: border-box
     .menu_admin_wrapper
       display: -webkit-flex
@@ -50,46 +41,20 @@
           list-style: none
           width: 100%
           font-family: $main-font
-          ul
-            position: absolute
-            height: 100%
-            top: 0
-            left: 0
-            width: 140px
-            margin-left: 60px
-            z-index: -1
-            background-color: rgba(234, 234, 234, 0.25)
-            visibility: hidden
-            opacity: 0
-            text-align: left
-            transition: $transition
-            li
-              text-transform: capitalize
-              list-style: none
-              width: 100%
-              padding-left: 25px
-              box-sizing: border-box
-              padding-bottom: 10px
-              color: $accent-color
-            .title
-              padding-top: 10px
-              background-color: #f0f0f0
-              padding-bottom: 10px
-              font-weight: bold
-              margin-bottom: 10px
-
           a
-            text-decoration: none
-            width: 100%
-            padding: 15px 10px
-            box-sizing: border-box
-            display: -webkit-flex
-            display: -ms-flex
-            display: flex
-            justify-content: center
-            align-items: center
-            &:hover
-              background-color: rgba(128, 128, 128, 0.08)
-            i
-              font-size: 20px
-              color: $accent-color
+            text-decoration: none 
+            span
+              text-decoration: none
+              width: 100%
+              padding: 15px 10px
+              box-sizing: border-box
+              display: -webkit-flex
+              display: -ms-flex
+              display: flex
+              justify-content: center
+              align-items: center
+              &:hover
+                background-color: rgba(128, 128, 128, 0.08)
+              i
+                font-size: 20px
+                color: $accent-color
