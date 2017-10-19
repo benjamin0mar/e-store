@@ -155,7 +155,7 @@ body {
   background-color: rgba(0, 0, 0, 0.75);
   min-height: calc(100vh);
   z-index: 6;
-  transition: all 0.4s cubic-bezier(0.77, 0, 0.175, 1);
+  transition: all 0.35s cubic-bezier(0.77, 0, 0.175, 1);
   opacity: 0;
   visibility: hidden; }
   #menu-dark.active {
@@ -172,7 +172,7 @@ body {
   min-height: calc(100vh - 50px);
   margin-top: 50px;
   margin-right: -100%;
-  transition: all 0.4s cubic-bezier(0.77, 0, 0.175, 1); }
+  transition: all 0.35s cubic-bezier(0.77, 0, 0.175, 1); }
   .menu-options.active {
     margin-right: 0; }
   .menu-options ul {
@@ -513,7 +513,7 @@ header {
             padding: 12px;
             z-index: 8;
             position: relative;
-            transition: all 0.4s cubic-bezier(0.77, 0, 0.175, 1); }
+            transition: all 0.35s cubic-bezier(0.77, 0, 0.175, 1); }
             header nav.top-menu .car .list-productos ul li:not(.footer-car):hover {
               background-color: rgba(128, 128, 128, 0.08); }
             header nav.top-menu .car .list-productos ul li:not(.footer-car) .info-item {
@@ -578,7 +578,7 @@ header {
           align-items: center;
       -ms-flex-pack: start;
           justify-content: flex-start;
-      transition: all 0.4s cubic-bezier(0.77, 0, 0.175, 1);
+      transition: all 0.35s cubic-bezier(0.77, 0, 0.175, 1);
       cursor: pointer;
       border-bottom: 1px solid rgba(61, 74, 84, 0);
       padding: 8px; }
@@ -610,7 +610,7 @@ header {
         height: 2px;
         background-color: #3D4A54;
         position: relative;
-        transition: all 0.4s cubic-bezier(0.77, 0, 0.175, 1); }
+        transition: all 0.35s cubic-bezier(0.77, 0, 0.175, 1); }
         header nav.top-menu .menu-icon i::before {
           position: absolute;
           content: '';
@@ -619,7 +619,7 @@ header {
           background-color: #3D4A54;
           top: -4px;
           left: 0;
-          transition: all 0.4s cubic-bezier(0.77, 0, 0.175, 1); }
+          transition: all 0.35s cubic-bezier(0.77, 0, 0.175, 1); }
         header nav.top-menu .menu-icon i::after {
           position: absolute;
           content: '';
@@ -628,7 +628,7 @@ header {
           background-color: #3D4A54;
           bottom: -4px;
           left: 0;
-          transition: all 0.4s cubic-bezier(0.77, 0, 0.175, 1); }
+          transition: all 0.35s cubic-bezier(0.77, 0, 0.175, 1); }
       header nav.top-menu .menu-icon span {
         color: #3D4A54;
         margin-bottom: -2px;
@@ -718,7 +718,7 @@ nav.slide-menu {
       display: -ms-flex;
       display: -ms-flexbox;
       display: flex;
-      transition: all 0.4s cubic-bezier(0.77, 0, 0.175, 1); }
+      transition: all 0.35s cubic-bezier(0.77, 0, 0.175, 1); }
     nav.slide-menu .new-products .more-products {
       display: -ms-flex;
       display: -ms-flexbox;
@@ -739,7 +739,7 @@ nav.slide-menu {
         -ms-flex-direction: column;
             flex-direction: column;
         text-decoration: none;
-        transition: all 0.4s cubic-bezier(0.77, 0, 0.175, 1); }
+        transition: all 0.35s cubic-bezier(0.77, 0, 0.175, 1); }
         nav.slide-menu .new-products .more-products a:hover {
           color: #3d4a54; }
         nav.slide-menu .new-products .more-products a i {
@@ -856,7 +856,7 @@ nav.slide-menu {
                       transform: scale(0);
               border-radius: 50%;
               z-index: -1;
-              transition: all 0.4s cubic-bezier(0.77, 0, 0.175, 1); }
+              transition: all 0.35s cubic-bezier(0.77, 0, 0.175, 1); }
         nav.slide-menu .new-products .product .product-wrapper img {
           margin-top: 5px;
           box-shadow: 0 15px 16px 0 rgba(0, 0, 0, 0.05), 0 1px 5px 0 rgba(0, 0, 0, 0.03), 0 10px 20px -2px rgba(0, 0, 0, 0.05); }
@@ -978,7 +978,7 @@ section.menu-section {
           color: rgba(61, 74, 84, 0.55);
           position: relative;
           cursor: pointer;
-          transition: all 0.4s cubic-bezier(0.77, 0, 0.175, 1); }
+          transition: all 0.35s cubic-bezier(0.77, 0, 0.175, 1); }
           section.menu-section aside.products-list .top-list .categories h2::before {
             content: '';
             position: absolute;
@@ -989,13 +989,13 @@ section.menu-section {
             height: 8px;
             -webkit-transform: scale(0);
                     transform: scale(0);
-            transition: all 0.4s cubic-bezier(0.77, 0, 0.175, 1); }
+            transition: all 0.35s cubic-bezier(0.77, 0, 0.175, 1); }
           section.menu-section aside.products-list .top-list .categories h2.active {
             color: #3D4A54; }
             section.menu-section aside.products-list .top-list .categories h2.active::before {
               -webkit-transform: scale(0.5);
                       transform: scale(0.5);
-              transition: all 0.4s cubic-bezier(0.77, 0, 0.175, 1); }
+              transition: all 0.35s cubic-bezier(0.77, 0, 0.175, 1); }
     section.menu-section aside.products-list .products-list-content {
       display: -ms-flex;
       display: -ms-flexbox;
@@ -1076,7 +1076,7 @@ section.menu-section {
             position: relative;
             overflow: hidden;
             z-index: 2;
-            transition: all 0.4s cubic-bezier(0.77, 0, 0.175, 1); }
+            transition: all 0.35s cubic-bezier(0.77, 0, 0.175, 1); }
             section.menu-section aside.products-list .products-list-content .product-description .product-description-content .add-car:hover::before {
               -webkit-transform: translateY(0);
                       transform: translateY(0);
@@ -1460,7 +1460,7 @@ footer {
         color: rgba(61, 74, 84, 0.55);
         position: relative;
         cursor: pointer;
-        transition: all 0.4s cubic-bezier(0.77, 0, 0.175, 1);
+        transition: all 0.35s cubic-bezier(0.77, 0, 0.175, 1);
         font-size: 14px; }
         .products_info_content .products_info_wrapper .tab_wrapper .tab h2::before {
           content: '';
@@ -1472,13 +1472,13 @@ footer {
           height: 8px;
           -webkit-transform: scale(0);
                   transform: scale(0);
-          transition: all 0.4s cubic-bezier(0.77, 0, 0.175, 1); }
+          transition: all 0.35s cubic-bezier(0.77, 0, 0.175, 1); }
       .products_info_content .products_info_wrapper .tab_wrapper .tab.active h2 {
         color: #3D4A54; }
         .products_info_content .products_info_wrapper .tab_wrapper .tab.active h2::before {
           -webkit-transform: scale(0.5);
                   transform: scale(0.5);
-          transition: all 0.4s cubic-bezier(0.77, 0, 0.175, 1); }
+          transition: all 0.35s cubic-bezier(0.77, 0, 0.175, 1); }
     .products_info_content .products_info_wrapper .info_content {
       display: -ms-flex;
       display: -ms-flexbox;
@@ -1924,7 +1924,7 @@ section.profile_section {
           cursor: pointer;
           position: relative;
           color: #3D4A54;
-          transition: all 0.4s cubic-bezier(0.77, 0, 0.175, 1); }
+          transition: all 0.35s cubic-bezier(0.77, 0, 0.175, 1); }
           section.profile_section .profile_wrapper .tabs ul li:not(.save)::before {
             content: '';
             position: absolute;
@@ -1935,14 +1935,14 @@ section.profile_section {
             height: 3px;
             -webkit-transform: scale(0);
                     transform: scale(0);
-            transition: all 0.4s cubic-bezier(0.77, 0, 0.175, 1); }
+            transition: all 0.35s cubic-bezier(0.77, 0, 0.175, 1); }
           section.profile_section .profile_wrapper .tabs ul li:not(.save).active {
             color: #3D4A54;
             background-color: rgba(128, 128, 128, 0.08); }
             section.profile_section .profile_wrapper .tabs ul li:not(.save).active::before {
               -webkit-transform: scale(1);
                       transform: scale(1);
-              transition: all 0.4s cubic-bezier(0.77, 0, 0.175, 1); }
+              transition: all 0.35s cubic-bezier(0.77, 0, 0.175, 1); }
             section.profile_section .profile_wrapper .tabs ul li:not(.save).active h1, section.profile_section .profile_wrapper .tabs ul li:not(.save).active i {
               color: #3d4a54; }
           section.profile_section .profile_wrapper .tabs ul li:not(.save) i {
@@ -2281,7 +2281,7 @@ section.auth_content {
       section.auth_content .auth_wrapper .tab_auth span {
         padding: 20px;
         width: 50%;
-        transition: all 0.4s cubic-bezier(0.77, 0, 0.175, 1);
+        transition: all 0.35s cubic-bezier(0.77, 0, 0.175, 1);
         position: relative;
         display: -ms-flex;
         display: -ms-flexbox;
@@ -2299,14 +2299,14 @@ section.auth_content {
           height: 3px;
           -webkit-transform: scale(0);
                   transform: scale(0);
-          transition: all 0.4s cubic-bezier(0.77, 0, 0.175, 1); }
+          transition: all 0.35s cubic-bezier(0.77, 0, 0.175, 1); }
         section.auth_content .auth_wrapper .tab_auth span.active {
           color: #3D4A54;
           background-color: rgba(128, 128, 128, 0.08); }
           section.auth_content .auth_wrapper .tab_auth span.active::before {
             -webkit-transform: scale(1);
                     transform: scale(1);
-            transition: all 0.4s cubic-bezier(0.77, 0, 0.175, 1); }
+            transition: all 0.35s cubic-bezier(0.77, 0, 0.175, 1); }
           section.auth_content .auth_wrapper .tab_auth span.active h1, section.auth_content .auth_wrapper .tab_auth span.active i {
             color: #3d4a54; }
         section.auth_content .auth_wrapper .tab_auth span i {
@@ -2442,7 +2442,7 @@ section.pay_section {
           color: rgba(61, 74, 84, 0.4);
           position: relative;
           cursor: pointer;
-          transition: all 0.4s cubic-bezier(0.77, 0, 0.175, 1); }
+          transition: all 0.35s cubic-bezier(0.77, 0, 0.175, 1); }
           section.pay_section .pay_wrapper .choose_payment .card_wrapper .card.active {
             border: 2px solid #2196F3;
             color: #2196F3; }
@@ -2644,7 +2644,7 @@ section.pay_section {
           position: relative;
           overflow: hidden;
           z-index: 2;
-          transition: all 0.4s cubic-bezier(0.77, 0, 0.175, 1); }
+          transition: all 0.35s cubic-bezier(0.77, 0, 0.175, 1); }
           .offer_section .offer_wrapper .product-description .product-description-content .add-car:hover::before {
             -webkit-transform: translateY(0);
                     transform: translateY(0);
@@ -2800,19 +2800,32 @@ section.pay_section {
       -webkit-animation: fadeInUp .5s;
               animation: fadeInUp .5s;
       display: block;
-      width: 220px;
-      background-color: #fff;
+      width: 230px;
+      background-color: #f7f7f7;
       box-shadow: 8px 10px 20px 0px rgba(46, 61, 73, 0.15);
       border-radius: 7px;
       height: 350px;
       overflow: hidden; }
-      .chat_section .chat_section_wrapper .chat h1 {
+      .chat_section .chat_section_wrapper .chat #caption_chat {
+        display: -ms-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+            align-items: center;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
         padding: 15px;
+        background-color: white;
         box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
         box-sizing: border-box;
-        font-weight: normal;
-        text-transform: none;
         color: #3D4A54; }
+        .chat_section .chat_section_wrapper .chat #caption_chat h1 {
+          font-weight: normal;
+          text-transform: none;
+          margin: 0; }
+        .chat_section .chat_section_wrapper .chat #caption_chat i {
+          cursor: pointer;
+          font-size: 16px; }
       .chat_section .chat_section_wrapper .chat .chat_messages {
         display: -ms-flex;
         display: -ms-flexbox;
@@ -2830,7 +2843,7 @@ section.pay_section {
                 flex-direction: column;
             box-sizing: border-box; }
             .chat_section .chat_section_wrapper .chat .chat_messages .chat_messages_wrapper .messages_wrapper .bubble {
-              box-shadow: 8px 10px 20px 0px rgba(46, 61, 73, 0.15);
+              box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
               display: -ms-flexbox;
               display: flex;
               max-width: 80%;
@@ -2843,7 +2856,8 @@ section.pay_section {
               -ms-flex-item-align: start;
                   align-self: flex-start;
               color: #3D4A54;
-              border-radius: 10px 25px 25px 10px; }
+              border-radius: 10px 25px 25px 10px;
+              background-color: #fff; }
             .chat_section .chat_section_wrapper .chat .chat_messages .chat_messages_wrapper .messages_wrapper .bubble_client {
               text-align: right;
               border-radius: 25px 10px 10px 25px;
@@ -2868,34 +2882,69 @@ section.pay_section {
         padding-top: 5px;
         padding-bottom: 5px;
         padding-right: 5px;
-        width: calc(200px - 38px);
+        width: calc(210px - 38px);
         font-family: "Quicksand", sans-serif;
         border: 1px solid rgba(61, 74, 84, 0.15);
         border-left: 1px solid #2196F3;
         color: #3D4A54;
-        transition: all 0.4s cubic-bezier(0.77, 0, 0.175, 1); }
+        font-size: 12px;
+        transition: all 0.35s cubic-bezier(0.77, 0, 0.175, 1); }
         .chat_section .chat_section_wrapper .button_chat input:active, .chat_section .chat_section_wrapper .button_chat input:focus {
           outline: none; }
-      .chat_section .chat_section_wrapper .button_chat i {
+      .chat_section .chat_section_wrapper .button_chat .wrapper_chat_button {
         display: -ms-flex;
         display: -ms-flexbox;
         display: flex;
-        -ms-flex-align: center;
-            align-items: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-        color: white;
         border-radius: 50%;
-        transition: all 0.4s cubic-bezier(0.77, 0, 0.175, 1);
-        font-size: 25px;
-        padding: 10px;
-        background-color: #2196F3;
-        box-shadow: 8px 10px 20px 0px rgba(46, 61, 73, 0.15);
-        width: 28px;
-        height: 28px;
-        margin-right: -37px;
         z-index: 4;
-        cursor: pointer; }
+        -webkit-transform: rotateZ(0deg);
+                transform: rotateZ(0deg);
+        -webkit-transform-origin: 50% 50%;
+                transform-origin: 50% 50%;
+        width: 48px;
+        height: 48px;
+        margin-right: -37px;
+        box-shadow: 8px 10px 20px 0px rgba(46, 61, 73, 0.15);
+        transition: all 0.35s cubic-bezier(0.77, 0, 0.175, 1);
+        background-color: #2196F3; }
+        .chat_section .chat_section_wrapper .button_chat .wrapper_chat_button.active {
+          -webkit-transform: rotateZ(720deg);
+                  transform: rotateZ(720deg); }
+          .chat_section .chat_section_wrapper .button_chat .wrapper_chat_button.active i {
+            display: none; }
+          .chat_section .chat_section_wrapper .button_chat .wrapper_chat_button.active button {
+            display: -ms-flex;
+            display: -ms-flexbox;
+            display: flex; }
+        .chat_section .chat_section_wrapper .button_chat .wrapper_chat_button i {
+          -ms-flex-align: center;
+              align-items: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+          color: white;
+          border-radius: 50%;
+          transition: all 0.35s cubic-bezier(0.77, 0, 0.175, 1);
+          font-size: 25px;
+          padding: 10px;
+          width: 28px;
+          height: 28px;
+          cursor: pointer; }
+        .chat_section .chat_section_wrapper .button_chat .wrapper_chat_button button {
+          display: none;
+          -ms-flex-align: center;
+              align-items: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+          width: 48px;
+          height: 48px;
+          border-radius: 50%;
+          z-index: 4;
+          border: 0;
+          color: #fff;
+          font-size: 20px;
+          background-color: transparent; }
+          .chat_section .chat_section_wrapper .button_chat .wrapper_chat_button button:active, .chat_section .chat_section_wrapper .button_chat .wrapper_chat_button button:focus {
+            outline: none; }
 
 .admin_section {
   display: -ms-flex;
@@ -2907,7 +2956,7 @@ section.pay_section {
     width: calc(100% - 60px);
     margin-left: 60px;
     background-color: white;
-    transition: all 0.4s cubic-bezier(0.77, 0, 0.175, 1); }
+    transition: all 0.35s cubic-bezier(0.77, 0, 0.175, 1); }
   .admin_section .menu_admin_section {
     display: -ms-flex;
     display: -ms-flexbox;
@@ -3262,7 +3311,8 @@ section.pay_section {
     border-collapse: collapse;
     border: 1px solid rgba(128, 128, 128, 0.15); }
     .inbox_pedidos .pedidos_wrapper table tr {
-      border-bottom: 1px solid rgba(128, 128, 128, 0.1); }
+      border-bottom: 1px solid rgba(128, 128, 128, 0.1);
+      font-family: "Quicksand", sans-serif; }
       .inbox_pedidos .pedidos_wrapper table tr th {
         text-transform: capitalize; }
         .inbox_pedidos .pedidos_wrapper table tr th h1 {
@@ -3273,6 +3323,18 @@ section.pay_section {
         padding: 15px; }
       .inbox_pedidos .pedidos_wrapper table tr th:last-child {
         width: 80px; }
+      .inbox_pedidos .pedidos_wrapper table tr td .user {
+        display: -ms-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+            align-items: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+        .inbox_pedidos .pedidos_wrapper table tr td .user img {
+          border-radius: 50%; }
+        .inbox_pedidos .pedidos_wrapper table tr td .user h2 {
+          min-width: 120px; }
       .inbox_pedidos .pedidos_wrapper table tr td h2 {
         color: rgba(61, 74, 84, 0.9); }
       .inbox_pedidos .pedidos_wrapper table tr td a {
@@ -3281,14 +3343,10 @@ section.pay_section {
         .inbox_pedidos .pedidos_wrapper table tr td a i {
           font-size: 20px; }
       .inbox_pedidos .pedidos_wrapper table tr td:last-child {
-        display: -ms-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-pack: distribute;
-            justify-content: space-around;
         width: 80px; }
         .inbox_pedidos .pedidos_wrapper table tr td:last-child a {
-          color: rgba(61, 74, 84, 0.7); }
+          color: rgba(61, 74, 84, 0.7);
+          margin: 4px; }
     .inbox_pedidos .pedidos_wrapper table .item:hover {
       background-color: rgba(128, 128, 128, 0.08); }
   .inbox_pedidos .pedidos_wrapper.active {
@@ -3297,13 +3355,15 @@ section.pay_section {
     -webkit-animation: fadeIn .4s;
             animation: fadeIn .4s; }
 
-.tabs_inbox {
+.tabs_inbox, .tabs_users {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
   font-family: "Quicksand", sans-serif;
   background-color: #f9f9f9; }
-  .tabs_inbox .tab_wrapper {
+  .tabs_inbox .tab_wrapper.two_tabs, .tabs_users .tab_wrapper.two_tabs {
+    width: 50% !important; }
+  .tabs_inbox .tab_wrapper, .tabs_users .tab_wrapper {
     width: 33.333%;
     display: -ms-flexbox;
     display: flex;
@@ -3316,9 +3376,9 @@ section.pay_section {
     color: #3D4A54;
     position: relative;
     color: #3D4A54;
-    transition: all 0.4s cubic-bezier(0.77, 0, 0.175, 1);
+    transition: all 0.35s cubic-bezier(0.77, 0, 0.175, 1);
     cursor: pointer; }
-    .tabs_inbox .tab_wrapper::before {
+    .tabs_inbox .tab_wrapper::before, .tabs_users .tab_wrapper::before {
       content: '';
       position: absolute;
       bottom: 0px;
@@ -3328,21 +3388,458 @@ section.pay_section {
       height: 3px;
       -webkit-transform: scale(0);
               transform: scale(0);
-      transition: all 0.4s cubic-bezier(0.77, 0, 0.175, 1); }
-    .tabs_inbox .tab_wrapper.active {
+      transition: all 0.35s cubic-bezier(0.77, 0, 0.175, 1); }
+    .tabs_inbox .tab_wrapper.active, .tabs_users .tab_wrapper.active {
       color: #3D4A54;
       background-color: rgba(128, 128, 128, 0.08); }
-      .tabs_inbox .tab_wrapper.active::before {
+      .tabs_inbox .tab_wrapper.active::before, .tabs_users .tab_wrapper.active::before {
         -webkit-transform: scale(1);
                 transform: scale(1);
-        transition: all 0.4s cubic-bezier(0.77, 0, 0.175, 1); }
-      .tabs_inbox .tab_wrapper.active h1, .tabs_inbox .tab_wrapper.active i {
+        transition: all 0.35s cubic-bezier(0.77, 0, 0.175, 1); }
+      .tabs_inbox .tab_wrapper.active h1, .tabs_inbox .tab_wrapper.active i, .tabs_users .tab_wrapper.active h1, .tabs_users .tab_wrapper.active i {
         color: #3d4a54; }
-    .tabs_inbox .tab_wrapper i {
+    .tabs_inbox .tab_wrapper i, .tabs_users .tab_wrapper i {
       font-size: 20px;
       margin-right: 10px; }
-    .tabs_inbox .tab_wrapper h2 {
+    .tabs_inbox .tab_wrapper h2, .tabs_users .tab_wrapper h2 {
       font-size: 14px; }
+
+.messages_section {
+  display: -ms-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  min-height: calc(100vh - 50px); }
+  .messages_section .list_messages {
+    display: block;
+    background-color: #F2F5F7;
+    width: 50%;
+    min-height: calc(100vh - 50px);
+    max-height: calc(100vh - 50px);
+    overflow-y: scroll; }
+    .messages_section .list_messages .list_messages_users .new_message_users {
+      display: -ms-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      -ms-flex-align: center;
+          align-items: center;
+      margin-top: 10px;
+      margin-bottom: 10px; }
+      .messages_section .list_messages .list_messages_users .new_message_users .message_box {
+        display: -ms-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+            align-items: center;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+        width: calc(100% - 60px);
+        margin-bottom: 7px;
+        margin-top: 7px;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+        padding: 20px 10px;
+        box-sizing: border-box;
+        border-radius: 3px;
+        font-family: "Quicksand", sans-serif;
+        color: #3D4A54;
+        background-color: white;
+        transition: all 0.35s cubic-bezier(0.77, 0, 0.175, 1);
+        border-left: 0px solid #2196F3;
+        position: relative;
+        color: #3D4A54;
+        transition: all 0.35s cubic-bezier(0.77, 0, 0.175, 1);
+        cursor: pointer; }
+        .messages_section .list_messages .list_messages_users .new_message_users .message_box::before {
+          content: '';
+          position: absolute;
+          bottom: 0px;
+          left: 0;
+          background-color: #2196F3;
+          width: 3px;
+          height: 100%;
+          -webkit-transform: scale(0);
+                  transform: scale(0);
+          transition: all 0.35s cubic-bezier(0.77, 0, 0.175, 1); }
+        .messages_section .list_messages .list_messages_users .new_message_users .message_box.active {
+          color: #3D4A54;
+          box-shadow: 8px 10px 20px 0px rgba(46, 61, 73, 0.15);
+          -webkit-transform: scale(1.01);
+                  transform: scale(1.01); }
+          .messages_section .list_messages .list_messages_users .new_message_users .message_box.active::before {
+            -webkit-transform: scale(1);
+                    transform: scale(1);
+            transition: all 0.35s cubic-bezier(0.77, 0, 0.175, 1); }
+        .messages_section .list_messages .list_messages_users .new_message_users .message_box .user {
+          display: -ms-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-align: center;
+              align-items: center; }
+          .messages_section .list_messages .list_messages_users .new_message_users .message_box .user img {
+            border-radius: 50%; }
+          .messages_section .list_messages .list_messages_users .new_message_users .message_box .user .status {
+            display: -ms-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-direction: column;
+                flex-direction: column;
+            margin-left: 12px; }
+            .messages_section .list_messages .list_messages_users .new_message_users .message_box .user .status span.s1 {
+              background-color: #e1284a; }
+            .messages_section .list_messages .list_messages_users .new_message_users .message_box .user .status span.s2 {
+              background-color: #19D88C; }
+            .messages_section .list_messages .list_messages_users .new_message_users .message_box .user .status .name_status {
+              display: -ms-flex;
+              display: -ms-flexbox;
+              display: flex;
+              -ms-flex-align: center;
+                  align-items: center;
+              margin-top: 4px; }
+              .messages_section .list_messages .list_messages_users .new_message_users .message_box .user .status .name_status small {
+                text-transform: capitalize;
+                margin-left: 5px; }
+              .messages_section .list_messages .list_messages_users .new_message_users .message_box .user .status .name_status span {
+                display: block;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%; }
+        .messages_section .list_messages .list_messages_users .new_message_users .message_box .message_body {
+          color: rgba(61, 74, 84, 0.7); }
+        .messages_section .list_messages .list_messages_users .new_message_users .message_box .message_setting i {
+          font-size: 20px;
+          cursor: pointer;
+          color: rgba(61, 74, 84, 0.9); }
+  .messages_section .chat_current {
+    display: block;
+    background-color: #F2F5F7;
+    font-family: "Quicksand", sans-serif;
+    width: 50%; }
+    .messages_section .chat_current .chat_header {
+      max-height: 50px;
+      min-height: 50px;
+      width: 100%;
+      background-color: #f7f7f7;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+      display: -ms-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+      -ms-flex-align: center;
+          align-items: center;
+      padding: 10px;
+      box-sizing: border-box;
+      color: #3D4A54; }
+      .messages_section .chat_current .chat_header .user {
+        display: -ms-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+            align-items: center; }
+        .messages_section .chat_current .chat_header .user img {
+          border-radius: 50%; }
+      .messages_section .chat_current .chat_header .chat_setting i {
+        font-size: 20px;
+        margin-right: 18px; }
+      .messages_section .chat_current .chat_header .status {
+        display: -ms-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+            flex-direction: column;
+        margin-left: 12px; }
+        .messages_section .chat_current .chat_header .status .name_status {
+          display: -ms-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-align: center;
+              align-items: center;
+          margin-top: 2px; }
+          .messages_section .chat_current .chat_header .status .name_status small {
+            text-transform: capitalize;
+            margin-left: 5px; }
+          .messages_section .chat_current .chat_header .status .name_status span {
+            display: block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%; }
+            .messages_section .chat_current .chat_header .status .name_status span.s2 {
+              background-color: #19D88C; }
+    .messages_section .chat_current .chat_input_messages {
+      display: -ms-flex;
+      display: -ms-flexbox;
+      display: flex;
+      max-height: 150px;
+      height: 150px;
+      width: 100%;
+      background-color: white;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07); }
+    .messages_section .chat_current .chat_input_messages {
+      display: -ms-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      -ms-flex-align: end;
+          align-items: flex-end;
+      padding: 14px 14px 5px 14px;
+      box-sizing: border-box; }
+      .messages_section .chat_current .chat_input_messages .send_response {
+        border: none;
+        display: -ms-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+            align-items: center;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        background-color: #2196F3;
+        padding: 10px;
+        border-radius: 2px;
+        cursor: pointer;
+        color: white;
+        font-size: 15px;
+        font-family: "Quicksand", sans-serif;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+        position: relative;
+        overflow: hidden;
+        z-index: 2;
+        width: 200px;
+        margin-top: 5px; }
+        .messages_section .chat_current .chat_input_messages .send_response:hover::before {
+          -webkit-transform: translateY(0);
+                  transform: translateY(0);
+          border-radius: 2px; }
+        .messages_section .chat_current .chat_input_messages .send_response::before {
+          content: '';
+          position: absolute;
+          display: block;
+          height: 100%;
+          width: 100%;
+          top: 0;
+          left: 0;
+          background-color: #0c84e4;
+          -webkit-transform: translateY(-100%);
+                  transform: translateY(-100%);
+          border-radius: 50%;
+          z-index: -1;
+          transition: all 0.4s cubic-bezier(0.77, 0, 0.175, 1); }
+        .messages_section .chat_current .chat_input_messages .send_response h2 {
+          text-decoration: none;
+          color: #fff; }
+        .messages_section .chat_current .chat_input_messages .send_response i {
+          font-size: 20px;
+          color: #fff; }
+      .messages_section .chat_current .chat_input_messages textarea.input_messages {
+        width: 100%;
+        resize: none;
+        border: 1px solid rgba(61, 74, 84, 0.25);
+        font-family: "Quicksand", sans-serif;
+        padding: 10px;
+        box-sizing: border-box;
+        border-radius: 3px;
+        color: #3D4A54;
+        height: 80px;
+        font-size: 12px; }
+        .messages_section .chat_current .chat_input_messages textarea.input_messages:active, .messages_section .chat_current .chat_input_messages textarea.input_messages:focus {
+          border: 1px solid #2196f3;
+          outline: none; }
+    .messages_section .chat_current .chat_current_messages {
+      min-height: calc(100vh - 250px);
+      max-height: calc(100vh - 250px);
+      overflow-y: scroll; }
+      .messages_section .chat_current .chat_current_messages .messages_wrapper {
+        display: -ms-flex;
+        display: -ms-flexbox;
+        display: flex;
+        padding: 8px;
+        -ms-flex-direction: column;
+            flex-direction: column;
+        box-sizing: border-box; }
+        .messages_section .chat_current .chat_current_messages .messages_wrapper .bubble {
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+          display: -ms-flexbox;
+          display: flex;
+          max-width: 80%;
+          padding: 10px 12px;
+          font-size: 12px;
+          margin-bottom: 10px;
+          text-transform: none; }
+        .messages_section .chat_current .chat_current_messages .messages_wrapper .bubble_admin {
+          text-align: left;
+          -ms-flex-item-align: start;
+              align-self: flex-start;
+          color: #3D4A54;
+          border-radius: 5px 25px 25px 5px;
+          background-color: white; }
+        .messages_section .chat_current .chat_current_messages .messages_wrapper .bubble_client {
+          text-align: right;
+          border-radius: 25px 5px 5px 25px;
+          -ms-flex-item-align: end;
+              align-self: flex-end;
+          color: #fff;
+          background-color: #2196F3; }
+
+section.users_section {
+  min-height: calc(100% - 50px);
+  background-color: #F2F5F7; }
+  section.users_section .list_users .list_users_wrapper {
+    display: none; }
+    section.users_section .list_users .list_users_wrapper table {
+      width: 100%;
+      background-color: #fff;
+      border-collapse: collapse;
+      border: 1px solid rgba(128, 128, 128, 0.15); }
+      section.users_section .list_users .list_users_wrapper table tr {
+        border-bottom: 1px solid rgba(128, 128, 128, 0.1);
+        font-family: "Quicksand", sans-serif; }
+        section.users_section .list_users .list_users_wrapper table tr th {
+          text-transform: capitalize; }
+          section.users_section .list_users .list_users_wrapper table tr th h1 {
+            color: rgba(61, 74, 84, 0.6);
+            font-size: 14px;
+            margin: 0; }
+        section.users_section .list_users .list_users_wrapper table tr th, section.users_section .list_users .list_users_wrapper table tr td {
+          padding: 15px; }
+        section.users_section .list_users .list_users_wrapper table tr th:last-child {
+          width: 80px; }
+        section.users_section .list_users .list_users_wrapper table tr td .user {
+          display: -ms-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-align: center;
+              align-items: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+          section.users_section .list_users .list_users_wrapper table tr td .user img {
+            border-radius: 50%; }
+          section.users_section .list_users .list_users_wrapper table tr td .user h2 {
+            min-width: 120px; }
+        section.users_section .list_users .list_users_wrapper table tr td h2 {
+          color: rgba(61, 74, 84, 0.9); }
+        section.users_section .list_users .list_users_wrapper table tr td a {
+          text-decoration: none;
+          color: #3D4A54; }
+          section.users_section .list_users .list_users_wrapper table tr td a i {
+            font-size: 20px; }
+        section.users_section .list_users .list_users_wrapper table tr td:last-child {
+          width: 80px; }
+          section.users_section .list_users .list_users_wrapper table tr td:last-child a {
+            color: rgba(61, 74, 84, 0.7);
+            margin: 4px; }
+      section.users_section .list_users .list_users_wrapper table .item:hover {
+        background-color: rgba(128, 128, 128, 0.08); }
+    section.users_section .list_users .list_users_wrapper.active {
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-animation: fadeIn .4s;
+              animation: fadeIn .4s; }
+    section.users_section .list_users .list_users_wrapper .new_user {
+      display: -ms-flex;
+      display: -ms-flexbox;
+      display: flex;
+      width: 100%;
+      -ms-flex-pack: center;
+          justify-content: center; }
+      section.users_section .list_users .list_users_wrapper .new_user .new_user_wrapper {
+        width: 400px !important;
+        min-height: 500px;
+        width: 100%;
+        padding: 40px;
+        box-sizing: border-box;
+        display: -ms-flex;
+        display: -ms-flexbox;
+        display: flex;
+        background-color: #fff;
+        box-shadow: 8px 10px 20px 0px rgba(46, 61, 73, 0.15);
+        margin-top: 30px;
+        margin-bottom: 30px; }
+        section.users_section .list_users .list_users_wrapper .new_user .new_user_wrapper form {
+          width: 100%;
+          display: -ms-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-direction: column;
+              flex-direction: column;
+          -ms-flex-align: center;
+              align-items: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+          section.users_section .list_users .list_users_wrapper .new_user .new_user_wrapper form .button_auth button {
+            display: -ms-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-align: center;
+                align-items: center;
+            -ms-flex-pack: distribute;
+                justify-content: space-around;
+            background-color: #2196F3;
+            padding: 8px;
+            border-radius: 2px;
+            cursor: pointer;
+            color: white;
+            font-size: 15px;
+            font-family: "Quicksand", sans-serif;
+            position: relative;
+            overflow: hidden;
+            z-index: 2;
+            box-shadow: 8px 10px 20px 0px rgba(46, 61, 73, 0.15);
+            border: none;
+            width: 150px; }
+            section.users_section .list_users .list_users_wrapper .new_user .new_user_wrapper form .button_auth button:hover::before {
+              -webkit-transform: translateY(0%);
+                      transform: translateY(0%);
+              border-radius: 2px; }
+            section.users_section .list_users .list_users_wrapper .new_user .new_user_wrapper form .button_auth button::before {
+              content: '';
+              position: absolute;
+              display: block;
+              height: 100%;
+              width: 100%;
+              top: 0;
+              left: 0;
+              background-color: #0c84e4;
+              -webkit-transform: translateY(-100%);
+                      transform: translateY(-100%);
+              border-radius: 50%;
+              z-index: -1;
+              transition: all 0.35s cubic-bezier(0.77, 0, 0.175, 1); }
+            section.users_section .list_users .list_users_wrapper .new_user .new_user_wrapper form .button_auth button h1 {
+              text-decoration: none;
+              color: #fff;
+              font-weight: normal; }
+            section.users_section .list_users .list_users_wrapper .new_user .new_user_wrapper form .button_auth button i {
+              font-size: 20px;
+              color: #fff; }
+          section.users_section .list_users .list_users_wrapper .new_user .new_user_wrapper form .field {
+            display: -ms-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-direction: column;
+                flex-direction: column;
+            -ms-flex-align: start;
+                align-items: flex-start;
+            margin-bottom: 15px;
+            width: 100%;
+            color: #3D4A54;
+            font-family: "Quicksand", sans-serif; }
+            section.users_section .list_users .list_users_wrapper .new_user .new_user_wrapper form .field label {
+              font-size: 14px;
+              color: rgba(61, 74, 84, 0.7); }
+            section.users_section .list_users .list_users_wrapper .new_user .new_user_wrapper form .field input {
+              width: 100%;
+              padding: 12px;
+              box-sizing: border-box;
+              border-radius: 2px;
+              color: #3D4A54;
+              border: 1px solid rgba(61, 74, 84, 0.25);
+              font-family: "Quicksand", sans-serif; }
+              section.users_section .list_users .list_users_wrapper .new_user .new_user_wrapper form .field input:active, section.users_section .list_users .list_users_wrapper .new_user .new_user_wrapper form .field input:focus {
+                border: 1px solid #2196f3;
+                outline: none; }
 
 .quantity {
   position: relative;

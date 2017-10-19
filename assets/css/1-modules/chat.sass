@@ -24,19 +24,31 @@
     .chat
       animation: fadeInUp .5s
       display: block
-      width: 220px
-      background-color: #fff
+      width: 230px
+      background-color: #f7f7f7
       box-shadow: $shadow
       border-radius: 7px
       height: 350px
       overflow: hidden
-      h1
+      #caption_chat
+        display: -webkit-flex
+        display: -ms-flex
+        display: flex
+        align-items: center
+        justify-content: space-between
         padding: 15px
+        background-color: white
         box-shadow: $accent-shadow
         box-sizing: border-box
-        font-weight: normal
-        text-transform: none
         color: $accent-color
+        h1
+          font-weight: normal
+          text-transform: none
+          margin: 0
+        i
+          cursor: pointer
+          font-size: 16px
+
       .chat_messages
         display: -webkit-flex
         display: -ms-flex
@@ -53,7 +65,7 @@
             flex-direction: column
             box-sizing: border-box
             .bubble
-              box-shadow: $shadow
+              box-shadow: $accent-shadow
               display: flex
               max-width: 80%
               padding: 5px 12px
@@ -65,6 +77,7 @@
               align-self: flex-start
               color: $accent-color
               border-radius: 10px 25px 25px 10px
+              background-color: #fff
             .bubble_client
               text-align: right
               border-radius: 25px 10px 10px 25px
@@ -87,29 +100,59 @@
         padding-top: 5px
         padding-bottom: 5px
         padding-right: 5px
-        width: calc(200px - 38px)
+        width: calc(210px - 38px)
         font-family: $main-font
         border: 1px solid rgba($accent-color, .15)
         border-left: 1px solid #2196F3
         color: $accent-color
+        font-size: 12px
         transition: $transition
         &:active, &:focus
          outline: none
-      i
+      .wrapper_chat_button
         display: -webkit-flex
         display: -ms-flex
         display: flex
-        align-items: center
-        justify-content: center
-        color: white
         border-radius: 50%
-        transition: $transition
-        font-size: 25px
-        padding: 10px
-        background-color: #2196F3
-        box-shadow: $shadow
-        width: 28px
-        height: 28px
-        margin-right: -37px
         z-index: 4
-        cursor: pointer
+        transform: rotateZ(0deg)
+        transform-origin: 50% 50%
+        width: 48px
+        height: 48px
+        margin-right: -37px
+        box-shadow: $shadow
+        transition: $transition
+        background-color: #2196F3
+        &.active
+          transform: rotateZ(720deg)
+          i
+            display: none
+          button
+            display: -webkit-flex
+            display: -ms-flex
+            display: flex
+        i
+          align-items: center
+          justify-content: center
+          color: white
+          border-radius: 50%
+          transition: $transition
+          font-size: 25px
+          padding: 10px
+          width: 28px
+          height: 28px
+          cursor: pointer
+        button
+          display: none
+          align-items: center
+          justify-content: center
+          width: 48px
+          height: 48px
+          border-radius: 50%
+          z-index: 4
+          border: 0
+          color: #fff
+          font-size: 20px
+          background-color: transparent
+          &:active, &:focus
+            outline: none

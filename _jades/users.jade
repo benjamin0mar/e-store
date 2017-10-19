@@ -1,0 +1,75 @@
+section.admin_section
+  .admin_content
+    {% include menu_admin.html%}  
+    section.users_section
+      .tabs_users
+        .tab_wrapper.two_tabs.active
+          i.fa.fa-users
+          h2 Usuarios
+        .tab_wrapper.two_tabs
+          i.fa.fa-plus 
+          h2 Nuevo
+      .list_users 
+        .list_users_wrapper.active
+          table 
+            tr
+              th
+                h1 ID Usuario
+              th
+                h1 usuario      
+              th
+                h1 email
+              th
+                h1 telefono  
+              th
+                h1 Locacion
+              th               
+                h1 Accion
+      
+            - for (var i = 0; i < 20; ++i) {
+              tr.item
+                td
+                  h2 US000200                
+                td
+                  .user
+                    img(src="https://images.unsplash.com/profile-fb-1485649729-9ad6da0a8efc.jpg?crop=faces&cs=tinysrgb&fit=crop&fm=jpg&h=150&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=150" width="40")
+                    h2 Omar Benjamin
+                td
+                  h2  benjamin0mar@hotmail.com
+                td
+                  h2  971755982
+                td
+                  h2 Amarilis, Huanuco
+                td
+                  a(href="#")
+                    i.ion-trash-a
+                  a(href="#")
+                    i.ion-edit
+                  a(href="#")
+                    i.ion-paper-airplane  
+            - }
+        .list_users_wrapper
+          .new_user
+            .new_user_wrapper
+              form
+                .field
+                  label Nombres:
+                  input(type="text" value="Omar Benjamin")
+                .field
+                  label Apellidos:
+                  input(type="text" value="Chagua Ramos") 
+                .field
+                  label Correo Electrónico:
+                  input(type="email" value="benjamin0mar@hotmail.com")    
+                .field
+                  label Contraseña:
+                  input(type="password" value="123456") 
+                .field
+                  label Telefono:
+                  input(type="text" value="971755982") 
+                .field
+                  label Locación:
+                  input(type="text" value="Amarilis")   
+                .button_auth
+                  button(type="submit") Registrar
+                    i.ion-android-done

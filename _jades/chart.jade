@@ -137,19 +137,21 @@ section.admin_section
                 i.ion-trash-a
               a(href="#")
                 i.ion-edit   
-                
-          tr.item
-            td
-              h2 MacBook Pro                
-            td
-              h2.status.s1 Completo  
-            td
-              h2 2 Agosto, 2017
-            td
-              a(href="#")
-                i.ion-trash-a
-              a(href="#")
-                i.ion-edit           
+          - for (var i = 0; i < 7; i++) {
+            tr.item
+              td
+                h2 MacBook Pro                
+              td
+                h2.status.s1 Completo  
+              td
+                h2 2 Agosto, 2017
+              td
+                a(href="#")
+                  i.ion-trash-a
+                a(href="#")
+                  i.ion-edit
+          - }      
+                   
       .table_users
         h4 Nuevos Usuarios        
         ul.list_users

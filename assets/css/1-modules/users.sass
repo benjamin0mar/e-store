@@ -1,0 +1,148 @@
+section.users_section
+  min-height: calc(100% - 50px)
+  background-color: #F2F5F7
+  .list_users
+    .list_users_wrapper
+      display: none
+      table
+        width: 100%
+        background-color: #fff
+        border-collapse: collapse
+        border: 1px solid rgba(128, 128, 128, 0.15)
+        tr
+          border-bottom: 1px solid rgba(128, 128, 128, 0.1)
+          font-family: $main-font
+          th
+            text-transform: capitalize
+            h1
+              color: rgba($accent-color ,.6)
+              font-size: 14px
+              margin: 0
+          th, td
+            // text-align: left
+            padding: 15px
+          th:last-child
+            width: 80px
+          td
+            .user
+              display: -webkit-flex
+              display: -ms-flex
+              display: flex
+              align-items: center
+              justify-content: center
+              img
+                border-radius: 50%
+              h2
+                min-width: 120px
+            h2
+              color: rgba($accent-color ,.9)
+            a
+              text-decoration: none
+              color: $accent-color
+              i
+                font-size: 20px
+          td:last-child
+            width: 80px
+            a
+              color: rgba($accent-color ,.7)
+              margin: 4px
+        .item:hover
+          background-color: rgba(128, 128, 128, 0.08)
+      &.active
+        display: flex
+        animation: fadeIn .4s
+      .new_user
+        display: -webkit-flex
+        display: -ms-flex
+        display: flex
+        width: 100%
+        justify-content: center
+        .new_user_wrapper
+          width: 400px !important
+          min-height: 500px
+          width: 100%
+          padding: 40px
+          box-sizing: border-box
+          display: -webkit-flex
+          display: -ms-flex
+          display: flex
+          background-color: #fff
+          box-shadow: $shadow
+          margin-top: 30px
+          margin-bottom: 30px
+          form
+            width: 100%
+            display: -webkit-flex
+            display: -ms-flex
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            .button_auth
+              button
+                display: -webkit-flex
+                display: -ms-flex
+                display: flex
+                align-items: center
+                justify-content: space-around
+                background-color: #2196F3
+                padding: 8px
+                border-radius: 2px
+                cursor: pointer
+                color: white
+                font-size: 15px
+                font-family: $main-font
+                position: relative
+                overflow: hidden
+                z-index: 2
+                box-shadow: $shadow
+                border: none
+                width: 150px
+                &:hover
+                  &::before
+                    transform: translateY(0%)
+                    border-radius: 2px
+                &::before
+                  content: ''
+                  position: absolute
+                  display: block
+                  height: 100%
+                  width: 100%
+                  top: 0
+                  left: 0
+                  background-color: darken(#2196F3, 7%)
+                  transform: translateY(-100%)
+                  border-radius: 50%
+                  z-index: -1
+                  transition: all 0.35s cubic-bezier(0.77, 0, 0.175, 1)
+                h1
+                  text-decoration: none
+                  color: #fff
+                  font-weight: normal
+                i
+                  font-size: 20px
+                  color: #fff
+            .field
+              display: -webkit-flex
+              display: -ms-flex
+              display: flex
+              flex-direction: column
+              align-items: flex-start
+              margin-bottom: 15px
+              width: 100%
+              color: $accent-color
+              font-family: $main-font
+              label
+                font-size: 14px
+                color: rgba($accent-color, .7)
+              input
+                width: 100%
+                padding: 12px
+                box-sizing: border-box
+                border-radius: 2px
+                color: $accent-color
+                border: 1px solid rgba($accent-color, .25)
+                font-family: $main-font
+                &:active, &:focus
+                  border: 1px solid rgba(#2196F3, 1)
+                  outline: none

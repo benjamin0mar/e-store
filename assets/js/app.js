@@ -1,4 +1,5 @@
 $(function(){
+
   movePay();
   menuShow();
   tabProducts();
@@ -13,7 +14,10 @@ $(function(){
   profileTabs(".profile_wrapper .tabs ul li",".tabs_content_profile");
   profileTabs(".auth_wrapper .tab_auth span",".auth_sign");
   profileTabs(".card_wrapper .card","#");
+  profileTabs(".new_message_users .message_box","#");
   profileTabs(".tabs_inbox .tab_wrapper",".pedidos_wrapper");
+  profileTabs(".tabs_users .tab_wrapper",".list_users_wrapper");
+
 
   page('/', index);
   page('/producto', producto);
@@ -24,6 +28,8 @@ $(function(){
   page('/autentificacion', auth);
   page('/admin', admin);
   page('/pedidos', pedidos);
+  page('/mensajes', mensajes);
+  page('/usuarios', usuarios);
   page();
 
   $(".btn-control.right").click();
@@ -57,15 +63,13 @@ function menuAdmin(){
 
 
 function openChat(){
-  var open = true;
   $(".button_chat i").click(function(){
-    if (open == true){
-      $(".chat_section_wrapper").removeClass("active");
-      open=false;
-    }else{
-      $(".chat_section_wrapper").addClass("active");
-      open = true;
-    }
+    $(".chat_section_wrapper").removeClass("active");
+    $(".wrapper_chat_button").addClass("active");
+  });
+  $("#caption_chat i").click(function(){
+    $(".chat_section_wrapper").addClass("active");
+  $(".wrapper_chat_button").removeClass("active");
   });
 }
 
@@ -132,6 +136,8 @@ function auth() {routesShow("#auth");}
 function offer() {routesShow("#offer");}
 function admin() {routesShow("#admin");}
 function pedidos() {routesShow("#pedidos");}
+function mensajes() {routesShow("#mensajes");}
+function usuarios() {routesShow("#usuarios");}
 
 function routesShow(id){
   $(id).siblings("section").removeClass("show_section");

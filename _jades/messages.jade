@@ -1,0 +1,107 @@
+section.admin_section
+  .admin_content
+    {% include menu_admin.html%}  
+    section.messages_section
+      .list_messages 
+        .list_messages_users
+          .new_message_users
+            .message_box.active
+              .user
+                img(src="https://images.unsplash.com/profile-fb-1485649729-9ad6da0a8efc.jpg?crop=faces&cs=tinysrgb&fit=crop&fm=jpg&h=150&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=150" width="40")
+                .status
+                  h2 Omar Benjamin  
+                  .name_status
+                    span.s2
+                    small online
+              .message_body
+                h3 Animi, ipsam voluptas praesentium...
+              .date_send
+                h4 5:30 pm
+              .message_setting
+                i.fa.fa-ellipsis-v 
+            - for (var i = 0; i < 2; ++i) {
+              .message_box
+                .user
+                  img(src="http://www.xsjjys.com/data/out/96/WHDQ-512397052.jpg" width="40")
+                  .status
+                    h2 Jose Carlos
+                    .name_status
+                      span.s2
+                      small online
+                .message_body
+                  h3 Animi, ipsam voluptas praesentium...
+                .date_send
+                  h4 5:30 pm
+                .message_setting
+                  i.fa.fa-ellipsis-v   
+            - } 
+            - for (var i = 0; i < 4; ++i) {
+              .message_box
+                .user
+                  img(src="http://www.xsjjys.com/data/out/96/WHDQ-512397056.jpg" width="40")
+                  .status
+                    h2 Juan Roberto
+                    .name_status
+                      span.s1
+                      small offline
+                .message_body
+                  h3 Animi, ipsam voluptas praesentium...
+                .date_send
+                  h4 5:30 pm
+                .message_setting
+                  i.fa.fa-ellipsis-v   
+            - }  
+            - for (var i = 0; i < 4; ++i) {
+              .message_box
+                .user
+                  img(src="http://www.xsjjys.com/data/out/96/WHDQ-512397485.jpg" width="40")
+                  .status
+                    h2 Augusto Jose
+                    .name_status
+                      span.s1
+                      small offline
+                .message_body
+                  h3 Animi, ipsam voluptas praesentium...
+                .date_send
+                  h4 5:30 pm
+                .message_setting
+                  i.fa.fa-ellipsis-v   
+            - }  
+      .chat_current   
+        .chat_header
+          .user
+            img(src="http://www.xsjjys.com/data/out/96/WHDQ-512397052.jpg" width="35")
+            .status
+              h2 Jose Carlos
+              .name_status
+                span.s2
+                small online
+          .chat_setting
+            i.fa.fa-cog
+            i.fa.fa-user
+            i.fa.fa-trash
+        .chat_current_messages
+          .messages_wrapper
+            .bubble.bubble_client Hola 
+            .bubble.bubble_admin hola que desea saber?
+            .bubble.bubble_client cual es precio de...
+            .bubble.bubble_client hola 
+            .bubble.bubble_admin Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum cumque aspernatur molestiae!
+            .bubble.bubble_client cual es precio de...
+            .bubble.bubble_client hola 
+            .bubble.bubble_client provident quam, dignissimos sit similique illo, dicta ipsa veritatis debitis consectetur, voluptatum eius eveniet. Ducimus quae, recusandae magnam?
+            .bubble.bubble_client cual es precio de...
+            .bubble.bubble_client Hola 
+            .bubble.bubble_admin hola que desea saber?
+            .bubble.bubble_client cual es precio de...
+            .bubble.bubble_client hola 
+            .bubble.bubble_admin Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum cumque aspernatur molestiae!
+            .bubble.bubble_client cual es precio de...
+            .bubble.bubble_client hola 
+            .bubble.bubble_client provident quam, dignissimos sit similique illo, dicta ipsa veritatis debitis consectetur, voluptatum eius eveniet. Ducimus quae, recusandae magnam?
+            .bubble.bubble_client cual es precio de...
+        .chat_input_messages      
+          textarea.input_messages(placeholder="Escriba su respuesta...")
+          button.send_response
+            h2 Responder    
+            i.fa.fa-paper-plane  

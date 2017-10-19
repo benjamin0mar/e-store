@@ -14,7 +14,7 @@ section.admin_section
           h2 Eliminados 
       .inbox_pedidos 
         .pedidos_wrapper.active
-          table.detalle_producto
+          table 
             tr
               th
                 h1 ID produtos
@@ -53,6 +53,92 @@ section.admin_section
             - }
               
         .pedidos_wrapper
-           p pedidos completos
+          table 
+            tr
+              th
+                h1 ID produtos
+              th
+                h1 usuario  
+              th
+                h1 Monto     
+              th
+                h1 fecha
+              th
+                h1 lugar
+              th               
+                h1 Accion
+
+            - for (var i = 0; i < 20; ++i) {
+              tr.item
+                td
+                  h2 IPP20171030                
+                td
+                  .user
+                    img(src="http://www.xsjjys.com/data/out/96/WHDQ-512397052.jpg" width="40")
+                    h2 Jose Carlos
+                td
+                  h2 S/.2500.00
+                td
+                  h2 10 Octubre, 2017
+                td
+                  h2 Tingo Maria, Huanuco
+                td
+                  a(href="#")
+                    i.ion-clipboard      
+            - }
         .pedidos_wrapper
-           p pedidos eliminados  
+          table 
+            tr
+              th
+                h1 ID produtos
+              th
+                h1 usuario  
+              th
+                h1 Monto     
+              th
+                h1 fecha
+              th
+                h1 lugar
+              th               
+                h1 Accion
+
+            - for (var i = 0; i < 2; ++i) {
+              tr.item
+                td
+                  h2 IPP20171030                
+                td
+                  .user
+                    img(src="https://images.unsplash.com/profile-fb-1485649729-9ad6da0a8efc.jpg?crop=faces&cs=tinysrgb&fit=crop&fm=jpg&h=150&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=150" width="40")
+                    h2 Omar Benjamin
+                td
+                  h2 S/.3000.00
+                td
+                  h2 2 Noviembre, 2017
+                td
+                  h2 Amarilis, Huanuco
+                td
+                  a(href="#")
+                    i.ion-android-refresh
+                  a(href="#")
+                    i.ion-clipboard      
+            - } 
+            - for (var i = 0; i < 10; ++i) {
+              tr.item
+                td
+                  h2 IPP20171030                
+                td
+                  .user
+                    img(src="http://www.xsjjys.com/data/out/96/WHDQ-512397052.jpg" width="40")
+                    h2 Jose Carlos
+                td
+                  h2 S/.2500.00
+                td
+                  h2 10 Octubre, 2017
+                td
+                  h2 Tingo Maria, Huanuco
+                td
+                  a(href="#")
+                    i.ion-android-refresh
+                  a(href="#")
+                    i.ion-clipboard      
+            - } 

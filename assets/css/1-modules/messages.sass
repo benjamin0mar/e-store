@@ -1,0 +1,256 @@
+.messages_section
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  justify-content: space-between
+  min-height: calc(100vh - 50px)
+  .list_messages
+    display: block
+    background-color: #F2F5F7
+    width: 50%
+    min-height: calc(100vh - 50px)
+    max-height: calc(100vh - 50px)
+    overflow-y: scroll
+    .list_messages_users
+      .new_message_users
+        display: -webkit-flex
+        display: -ms-flex
+        display: flex
+        flex-direction: column
+        align-items: center
+        margin-top: 10px
+        margin-bottom: 10px
+        .message_box
+          display: -webkit-flex
+          display: -ms-flex
+          display: flex
+          align-items: center
+          justify-content: space-between
+          width: calc(100% - 60px)
+          margin-bottom: 7px
+          margin-top: 7px
+          box-shadow: $accent-shadow
+          padding: 20px 10px
+          box-sizing: border-box
+          border-radius: 3px
+          font-family: $main-font
+          color: $accent-color
+          background-color: white
+          transition: $transition
+          border-left: 0px solid #2196F3
+          position: relative
+          color: $accent-color
+          transition: $transition
+          cursor: pointer
+          &::before
+            content: ''
+            position: absolute
+            bottom: 0px
+            left: 0
+            background-color: #2196F3
+            width: 3px
+            height: 100%
+            transform: scale(0)
+            transition: $transition
+          &.active
+            color: $accent-color
+            box-shadow: $shadow
+            transform: scale(1.01)
+            &::before
+              transform: scale(1)
+              transition: $transition
+          .user
+            display: -webkit-flex
+            display: -ms-flex
+            display: flex
+            align-items: center
+            img
+              border-radius: 50%
+            .status
+              display: -webkit-flex
+              display: -ms-flex
+              display: flex
+              flex-direction: column
+              margin-left: 12px
+              span
+                &.s1
+                  background-color: #e1284a
+                &.s2
+                  background-color: #19D88C
+              .name_status
+                display: -webkit-flex
+                display: -ms-flex
+                display: flex
+                align-items: center
+                margin-top: 4px
+                small
+                  text-transform: capitalize
+                  margin-left: 5px
+                span
+                  display: block
+                  width: 10px
+                  height: 10px
+                  border-radius: 50%
+          .message_body
+            color: rgba($accent-color, .7)
+          .message_setting i
+              font-size: 20px
+              cursor: pointer
+              color: rgba($accent-color, .9)
+  .chat_current
+    display: block
+    background-color: #F2F5F7
+    font-family: $main-font
+    width: 50%
+    .chat_header
+      max-height: 50px
+      min-height: 50px
+      width: 100%
+      background-color: #f7f7f7
+      box-shadow: $accent-shadow
+      display: -webkit-flex
+      display: -ms-flex
+      display: flex
+      justify-content: space-between
+      align-items: center
+      padding: 10px
+      box-sizing: border-box
+      color: $accent-color
+      .user
+        display: -webkit-flex
+        display: -ms-flex
+        display: flex
+        align-items: center
+        img
+          border-radius: 50%
+      .chat_setting i
+        font-size: 20px
+        margin-right: 18px
+      .status
+        display: -webkit-flex
+        display: -ms-flex
+        display: flex
+        flex-direction: column
+        margin-left: 12px
+        .name_status
+          display: -webkit-flex
+          display: -ms-flex
+          display: flex
+          align-items: center
+          margin-top: 2px
+          small
+            text-transform: capitalize
+            margin-left: 5px
+          span
+            display: block
+            width: 10px
+            height: 10px
+            border-radius: 50%
+            &.s2
+              background-color: #19D88C
+    .chat_input_messages
+      display: -webkit-flex
+      display: -ms-flex
+      display: flex
+      max-height: 150px
+      height: 150px
+      width: 100%
+      background-color: white
+      box-shadow: $accent-shadow
+    .chat_input_messages
+      display: -webkit-flex
+      display: -ms-flex
+      display: flex
+      flex-direction: column
+      align-items: flex-end
+      padding: 14px 14px 5px 14px
+      box-sizing: border-box
+      .send_response
+        border: none
+        display: -webkit-flex
+        display: -ms-flex
+        display: flex
+        align-items: center
+        justify-content: space-around
+        background-color: #2196F3
+        padding: 10px
+        border-radius: 2px
+        cursor: pointer
+        color: white
+        font-size: 15px
+        font-family: $main-font
+        box-shadow: $accent-shadow
+        position: relative
+        overflow: hidden
+        z-index: 2
+        width: 200px
+        margin-top: 5px
+        &:hover
+          &::before
+            transform: translateY(0)
+            border-radius: 2px
+        &::before
+          content: ''
+          position: absolute
+          display: block
+          height: 100%
+          width: 100%
+          top: 0
+          left: 0
+          background-color: darken(#2196F3, 7%)
+          transform: translateY(-100%)
+          border-radius: 50%
+          z-index: -1
+          transition: all 0.4s cubic-bezier(0.77, 0, 0.175, 1)
+        h2
+          text-decoration: none
+          color: #fff
+        i
+          font-size: 20px
+          color: #fff
+
+      textarea.input_messages
+        width: 100%
+        resize: none
+        border: 1px solid rgba($accent-color, .25)
+        font-family: $main-font
+        padding: 10px
+        box-sizing: border-box
+        border-radius: 3px
+        color: $accent-color
+        height: 80px
+        font-size: 12px
+        &:active, &:focus
+          border: 1px solid rgba(#2196F3, 1)
+          outline: none
+    .chat_current_messages
+      min-height: calc(100vh - 250px)
+      max-height: calc(100vh - 250px)
+      overflow-y: scroll
+      .messages_wrapper
+        display: -webkit-flex
+        display: -ms-flex
+        display: flex
+        padding: 8px
+        flex-direction: column
+        box-sizing: border-box
+        .bubble
+          box-shadow: $accent-shadow
+          display: flex
+          max-width: 80%
+          padding: 10px 12px
+          font-size: 12px
+          margin-bottom: 10px
+          text-transform: none
+        .bubble_admin
+          text-align: left
+          align-self: flex-start
+          color: $accent-color
+          border-radius: 5px 25px 25px 5px
+          background-color: white
+        .bubble_client
+          text-align: right
+          border-radius: 25px 5px 5px 25px
+          align-self: flex-end
+          color: #fff
+          background-color: #2196F3
