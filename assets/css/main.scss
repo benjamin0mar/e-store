@@ -18,6 +18,7 @@
 @import "1-modules/inbox";
 @import "1-modules/messages";
 @import "1-modules/users";
+@import "1-modules/stock";
 
 
 // NOTE: input number styling
@@ -97,4 +98,125 @@ input[type=number]
   position: absolute;
   bottom: -1px;
   height: 50%;
+}
+
+// NOTE: input files
+
+.inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+.inputfile:active, .inputfile:focus, .inputfile:visited {
+    outline: none !important;
+}
+.file-content{
+  font-family: $main-font;
+  display: flex !important;
+  justify-content: space-between;
+  // border: 1px solid #bdbdbd !important;
+  background-color: #ffffff !important;
+  margin-bottom: 0 !important  ;
+}
+.file-content:focus{
+  outline: none !important;
+}
+
+.inputfile + label {
+    width: 100%;
+    font-size: 15px;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    box-sizing: border-box;
+    font-family: 'Hind', sans-serif;
+}
+
+.no-js .inputfile + label {
+    display: none;
+}
+
+
+
+
+.inputfile + label i {
+    font-size: 20px;
+}
+
+
+/* style 6 */
+
+.inputfile-6 + label {
+    color: #242529;
+}
+
+.inputfile-6 + label {
+    border: 1px solid rgba($accent-color, .25);
+    // background-color: white;
+    padding: 0;
+}
+
+.inputfile-6 + label {
+  &:active, &:focus, &:visited{
+    border: 1px solid rgba(#2196F3, 1)
+  }
+}
+
+.inputfile-6:focus + label,
+.inputfile-6.has-focus + label,
+.inputfile-6 + label:hover {
+    // border-color: #722040;
+}
+
+.inputfile-6 + label span,
+.inputfile-6 + label strong {
+    padding: 0px 10px
+}
+
+.inputfile-6 + label span {
+    width: 200px;
+    // min-height: 2em;
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    vertical-align: top;
+    font-family: 'Source Sans Pro', sans-serif !important;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+.inputfile-6 + label strong {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  height: 100%;
+  color: $accent-color;
+  font-family: $main-font;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 13px;
+  -ms-align-items: center;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  width: 20px;
+}
+
+@media (max-width: 1120px ) {
+  .label-file{
+    display: none;
+  }
+  .inputfile + label svg {
+      margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 50em) {
+	.inputfile-6 + label strong {
+		display: block;
+	}
 }

@@ -61,15 +61,27 @@ section.admin_section
                 .field
                   label Correo Electrónico:
                   input(type="email" value="benjamin0mar@hotmail.com")    
-                .field
-                  label Contraseña:
-                  input(type="password" value="123456") 
+                .field_inline
+                  .field
+                    label Contraseña:
+                    input(type="password" value="123456") 
+                  .field
+                    label Confirma Contraseña :
+                    input(type="password" value="123456")  
                 .field
                   label Telefono:
                   input(type="text" value="971755982") 
                 .field
                   label Locación:
                   input(type="text" value="Amarilis")   
+                .field.load_file
+                  label Imagen Perfil
+                  input#file-7.inputfile.inputfile-6(type='file', name='nombre_archivo', required='required', data-multiple-caption='{count} archivos seleccionados', multiple='true')
+                  label.file-content(for='file-7')
+                    span
+                    strong
+                      i.fa.fa-file-image-o 
+                      p &nbsp  
                 .button_auth
                   button(type="submit") Registrar
                     i.ion-android-done

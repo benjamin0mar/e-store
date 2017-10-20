@@ -20,8 +20,9 @@
       {% include menu.html %}
 
       <section class="seccions show_section" id="main">
-        {% include showcase.html %}
-        {% include products.html %}
+        {% include chart.html %}
+        <!-- {% include showcase.html %}
+        {% include products.html %} -->
       </section>
 
       <section class="seccions " id="admin">
@@ -40,6 +41,10 @@
         {% include users.html %}
       </section>
 
+      <section class="seccions " id="stock">
+        {% include stock.html %}
+      </section>
+
       <section class="seccions" id="producto">
         {% include products_content.html %}
         {% include products_info.html %}
@@ -48,7 +53,6 @@
 
       <section class="seccions" id="carrito">
         {% include car.html %}
-        {% include showcase.html %}
       </section>
 
       <section class="seccions" id="profile">
@@ -82,11 +86,12 @@
     <script>
     Chart.defaults.global.defaultFontFamily = "Quicksand";
     var ctx = document.getElementById("myChart").getContext('2d');
+
     var myChart = new Chart(ctx,
     {
     type: 'line',
     data: {
-        labels: ["Lun", "Mar", "Mier", "Jue","Vie", "Sab", "Dom"],
+        labels: ["Lunes", "Martes", "Miercoles", "Jueves","Viernes", "Sabado", "Domingo"],
         datasets: [{
             data: ["1","2", "8","2", "3", "1", "3"],
             backgroundColor: [
@@ -122,28 +127,34 @@
     },
     options: {
       responsive: true,
-     maintainAspectRatio: false,
+      maintainAspectRatio: false,
       legend: {
           display: false
       },
       scales: {
           yAxes: [{
-              ticks: {
-                  beginAtZero:true,
-                  fontSize: 14
-              },
-              gridLines: {
-                  color: "rgba(0, 0, 0, 0)",
-              }
+            ticks: {
+              beginAtZero:true,
+              fontSize: 14,
+              padding: -25
+            },
+            gridLines: {
+              color: "rgba(0, 0, 0, 0)",
+              offsetGridLines : false,
+            }
           }],
+
           xAxes: [{
             ticks: {
-                fontSize: 14
+              fontSize: 14,
+              display: false,
             },
-               gridLines: {
-                   color: "rgba(0, 0, 0, 0)",
-               }
-           }]
+            gridLines: {
+              color: "rgba(0, 0, 0, 0)",
+              offsetGridLines : false,
+            }
+          }]
+
       }
     }
   });

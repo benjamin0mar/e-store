@@ -17,6 +17,7 @@ $(function(){
   profileTabs(".new_message_users .message_box","#");
   profileTabs(".tabs_inbox .tab_wrapper",".pedidos_wrapper");
   profileTabs(".tabs_users .tab_wrapper",".list_users_wrapper");
+  profileTabs(".tabs_stock .tab_wrapper",".list_products_wrapper");
 
 
   page('/', index);
@@ -30,6 +31,7 @@ $(function(){
   page('/pedidos', pedidos);
   page('/mensajes', mensajes);
   page('/usuarios', usuarios);
+  page('/productos', stock);
   page();
 
   $(".btn-control.right").click();
@@ -138,6 +140,7 @@ function admin() {routesShow("#admin");}
 function pedidos() {routesShow("#pedidos");}
 function mensajes() {routesShow("#mensajes");}
 function usuarios() {routesShow("#usuarios");}
+function stock() {routesShow("#stock");}
 
 function routesShow(id){
   $(id).siblings("section").removeClass("show_section");

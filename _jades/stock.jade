@@ -1,0 +1,105 @@
+section.admin_section
+  .admin_content
+    {% include menu_admin.html%}  
+    section.stock_section
+      .tabs_stock
+        .tab_wrapper.two_tabs.active
+          i.fa.fa-cubes
+          h2 Productos
+        .tab_wrapper.two_tabs
+          i.fa.fa-plus 
+          h2 Nuevo
+      .list_products
+        .list_products_wrapper.active
+          table 
+            tr
+              th
+                h1 Codigo  
+              th
+                h1 Nombre      
+              th
+                h1 Precio
+              th
+                h1 Precio Mayor 
+              th
+                h1 Unidad  
+              th
+                h1 Marca
+              th
+                h1 Creado  
+              th               
+                h1 Accion
+      
+            - for (var i = 0; i < 20; ++i) {
+              tr.item
+                td
+                  h2 AMP00001                
+                td
+                  h2  Apple MacBook Pro 
+                td
+                  h2  S/. 3000.00
+                td
+                  h2  S/. 2900.00  
+                td
+                  h2  UND
+                td
+                  h2  Apple  
+                td
+                  h2  2 Noviembre, 2017
+                td
+                  a(href="#")
+                    i.ion-trash-a
+                  a(href="#")
+                    i.ion-edit 
+                  a(href="#")
+                    i.ion-clipboard  
+            - }
+        .list_products_wrapper
+          .new_products
+            .new_products_wrapper
+              form
+                   
+                .field
+                  label Codigo: 
+                  input(type="text" value="P0001")
+                .field
+                  label Nombre:
+                  input(type="text" value="pple MacBook Pro") 
+                .field_inline  
+                  .field
+                    label Precio:
+                    input(type="text" value="3000")    
+                  .field
+                    label Precio Mayor:
+                    input(type="text" value="2900")    
+                .field
+                  label Unidad:
+                  select
+                    option UND 
+                    option CAJA
+                .field
+                  label Marca:
+                  select
+                    option Apple 
+                    option Lenovo
+                .field.load_file
+                  label Imagen Mediano
+                  input#file-7.inputfile.inputfile-6(type='file', name='nombre_archivo', required='required', data-multiple-caption='{count} archivos seleccionados', multiple='true')
+                  label.file-content(for='file-7')
+                    span
+                    strong
+                      i.fa.fa-file-image-o 
+                      p &nbsp;
+                .field.load_file
+                  label Imagen Largo
+                  input#file-7.inputfile.inputfile-6(type='file', name='nombre_archivo', required='required', data-multiple-caption='{count} archivos seleccionados', multiple='true')
+                  label.file-content(for='file-7')
+                    span
+                    strong
+                      i.fa.fa-file-image-o 
+                      p &nbsp; 
+                    
+                .button_auth
+                  button(type="submit") Registrar
+                    i.ion-android-done
+      
