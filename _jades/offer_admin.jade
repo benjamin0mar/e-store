@@ -1,0 +1,71 @@
+section.admin_section
+  .admin_content
+    {% include menu_admin.html%}  
+    section.offer_admin_section
+      .tabs_offers
+        .tab_wrapper.two_tabs.active
+          i.fa.fa-tags
+          h2 Ofertas
+        .tab_wrapper.two_tabs
+          i.fa.fa-plus 
+          h2 Nuevo
+      .list_offers 
+        .list_offers_wrapper.active
+          table 
+            tr
+              th
+                h1 Codigo  
+              th
+                h1 Nombre      
+              th
+                h1 Precio
+              th
+                h1 Precio Mayor   
+              th
+                h1 Descuento
+              th
+                h1 Dias
+              th               
+                h1 Accion
+      
+            - for (var i = 0; i < 20; ++i) {
+              tr.item
+                td
+                  h2 AMP00001                
+                td
+                  h2  Apple MacBook Pro 
+                td
+                  h2  S/. 3000.00 
+                td
+                  h2  S/. 2900.00   
+                td
+                  h2  15%
+                td
+                  h2  3 Dias  
+                td
+                  a(href="#")
+                    i.ion-trash-a
+                  a(href="#")
+                    i.ion-edit 
+                  a(href="#")
+                    i.ion-clipboard  
+            - }
+        .list_offers_wrapper
+          .new_offer
+            .new_offer_wrapper
+              form
+                .field
+                  label Producto:
+                  select
+                    option Apple MacBook Pro  
+                    option IPhone X 
+                .field
+                  label Descuento (%):
+                  input(type="text" value="15")
+                .field
+                  label Duracion (Dias):
+                  input(type="text" value="5") 
+     
+                .button_auth
+                  button(type="submit") Registrar
+                    i.ion-android-done

@@ -1,6 +1,7 @@
 $(function(){
 
   movePay();
+  moveUsers();
   menuShow();
   tabProducts();
   moveSlideBar();
@@ -18,6 +19,7 @@ $(function(){
   profileTabs(".tabs_inbox .tab_wrapper",".pedidos_wrapper");
   profileTabs(".tabs_users .tab_wrapper",".list_users_wrapper");
   profileTabs(".tabs_stock .tab_wrapper",".list_products_wrapper");
+  profileTabs(".tabs_offers .tab_wrapper",".list_offers_wrapper");
 
 
   page('/', index);
@@ -32,6 +34,7 @@ $(function(){
   page('/mensajes', mensajes);
   page('/usuarios', usuarios);
   page('/productos', stock);
+  page('/oferta', offerAdmin);
   page();
 
   $(".btn-control.right").click();
@@ -141,6 +144,7 @@ function pedidos() {routesShow("#pedidos");}
 function mensajes() {routesShow("#mensajes");}
 function usuarios() {routesShow("#usuarios");}
 function stock() {routesShow("#stock");}
+function offerAdmin() {routesShow("#offer_admin");}
 
 function routesShow(id){
   $(id).siblings("section").removeClass("show_section");
@@ -149,7 +153,7 @@ function routesShow(id){
 
 
 function tabInfoProduct(){
-  $(".tab_wrapper aside").click(function(){
+  $(".tab_wrapper_content aside").click(function(){
     var indice = $(this).index();
     $(this).siblings().removeClass("active");
     $(this).addClass("active");
@@ -246,18 +250,50 @@ function GalleryProducts(){
 
 }
 
+
+function moveUsers(){
+  $(window).scroll(function(e){
+    var top = $(this).scrollTop();
+    var heigthUser = $(".list_users").height();
+    var tableBottom = $(".detalle_producto").offset().top;
+    var tableHeigth = $(".detalle_producto").height();
+    var diff = top - tableBottom + 70;
+    if(top + 50 > tableBottom){
+      if (!((top + 50 + heigthUser) > (tableBottom + tableHeigth))) {
+        $(".list_users").css({
+          "margin-top": diff+"px"
+        });
+      }
+    }
+    else{
+      $(".list_users").css({
+        "margin-top": "0px"
+      });
+    }
+  });
+}
+
+
 function movePay(){
   $(window).scroll(function(){
     var top = $(this).scrollTop();
-    var topPayContent = $(".pay_producto").offset().top;
-    var topMenu = $(".slide-menu").offset().top;
-    if(top > topPayContent ){
-     $(".pay_producto_content").addClass("fixed");
-     $(".pay_producto_content").css({
-       "top":  (top + 30)+"px"
-     })
-    }else if(top < topPayContent){
-      $(".pay_producto_content").removeClass("fixed");
+    var heigthPay = $(".pay_producto_wrapper").height();
+    var tableBottom = $(".detalle_producto").height();
+    if(top + heigthPay + 70 > (tableBottom)){
+      $(".pay_producto_wrapper").css({
+        "margin-top" : (tableBottom - heigthPay - 40)+"px"
+      });
+
+    }else {
+      if(top < 50){
+        $(".pay_producto_wrapper").css({
+          "margin-top" : "0px"
+        });
+      }else{
+        $(".pay_producto_wrapper").css({
+          "margin-top" :  (top+30)+"px"
+        });
+      }
     }
   });
 }

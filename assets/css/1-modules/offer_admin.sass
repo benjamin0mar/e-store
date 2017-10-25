@@ -1,8 +1,8 @@
-section.stock_section
+section.offer_admin_section
   min-height: calc(100% - 50px)
   background-color: #F2F5F7
-  .list_products
-    .list_products_wrapper
+  .list_offers
+    .list_offers_wrapper
       display: none
       table
         width: 100%
@@ -24,6 +24,16 @@ section.stock_section
           th:last-child
             width: 80px
           td
+            .offer
+              display: -webkit-flex
+              display: -ms-flex
+              display: flex
+              align-items: center
+              justify-content: center
+              img
+                border-radius: 50%
+              h2
+                min-width: 120px
             h2
               color: rgba($accent-color ,.9)
             a
@@ -41,13 +51,13 @@ section.stock_section
       &.active
         display: flex
         animation: fadeIn .4s
-      .new_products
+      .new_offer
         display: -webkit-flex
         display: -ms-flex
         display: flex
         width: 100%
         justify-content: center
-        .new_products_wrapper
+        .new_offer_wrapper
           width: 100%
           min-height: 600px
           width: 100%
@@ -56,10 +66,10 @@ section.stock_section
           display: -webkit-flex
           display: -ms-flex
           display: flex
-          justify-content: center
           background-color: #fff
+          justify-content: center
           form
-            width: 400px !important
+            width: 400px
             display: -webkit-flex
             display: -ms-flex
             display: flex
@@ -130,23 +140,9 @@ section.stock_section
               width: 100%
               color: $accent-color
               font-family: $main-font
-              .load_file
-                height: 30px
               label
                 font-size: 14px
                 color: rgba($accent-color, .7)
-              textarea
-                width: 100%
-                padding: 12px
-                box-sizing: border-box
-                border-radius: 2px
-                color: $accent-color
-                border: 1px solid rgba($accent-color, .25)
-                resize: none
-                min-height: 100px
-                &:active, &:focus
-                  border: 1px solid rgba(#2196F3, 1)
-                  outline: none
               input, select
                 width: 100%
                 padding: 12px

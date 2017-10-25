@@ -4,7 +4,7 @@ section.car_content
       table.detalle_producto
           tr
             th
-              h1 Producto
+              h1 Producto 
             th
               h1 Precio Unidad
             th
@@ -54,6 +54,26 @@ section.car_content
                 a(href="#")
                   i.ion-trash-a
           - }  
+          - for (var i = 0; i < 3; ++i) {
+            tr.item
+              td
+                .item_content
+                  img(src="assets/img/product#{i+2}.jpg" width="120")
+                  .product_name
+                    h2 Apple MacBook Pro new
+                    small disponible 
+                      i.ion-android-done
+              td
+                h2 S/. 3000.00  
+              td
+                .quantity
+                  input(type="number" min="1" max="10" step="1" value="1")
+              td
+                h2 S/. 3000.00
+              td
+                a(href="#")
+                  i.ion-trash-a
+          - }
           
       .pay_producto
         .pay_producto_content
@@ -74,3 +94,4 @@ section.car_content
               .pay
                 a#see-car(href="/pago") Pagar
                 i.fa.fa-credit-card          
+ 
