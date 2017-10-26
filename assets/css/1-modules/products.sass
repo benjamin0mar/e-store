@@ -100,13 +100,15 @@ section.menu-section
         margin: 0
         font-size: 14px
         color: #45A6F3
+      .categories_select
+        display: none
       .categories
         display: -webkit-flex
         display: -ms-flex
         display: flex
         align-items: center
         justify-content: space-between
-        width: 600px
+        width: 550px
         h2
           margin-left: 5px
           color: rgba($accent-color, .55)
@@ -116,17 +118,17 @@ section.menu-section
           &::before
             content: ''
             position: absolute
-            bottom: -25px
+            bottom: -22px
             left: 0
             background-color: #2196F3
             width: 100%
-            height: 8px
-            transform: scale(0)
+            height: 4px
+            transform: scaleX(0)
             transition: $transition
           &.active
             color: $accent-color
             &::before
-              transform: scale(.5)
+              transform: scaleX(1)
               transition: $transition
 
 
@@ -146,7 +148,6 @@ section.menu-section
           display: -ms-flex
           display: flex
       .product-description
-        // height: 300px
         background-color: #fff
         box-shadow: $accent-shadow
         display: -webkit-flex
@@ -162,14 +163,11 @@ section.menu-section
         opacity: 0
         &:hover
           box-shadow: $shadow
-          // transform: translateY(-2px)
           .add-car
             box-shadow: $shadow
         &.show
           opacity: 1
           animation: fadeIn .8s
-        // img
-        //   box-shadow: $shadow
         .product-description-content
           padding: 15px
           box-sizing: border-box
@@ -186,6 +184,7 @@ section.menu-section
             color: $accent-color
             margin: 0
             margin-top: 10px
+            margin-bottom: 10px
           .add-car
             display: -webkit-flex
             display: -ms-flex
@@ -198,8 +197,6 @@ section.menu-section
             margin-bottom: -35px
             width: 100px
             border-radius: 2px
-            // font-weight: 900
-            // display: block
             cursor: pointer
             color: white
             font-size: 15px
@@ -260,3 +257,61 @@ section.menu-section
               text-decoration: line-through
               color: rgba($accent-color, .5)
               margin-right: 10px
+
+  @media (max-width: 1100px)
+    aside.products-list
+      .top-list
+        .categories
+          width: 350px
+      .products-list-content
+        .products-list-wrapper
+          .product-description
+            .product-description-content
+              h2
+                font-size: 12px
+                text-align: center
+              .power
+                width: 100%
+                justify-content: space-between
+              .price
+                font-size: 12px
+              .add-car
+                width: 100%
+                margin-bottom: 0
+
+  @media (max-width: 840px)
+    aside.side-list
+      display: none
+    aside.products-list
+      width: 100%
+      padding: 0
+
+
+  @media (max-width: 570px)
+    aside.products-list
+      .top-list
+        .categories
+          display: none
+        .categories_select
+          display: block
+          select
+            width: 100%
+            padding: 12px
+            box-sizing: border-box
+            border-radius: 2px
+            color: $accent-color
+            border: 1px solid rgba($accent-color, .25)
+            font-family: $main-font
+            &:active, &:focus
+              border: 1px solid rgba(#2196F3, 1)
+              outline: none
+      .products-list-content
+        .products-list-wrapper
+          .product-description
+            width: calc(50% - 20px)
+  @media (max-width: 400px)
+    aside.products-list
+      .products-list-content
+        .products-list-wrapper
+          .product-description
+            width: calc(100% - 20px)

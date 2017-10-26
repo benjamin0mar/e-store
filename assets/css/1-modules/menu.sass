@@ -223,6 +223,7 @@ header
         width: 120px
         &:focus, &:active
           outline: none
+
     .logo
       flex-grow: 2
       span
@@ -237,6 +238,20 @@ header
         border-radius: 50%
         display: block
         margin: 0 auto
+
+    @media (max-width: 700px)
+      .dropdown
+        display: none
+      .search-field
+        display: none
+      .logo
+        flex-grow: 1
+        display: flex
+        margin-left: 20px
+      .user-img
+        position: absolute
+        right: 0
+        top: 10px
     .car
       height: 100%
       width: 50px
@@ -406,6 +421,8 @@ header
       cursor: pointer
       border-bottom: 1px solid rgba($accent-color, 0)
       padding: 8px
+      // box-sizing: border-box
+      height: 100%
       &.active
         border-bottom: 1px solid rgba($accent-color, .1)
         width: 200px
@@ -519,6 +536,33 @@ nav.slide-menu
     &.hide
       opacity: 0
       animation: fadeOutUp .3s
+  @media (max-width: 1080px)
+    .btn-control
+      width: 40px
+      height: 40px
+      i
+        font-size: 18px
+      &.left
+          left: 0
+          margin-left: 20px
+      &.right
+          right: 0
+          margin-right: 20px
+
+  @media (max-width: 550px)
+    .btn-control
+      margin-top: 125px
+      width: 35px
+      height: 35px
+      background-color: rgba(white, .95)
+      i
+        font-size: 16px
+      &.left
+          left: 0
+          margin-left: 7px
+      &.right
+          right: 0
+          margin-right: 7px
 
   .new-products
     display: -webkit-flex
@@ -526,7 +570,6 @@ nav.slide-menu
     display: flex
     align-items: center
     justify-content: flex-start
-    // overflow-y: scroll
     padding-bottom: 100px
     .new-products-wrapper
       width: 100%
@@ -564,7 +607,6 @@ nav.slide-menu
       display: -ms-flex
       display: flex
       min-width: 530px
-      // height: 270px
       box-sizing: border-box
       .product-wrapper
         display: -webkit-flex
@@ -665,3 +707,32 @@ nav.slide-menu
         img
           margin-top: 5px
           box-shadow: 0 15px 16px 0 rgba(0,0,0,0.05), 0 1px 5px 0 rgba(0,0,0,0.03), 0 10px 20px -2px rgba(0,0,0,0.05)
+
+    @media (max-width: 550px)
+      .more-products
+        min-width: 100%
+      .product
+        min-width: 100%
+        width: 100%
+        .product-wrapper
+          padding: 50px 10px 50px 10px
+          img
+            width: 120px
+          .content
+            margin-left: 20px
+            margin-right: 0
+            .power
+              display: none
+            p
+              padding: 10px 40px 10px 10px
+              box-sizing: border-box
+              // margin-bottom: 0
+            .see-more
+              width: 150px
+              box-sizing: border-box
+
+@media (max-width: 550px)
+  nav.slide-menu
+    height: auto
+    .new-products
+      padding-bottom: 0
