@@ -162,7 +162,9 @@
                 &:active, &:focus
                   border: 1px solid rgba(#2196F3, 1)
                   outline: none
-
+          .responsive_table
+            width: 100%
+            overflow-x: auto
           table
             border-collapse: collapse
             margin-top: 20px
@@ -221,3 +223,48 @@
               box-shadow: $accent-shadow
               border-radius: 4px
               padding: 10px
+
+@media (max-width: 850px)
+  .products_info_content
+    .products_info_wrapper
+      width: calc(100% - 20px)
+      margin: 10px
+
+@media (max-width: 600px)
+  .products_info_content
+    .products_info_wrapper
+      .tab_wrapper
+        .tab_wrapper_content
+          .tab
+            h2
+              font-size: 11px
+      .info_content
+        .info_wrapper
+          .info_products
+            .info_products_char
+              width: calc(50% - 20px)
+              &:nth-child(2n)
+                margin-right: 0px
+              .title_char
+                display: -webkit-flex
+                display: -ms-flex
+                display: flex
+                align-items: center
+                h2
+                  font-size: 12px
+                  margin-left: 10px
+                  text-transform: uppercase
+                  margin-bottom: 0
+                  color: rgba($accent-color, .6)
+              i
+                font-size: 30px
+              p
+                margin: 0
+                text-align: left
+                font-size: 11px
+                color: rgba($accent-color, .7)
+                background-color: #fff
+                box-sizing: border-box
+                box-shadow: $accent-shadow
+                border-radius: 4px
+                padding: 10px

@@ -62,6 +62,31 @@
               background-color: #A8E4EE
             &.c3
               background-color: #2BC9E2
+    @media (max-width: 600px)
+      .guia_content
+        h1
+          font-size: 13px
+        .result
+          .number
+            min-width: 80px
+            .percentage
+              display: -webkit-flex
+              display: -ms-flex
+              display: flex
+              align-items: flex-start
+              flex-direction: column
+              h3
+                font-size: 15px
+              p
+                font-size: 11px
+
+    @media (max-width: 500px)
+      .guia_content
+        flex-direction: column
+        h1
+          margin-bottom: 20px
+        .result
+          margin-bottom: 20px
 
     .chart_content
       width: 100%
@@ -123,6 +148,30 @@
               background-color: red
       .number_overall_content:nth-child(2n+1)
         background-color: #E2ECF6
+    @media (max-width: 780px)
+      .number_overall
+        .number_overall_content
+          .product_sale_count
+            i
+              font-size: 25px
+            h3
+              font-size: 20px
+          .number_sale
+            h2
+              text-transform: uppercase
+              color: rgba($accent-color, .6)
+            h1
+              font-size: 18px
+
+    @media (max-width: 650px)
+      .number_overall
+        flex-wrap: wrap
+        height: auto
+        .number_overall_content
+          width: 50%
+          height: 150px
+          margin-bottom: 4px
+
 
 .table_section
   display: -webkit-flex
@@ -284,4 +333,160 @@
             font-weight: bold
           .email
             font-size: 10px
- 
+
+@media (max-width: 1000px)
+  .table_section
+    flex-direction: column
+    .table_order
+      width: 100%
+      background-color: #fff
+      h4
+        color: rgba($accent-color, .8)
+        font-size: 15px
+        text-transform: uppercase
+        margin-left: 5px
+        text-align: left
+        margin-bottom: 20px
+        margin-top: 20px
+      table
+        width: 100%
+        background-color: #fff
+        border-collapse: collapse
+        border: 1px solid rgba(128, 128, 128, 0.15)
+        tr
+          border-bottom: 1px solid rgba(128, 128, 128, 0.1)
+          th
+            text-transform: capitalize
+            h1
+              color: rgba($accent-color ,.6)
+              font-size: 14px
+              margin: 0
+          th, td
+            // text-align: left
+            padding: 15px
+          th:last-child
+            width: 80px
+          td
+            h2
+              color: rgba($accent-color ,.9)
+            .status
+              padding: 6px 30px
+              border-radius: 15px
+              color: white
+              text-transform: uppercase
+              font-weight: bold
+              width: 100px
+              min-width: 100px
+              margin: 0 auto
+              box-shadow: $shadow
+              &.s1
+                background-color: #50affa
+              &.s2
+                background-color: #E9535C
+              &.s3
+                background-color: #37D67A
+
+            a
+              text-decoration: none
+              color: $accent-color
+              i
+                font-size: 20px
+          td:last-child
+            display: -webkit-flex
+            display: -ms-flex
+            display: flex
+            justify-content: space-around
+            width: 80px
+            a
+              color: rgba($accent-color ,.7)
+        .item:hover
+          background-color: rgba(128, 128, 128, 0.08)
+
+    .table_users
+      width: 100%
+      margin-left: 0px
+      h4
+        color: rgba($accent-color, .8)
+        font-size: 15px
+        text-transform: uppercase
+        margin-left: 5px
+        text-align: left
+        margin-bottom: 20px
+        margin-top: 20px
+      .list_users
+        margin: 0
+        color: $accent-color
+        display: -webkit-flex
+        display: -ms-flex
+        display: flex
+        flex-direction: column
+        border: 1px solid rgba(128, 128, 128, 0.15)
+        padding: 10px
+        box-sizing: border-box
+        li
+          display: -webkit-flex
+          display: -ms-flex
+          display: flex
+          align-items: center
+          justify-content: space-between
+          padding-top: 15px
+          padding-bottom: 15px
+          .user
+            display: -webkit-flex
+            display: -ms-flex
+            display: flex
+            align-items: center
+          .profile_btn
+            display: -webkit-flex
+            display: -ms-flex
+            display: flex
+            align-items: center
+            justify-content: space-around
+            background-color: #2196F3
+            padding: 7px
+            border-radius: 2px
+            cursor: pointer
+            color: white
+            width: 80px
+            margin-right: 10px
+            box-shadow: $shadow
+            font-size: 15px
+            font-family: $main-font
+            font-weight: bold
+            letter-spacing: 0.05em
+            position: relative
+            overflow: hidden
+            z-index: 2
+            &:hover
+              &::before
+                transform: translateY(0)
+                border-radius: 2px
+            &::before
+              content: ''
+              position: absolute
+              display: block
+              height: 100%
+              width: 100%
+              top: 0
+              left: 0
+              background-color: darken(#2196F3, 7%)
+              transform: translateY(-100%)
+              border-radius: 50%
+              z-index: -1
+              transition: all 0.4s cubic-bezier(0.77, 0, 0.175, 1)
+            a
+              text-decoration: none
+              color: #fff
+            i
+              font-size: 18px
+              color: #fff
+
+          img
+            border-radius: 50%
+          .info
+            margin-left: 10px
+            text-align: left
+            .name
+              font-weight: bold
+            .email
+              font-size: 10px

@@ -4,7 +4,6 @@ section.car_content
   display: flex
   justify-content: center
   .car_content_wrapper
-    // background-color: green
     margin-bottom: 40px
     margin-top: 30px
     width: 1200px
@@ -110,6 +109,7 @@ section.car_content
         background-color: #fff
         border-collapse: collapse
         box-shadow: $shadow
+        width: calc(100% - 310px)
         tr
           border-bottom: 1px solid rgba(128, 128, 128, 0.1)
           th
@@ -129,6 +129,8 @@ section.car_content
               display: flex
               justify-content: center
               align-items: center
+              img
+                width: 120px
               .product_name
                 display: -webkit-flex
                 display: -ms-flex
@@ -137,6 +139,7 @@ section.car_content
                 align-items: flex-start
                 h2
                   font-weight: normal
+                  text-align: left
                 small
                   color: #47AAF9
             a
@@ -146,4 +149,69 @@ section.car_content
                 font-size: 20px
         .item:hover
           background-color: rgba(128, 128, 128, 0.08)
- 
+
+      @media (max-width: 1200px)
+        .pay_producto
+          margin-left: 10px
+          margin-right: 10px
+          min-width: 240px
+        table
+          width: calc(100% - 260px)
+          tr
+            th
+              h1
+                font-size: 12px
+            th, td
+              padding: 15px
+            td
+              h2
+                font-size: 11px
+              .item_content
+                .product_name
+                img
+                  width: 80px
+
+
+      @media (max-width: 1000px)
+        .pay_producto
+          margin-left: 10px
+          margin-right: 10px
+          min-width: 210px
+          position: relative
+          .pay_producto_content
+            width: 100%
+          .pay_producto_wrapper
+            .pay_total
+              padding: 10px
+              h1:last-child
+                font-size: 20px
+            .pay_list
+              span
+                h2
+                  font-size: 12px
+        table
+          width: calc(100% - 230px)
+
+
+
+@media (max-width: 800px)
+  section.car_content
+    display: -webkit-flex
+    display: -ms-flex
+    display: flex
+    justify-content: center
+    .car_content_wrapper
+      margin-top: 20px
+      width: 100%
+      .list-products
+        flex-direction: column
+        .pay_producto
+          width: calc(100% - 20px)
+          margin-top: 20px
+        .responsive_table
+          margin-left: 10px
+          margin-right: 10px
+          width: calc(100% - 20px)
+          overflow-x: auto
+        table
+          width: 100%
