@@ -97,6 +97,34 @@
               font-size: 20px
               cursor: pointer
               color: rgba($accent-color, .9)
+
+
+  @media (max-width: 940px)
+    .list_messages
+      .list_messages_users
+        .new_message_users
+          .message_box
+            .user
+              .status
+                h2
+                  text-align: left
+            .message_body
+              display: none
+
+  @media (max-width: 750px)
+    .list_messages
+      .list_messages_users
+        .new_message_users
+          .message_box
+            .user
+              .status
+                h2
+                  font-size: 11px
+            .date_send
+              display: none
+
+
+
   .chat_current
     display: block
     background-color: #F2F5F7
@@ -123,9 +151,13 @@
         align-items: center
         img
           border-radius: 50%
-      .chat_setting i
-        font-size: 20px
-        margin-right: 18px
+      .chat_setting
+        display: -webkit-flex
+        display: -ms-flex
+        display: flex
+        i
+          font-size: 20px
+          margin-right: 18px
       .status
         display: -webkit-flex
         display: -ms-flex
@@ -148,6 +180,19 @@
             border-radius: 50%
             &.s2
               background-color: #19D88C
+
+    @media (max-width: 530px)
+      .chat_header
+        .chat_setting
+          display: -webkit-flex
+          display: -ms-flex
+          display: flex
+          flex-direction: column
+          i
+            font-size: 17px
+
+
+
     .chat_input_messages
       display: -webkit-flex
       display: -ms-flex
@@ -209,6 +254,10 @@
           font-size: 20px
           color: #fff
 
+      @media (max-width: 430px)
+        .send_response
+          width: 100%
+
       textarea.input_messages
         width: 100%
         resize: none
@@ -254,3 +303,29 @@
           align-self: flex-end
           color: #fff
           background-color: #2196F3
+
+  @media (max-width: 600px)
+    .list_messages
+      width: 100px
+      .list_messages_users
+        .new_message_users
+          .message_box
+            width: calc(100% - 14px)
+            margin: 7px
+            flex-direction: column
+            padding: 10px
+            i
+              transform: rotate(90deg)
+            .user
+              flex-direction: column
+              align-items: center
+              .status
+                margin-left: 0
+                h2
+                  display: none
+            .date_send
+              display: none
+    .chat_current
+      width: calc(100% - 120px)
+
+ 

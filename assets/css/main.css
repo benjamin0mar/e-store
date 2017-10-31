@@ -563,27 +563,30 @@ header {
                   justify-content: center;
               border-radius: 50%;
               background-color: rgba(71, 170, 249, 0.9); }
-      header nav.top-menu .car .number-productos {
-        right: 3px;
-        top: 4px;
-        position: absolute;
-        color: #fff;
-        width: 13px;
-        height: 13px;
-        border-radius: 50%;
-        background-color: #47aaf9;
-        display: -ms-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-align: center;
-            align-items: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-        padding: 2px;
-        font-size: 11px; }
       header nav.top-menu .car i {
         color: #3D4A54;
-        font-size: 22px; }
+        font-size: 22px;
+        position: relative; }
+        header nav.top-menu .car i .number-productos {
+          font-family: "Quicksand", sans-serif;
+          right: -10px;
+          top: -8px;
+          position: absolute;
+          color: #fff;
+          width: 13px;
+          height: 13px;
+          border-radius: 50%;
+          background-color: #47aaf9;
+          display: -ms-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-align: center;
+              align-items: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+          padding: 2px;
+          font-size: 11px;
+          font-style: normal; }
     @media (max-width: 500px) {
       header nav.top-menu .car {
         position: inherit; }
@@ -1619,7 +1622,9 @@ footer {
           flex-grow: 1;
       width: calc(100% - 20px); }
   .producto_content .producto_content_wrapper .producto_content_info p {
-    width: 100%; } }
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box; } }
 
 .products_info_content {
   display: -ms-flex;
@@ -2114,6 +2119,8 @@ section.car_content {
           margin-right: 10px;
           width: calc(100% - 20px);
           overflow-x: auto; }
+          section.car_content .car_content_wrapper .list-products .responsive_table table {
+            width: 1000px; }
         section.car_content .car_content_wrapper .list-products table {
           width: 100%; } }
 
@@ -2485,7 +2492,8 @@ section.profile_section {
     margin-right: 10px;
     margin-left: 10px; }
     section.profile_section .panel_title {
-      width: 100%; }
+      width: 100%;
+      margin-top: 20px; }
     section.profile_section .profile_wrapper {
       width: 100%;
       -ms-flex-direction: column;
@@ -2509,7 +2517,7 @@ section.auth_content {
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
-  height: calc(100vh - 50px); }
+  min-height: calc(100vh - 50px); }
   section.auth_content .auth_wrapper {
     margin-top: 30px;
     width: 500px;
@@ -2673,6 +2681,28 @@ section.auth_content {
           font-size: 14px;
           font-weight: normal;
           color: rgba(61, 74, 84, 0.5); }
+
+@media (max-width: 535px) {
+  section.auth_content {
+    width: 100%;
+    min-height: calc(100vh - 50px); }
+    section.auth_content .auth_wrapper {
+      margin-top: 20px;
+      width: calc(100% - 20px);
+      margin-left: 10px;
+      margin-right: 10px; }
+      section.auth_content .auth_wrapper .auth_form {
+        width: 100%; }
+        section.auth_content .auth_wrapper .auth_form .auth_sign {
+          width: 100% !important; }
+          section.auth_content .auth_wrapper .auth_form .auth_sign form {
+            margin-top: 20px;
+            width: 100%; }
+            section.auth_content .auth_wrapper .auth_form .auth_sign form .button_auth {
+              margin-top: 20px;
+              width: 100%; }
+              section.auth_content .auth_wrapper .auth_form .auth_sign form .button_auth button {
+                width: 100%; } }
 
 section.pay_section {
   display: -ms-flex;
@@ -2903,6 +2933,52 @@ section.pay_section {
               border: 1px solid #2196f3;
               outline: none; }
 
+@media (max-width: 830px) {
+  section.pay_section .panel_title {
+    margin-top: 20px;
+    width: calc(100% - 20px);
+    margin-left: 10px;
+    margin-right: 10px; }
+  section.pay_section .pay_wrapper {
+    width: calc(100% - 20px);
+    padding: 10px 20px 20px 20px;
+    margin-left: 10px;
+    margin-right: 10px; } }
+
+@media (max-width: 620px) {
+  section.pay_section .panel_title {
+    margin-top: 20px;
+    width: calc(100% - 20px);
+    margin-left: 10px;
+    margin-right: 10px; }
+  section.pay_section .pay_wrapper {
+    width: calc(100% - 20px);
+    margin-left: 10px;
+    margin-right: 10px; }
+    section.pay_section .pay_wrapper .choose_payment .card_wrapper {
+      -ms-flex-direction: column;
+          flex-direction: column; }
+      section.pay_section .pay_wrapper .choose_payment .card_wrapper .card {
+        margin-top: 10px;
+        width: 100%;
+        box-sizing: border-box; }
+    section.pay_section .pay_wrapper .form_payment form {
+      display: -ms-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+      section.pay_section .pay_wrapper .form_payment form aside {
+        width: 100%; }
+        section.pay_section .pay_wrapper .form_payment form aside .field_inline {
+          width: 100%;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap; }
+          section.pay_section .pay_wrapper .form_payment form aside .field_inline .field {
+            width: 100%; }
+            section.pay_section .pay_wrapper .form_payment form aside .field_inline .field:first-child {
+              margin-right: 0; } }
+
 .offer_section {
   display: -ms-flex;
   display: -ms-flexbox;
@@ -3055,6 +3131,16 @@ section.pay_section {
             text-decoration: line-through;
             color: rgba(61, 74, 84, 0.5);
             margin-right: 10px; }
+
+@media (max-width: 620px) {
+  .offer_section .offer_wrapper .product-description {
+    width: calc(50% - 30px); } }
+
+@media (max-width: 450px) {
+  .offer_section .offer_wrapper .product-description {
+    width: calc(100% - 30px); }
+    .offer_section .offer_wrapper .product-description .offer_number {
+      left: calc(50% - 15px); } }
 
 .field {
   position: relative; }
@@ -3436,7 +3522,8 @@ section.pay_section {
               background-color: #2BC9E2; }
     @media (max-width: 600px) {
       .chart_section .chart_top_section .guia_content h1 {
-        font-size: 13px; }
+        font-size: 13px;
+        display: none; }
       .chart_section .chart_top_section .guia_content .result .number {
         min-width: 80px; }
         .chart_section .chart_top_section .guia_content .result .number .percentage {
@@ -3465,6 +3552,9 @@ section.pay_section {
       .chart_section .chart_top_section .chart_content canvas {
         width: calc(100%) !important;
         height: 350px !important; }
+    @media (max-width: 600px) {
+      .chart_section .chart_top_section .chart_content canvas {
+        height: 250px !important; } }
     .chart_section .chart_top_section .number_overall {
       margin-top: -9px;
       display: -ms-flex;
@@ -3720,6 +3810,9 @@ section.pay_section {
         text-align: left;
         margin-bottom: 20px;
         margin-top: 20px; }
+      .table_section .table_order .responsive_table {
+        width: 100%;
+        overflow-x: auto; }
       .table_section .table_order table {
         width: 100%;
         background-color: #fff;
@@ -3868,6 +3961,11 @@ section.pay_section {
 
 .inbox_pedidos .pedidos_wrapper {
   display: none; }
+  .inbox_pedidos .pedidos_wrapper .responsive_table {
+    width: 100%;
+    overflow-x: auto; }
+    .inbox_pedidos .pedidos_wrapper .responsive_table table {
+      width: 800px; }
   .inbox_pedidos .pedidos_wrapper table {
     width: 100%;
     background-color: #fff;
@@ -3966,6 +4064,10 @@ section.pay_section {
       margin-right: 10px; }
     .tabs_inbox .tab_wrapper h2, .tabs_users .tab_wrapper h2, .tabs_stock .tab_wrapper h2, .tabs_offers .tab_wrapper h2 {
       font-size: 14px; }
+
+@media (max-width: 500px) {
+  .tabs_inbox .tab_wrapper h2, .tabs_users .tab_wrapper h2, .tabs_stock .tab_wrapper h2, .tabs_offers .tab_wrapper h2 {
+    display: none; } }
 
 .messages_section {
   display: -ms-flex;
@@ -4075,6 +4177,16 @@ section.pay_section {
           font-size: 20px;
           cursor: pointer;
           color: rgba(61, 74, 84, 0.9); }
+  @media (max-width: 940px) {
+    .messages_section .list_messages .list_messages_users .new_message_users .message_box .user .status h2 {
+      text-align: left; }
+    .messages_section .list_messages .list_messages_users .new_message_users .message_box .message_body {
+      display: none; } }
+  @media (max-width: 750px) {
+    .messages_section .list_messages .list_messages_users .new_message_users .message_box .user .status h2 {
+      font-size: 11px; }
+    .messages_section .list_messages .list_messages_users .new_message_users .message_box .date_send {
+      display: none; } }
   .messages_section .chat_current {
     display: block;
     background-color: #F2F5F7;
@@ -4104,9 +4216,13 @@ section.pay_section {
             align-items: center; }
         .messages_section .chat_current .chat_header .user img {
           border-radius: 50%; }
-      .messages_section .chat_current .chat_header .chat_setting i {
-        font-size: 20px;
-        margin-right: 18px; }
+      .messages_section .chat_current .chat_header .chat_setting {
+        display: -ms-flex;
+        display: -ms-flexbox;
+        display: flex; }
+        .messages_section .chat_current .chat_header .chat_setting i {
+          font-size: 20px;
+          margin-right: 18px; }
       .messages_section .chat_current .chat_header .status {
         display: -ms-flex;
         display: -ms-flexbox;
@@ -4131,6 +4247,15 @@ section.pay_section {
             border-radius: 50%; }
             .messages_section .chat_current .chat_header .status .name_status span.s2 {
               background-color: #19D88C; }
+    @media (max-width: 530px) {
+      .messages_section .chat_current .chat_header .chat_setting {
+        display: -ms-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+        .messages_section .chat_current .chat_header .chat_setting i {
+          font-size: 17px; } }
     .messages_section .chat_current .chat_input_messages {
       display: -ms-flex;
       display: -ms-flexbox;
@@ -4196,6 +4321,9 @@ section.pay_section {
         .messages_section .chat_current .chat_input_messages .send_response i {
           font-size: 20px;
           color: #fff; }
+      @media (max-width: 430px) {
+        .messages_section .chat_current .chat_input_messages .send_response {
+          width: 100%; } }
       .messages_section .chat_current .chat_input_messages textarea.input_messages {
         width: 100%;
         resize: none;
@@ -4245,12 +4373,42 @@ section.pay_section {
               align-self: flex-end;
           color: #fff;
           background-color: #2196F3; }
+  @media (max-width: 600px) {
+    .messages_section .list_messages {
+      width: 100px; }
+      .messages_section .list_messages .list_messages_users .new_message_users .message_box {
+        width: calc(100% - 14px);
+        margin: 7px;
+        -ms-flex-direction: column;
+            flex-direction: column;
+        padding: 10px; }
+        .messages_section .list_messages .list_messages_users .new_message_users .message_box i {
+          -webkit-transform: rotate(90deg);
+                  transform: rotate(90deg); }
+        .messages_section .list_messages .list_messages_users .new_message_users .message_box .user {
+          -ms-flex-direction: column;
+              flex-direction: column;
+          -ms-flex-align: center;
+              align-items: center; }
+          .messages_section .list_messages .list_messages_users .new_message_users .message_box .user .status {
+            margin-left: 0; }
+            .messages_section .list_messages .list_messages_users .new_message_users .message_box .user .status h2 {
+              display: none; }
+        .messages_section .list_messages .list_messages_users .new_message_users .message_box .date_send {
+          display: none; }
+    .messages_section .chat_current {
+      width: calc(100% - 120px); } }
 
 section.users_section {
   min-height: calc(100% - 50px);
   background-color: #F2F5F7; }
   section.users_section .list_users .list_users_wrapper {
     display: none; }
+    section.users_section .list_users .list_users_wrapper .responsive_table {
+      width: 100%;
+      overflow-x: auto; }
+      section.users_section .list_users .list_users_wrapper .responsive_table table {
+        width: 1000px; }
     section.users_section .list_users .list_users_wrapper table {
       width: 100%;
       background-color: #fff;
@@ -4387,6 +4545,20 @@ section.users_section {
               margin-right: 10px; }
             section.users_section .list_users .list_users_wrapper .new_user .new_user_wrapper form .field_inline .field {
               width: 50%; }
+          @media (max-width: 500px) {
+            section.users_section .list_users .list_users_wrapper .new_user .new_user_wrapper form .field_inline {
+              display: -ms-flex;
+              display: -ms-flexbox;
+              display: flex;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+              width: 100%;
+              -ms-flex-pack: justify;
+                  justify-content: space-between; }
+              section.users_section .list_users .list_users_wrapper .new_user .new_user_wrapper form .field_inline .field:first-child {
+                margin-right: 0px; }
+              section.users_section .list_users .list_users_wrapper .new_user .new_user_wrapper form .field_inline .field {
+                width: 100%; } }
           section.users_section .list_users .list_users_wrapper .new_user .new_user_wrapper form .field {
             display: -ms-flex;
             display: -ms-flexbox;
@@ -4419,6 +4591,11 @@ section.stock_section {
   background-color: #F2F5F7; }
   section.stock_section .list_products .list_products_wrapper {
     display: none; }
+    section.stock_section .list_products .list_products_wrapper .responsive_table {
+      width: 100%;
+      overflow-x: auto; }
+      section.stock_section .list_products .list_products_wrapper .responsive_table table {
+        width: 1000px; }
     section.stock_section .list_products .list_products_wrapper table {
       width: 100%;
       background-color: #fff;
@@ -4543,6 +4720,20 @@ section.stock_section {
               margin-right: 10px; }
             section.stock_section .list_products .list_products_wrapper .new_products .new_products_wrapper form .field_inline .field {
               width: 50%; }
+          @media (max-width: 500px) {
+            section.stock_section .list_products .list_products_wrapper .new_products .new_products_wrapper form .field_inline {
+              display: -ms-flex;
+              display: -ms-flexbox;
+              display: flex;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+              width: 100%;
+              -ms-flex-pack: justify;
+                  justify-content: space-between; }
+              section.stock_section .list_products .list_products_wrapper .new_products .new_products_wrapper form .field_inline .field:first-child {
+                margin-right: 0px; }
+              section.stock_section .list_products .list_products_wrapper .new_products .new_products_wrapper form .field_inline .field {
+                width: 100%; } }
           section.stock_section .list_products .list_products_wrapper .new_products .new_products_wrapper form .field {
             display: -ms-flex;
             display: -ms-flexbox;
@@ -4589,6 +4780,11 @@ section.offer_admin_section {
   background-color: #F2F5F7; }
   section.offer_admin_section .list_offers .list_offers_wrapper {
     display: none; }
+    section.offer_admin_section .list_offers .list_offers_wrapper .responsive_table {
+      width: 100%;
+      overflow-x: auto; }
+      section.offer_admin_section .list_offers .list_offers_wrapper .responsive_table table {
+        width: 1000px; }
     section.offer_admin_section .list_offers .list_offers_wrapper table {
       width: 100%;
       background-color: #fff;
@@ -4857,11 +5053,13 @@ input[type=number] {
 
 /* style 6 */
 .inputfile-6 + label {
-  color: #242529; }
+  color: #242529;
+  padding: 10px 0px; }
 
 .inputfile-6 + label {
   border: 1px solid rgba(61, 74, 84, 0.25);
-  padding: 0; }
+  padding: 10px 0;
+  border-radius: 2px; }
 
 .inputfile-6 + label:active, .inputfile-6 + label:focus, .inputfile-6 + label:visited {
   border: 1px solid #2196f3; }

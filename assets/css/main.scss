@@ -23,7 +23,7 @@
 
 
 // NOTE: input number styling
- 
+
 .quantity {
   position: relative;
   margin-right: 10px;
@@ -152,12 +152,14 @@ input[type=number]
 
 .inputfile-6 + label {
     color: #242529;
+    padding: 10px 0px;
 }
 
 .inputfile-6 + label {
     border: 1px solid rgba($accent-color, .25);
     // background-color: white;
-    padding: 0;
+    padding: 10px 0;
+    border-radius: 2px;
 }
 
 .inputfile-6 + label {

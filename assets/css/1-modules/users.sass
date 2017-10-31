@@ -4,6 +4,11 @@ section.users_section
   .list_users
     .list_users_wrapper
       display: none
+      .responsive_table
+        width: 100%
+        overflow-x: auto
+        table
+          width: 1000px
       table
         width: 100%
         background-color: #fff
@@ -130,6 +135,19 @@ section.users_section
                 margin-right: 10px
               .field
                 width: 50%
+
+            @media (max-width: 500px)
+              .field_inline
+                display: -webkit-flex
+                display: -ms-flex
+                display: flex
+                flex-direction: column
+                width: 100%
+                justify-content: space-between
+                .field:first-child
+                  margin-right: 0px
+                .field
+                  width: 100%
             .field
               display: -webkit-flex
               display: -ms-flex

@@ -48,7 +48,10 @@ $(function(){
 
 function responsiveTable(){
   if($(window).width()<800){
-    $("#car_producto_table, #table_story, #char_table").wrap("<div class='responsive_table'></div >");
+    $("#car_producto_table, #table_story, #char_table, #table_pedidos").wrap("<div class='responsive_table'></div >");
+  }
+  if($(window).width()<1000){
+    $(".pedidos_wrapper table, .list_offers  table, .list_products table,   .list_users table").wrap("<div class='responsive_table'></div >");
   }
 }
 

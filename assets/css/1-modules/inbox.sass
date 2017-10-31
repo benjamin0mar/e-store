@@ -1,6 +1,11 @@
 .inbox_pedidos
   .pedidos_wrapper
     display: none
+    .responsive_table
+      width: 100%
+      overflow-x: auto
+      table
+        width: 800px
     table
       width: 100%
       background-color: #fff
@@ -91,3 +96,8 @@
       margin-right: 10px
     h2
       font-size: 14px;
+@media (max-width: 500px)
+  .tabs_inbox, .tabs_users, .tabs_stock, .tabs_offers
+    .tab_wrapper
+      h2
+        display: none

@@ -391,25 +391,29 @@ header
               justify-content: center
               border-radius: 50%
               background-color: rgba(#47AAF9, .9)
-      .number-productos
-        right: 3px
-        top: 4px
-        position: absolute
-        color: #fff
-        width: 13px
-        height: 13px
-        border-radius: 50%
-        background-color: #47aaf9
-        display: -webkit-flex
-        display: -ms-flex
-        display: flex
-        align-items: center
-        justify-content: center
-        padding: 2px
-        font-size: 11px
+
       i
         color: $accent-color
         font-size: 22px
+        position: relative
+        .number-productos
+          font-family: $main-font
+          right: -10px
+          top: -8px
+          position: absolute
+          color: #fff
+          width: 13px
+          height: 13px
+          border-radius: 50%
+          background-color: #47aaf9
+          display: -webkit-flex
+          display: -ms-flex
+          display: flex
+          align-items: center
+          justify-content: center
+          padding: 2px
+          font-size: 11px
+          font-style: normal
 
 
     @media (max-width: 500px)

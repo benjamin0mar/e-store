@@ -206,3 +206,54 @@ section.pay_section
             &:active, &:focus
               border: 1px solid rgba(#2196F3, 1)
               outline: none
+
+@media (max-width: 830px)
+  section.pay_section
+    .panel_title
+      margin-top: 20px
+      width: calc(100% - 20px)
+      margin:
+        left: 10px
+        right: 10px
+    .pay_wrapper
+      width: calc(100% - 20px)
+      padding: 10px 20px 20px 20px
+      margin:
+        left: 10px
+        right: 10px
+
+@media (max-width: 620px)
+  section.pay_section
+    .panel_title
+      margin-top: 20px
+      width: calc(100% - 20px)
+      margin:
+        left: 10px
+        right: 10px
+    .pay_wrapper
+      width: calc(100% - 20px)
+      margin:
+        left: 10px
+        right: 10px
+      .choose_payment
+        .card_wrapper
+          flex-direction: column
+          .card
+            margin-top: 10px
+            width: 100%
+            box-sizing: border-box
+      .form_payment
+        form
+          display: -webkit-flex
+          display: -ms-flex
+          display: flex
+          flex-direction: column
+          aside
+            width: 100%
+            .field_inline
+              width: 100%
+              flex-wrap: wrap
+              .field
+                width: 100%
+                &:first-child
+                  margin-right: 0

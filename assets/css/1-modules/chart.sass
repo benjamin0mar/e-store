@@ -66,6 +66,7 @@
       .guia_content
         h1
           font-size: 13px
+          display: none
         .result
           .number
             min-width: 80px
@@ -95,6 +96,10 @@
         // width: 1000px !important:;
         width: calc(100%) !important
         height: 350px !important
+    @media (max-width: 600px)
+      .chart_content
+        canvas
+          height: 250px !important
     .number_overall
       margin-top: -9px
       display: -webkit-flex
@@ -348,6 +353,9 @@
         text-align: left
         margin-bottom: 20px
         margin-top: 20px
+      .responsive_table
+        width: 100%
+        overflow-x: auto
       table
         width: 100%
         background-color: #fff

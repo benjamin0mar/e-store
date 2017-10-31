@@ -30,9 +30,6 @@
         box-shadow: $shadow
         .add-car
             box-shadow: $shadow
-      // &.show
-      //   opacity: 1
-      //   animation: fadeIn .8s
       .offer_number
         position: absolute
         top: -15px
@@ -139,3 +136,17 @@
             text-decoration: line-through
             color: rgba($accent-color, .5)
             margin-right: 10px
+
+@media (max-width: 620px)
+  .offer_section
+    .offer_wrapper
+      .product-description
+        width: calc(50% - 30px)
+
+@media (max-width: 450px)
+  .offer_section
+    .offer_wrapper
+      .product-description
+        width: calc(100% - 30px)
+        .offer_number
+          left: calc(50% - 15px)
